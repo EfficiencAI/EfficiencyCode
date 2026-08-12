@@ -3,6 +3,2894 @@
 version = 4
 
 [[package]]
+name = "EfficiencyCode-agent-extension"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-core",
+ "EfficiencyCode-protocol",
+ "anyhow",
+ "core_test_support",
+ "pretty_assertions",
+ "tokio",
+]
+
+[[package]]
+name = "EfficiencyCode-agent-graph-store"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-state",
+ "EfficiencyCode-utils-absolute-path",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+]
+
+[[package]]
+name = "EfficiencyCode-agent-identity"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-protocol",
+ "anyhow",
+ "base64 0.22.1",
+ "chrono",
+ "crypto_box",
+ "ed25519-dalek",
+ "http 1.4.0",
+ "jsonwebtoken",
+ "pretty_assertions",
+ "rand 0.9.3",
+ "serde",
+ "serde_json",
+ "sha2 0.10.9",
+]
+
+[[package]]
+name = "EfficiencyCode-analytics"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-app-server-protocol",
+ "EfficiencyCode-git-utils",
+ "EfficiencyCode-login",
+ "EfficiencyCode-model-provider",
+ "EfficiencyCode-plugin",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-state",
+ "EfficiencyCode-utils-absolute-path",
+ "os_info",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "sha1 0.10.6",
+ "tokio",
+ "tracing",
+]
+
+[[package]]
+name = "EfficiencyCode-ansi-escape"
+version = "0.0.0"
+dependencies = [
+ "ansi-to-tui",
+ "ratatui",
+ "tracing",
+]
+
+[[package]]
+name = "EfficiencyCode-api"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-client",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-rustls-provider",
+ "EfficiencyCode-websocket-client",
+ "anyhow",
+ "assert_matches",
+ "async-channel",
+ "base64 0.22.1",
+ "bytes",
+ "chrono",
+ "eventsource-stream",
+ "futures",
+ "http 1.4.0",
+ "pretty_assertions",
+ "regex-lite",
+ "schemars 0.8.22",
+ "serde",
+ "serde_json",
+ "thiserror 2.0.18",
+ "tokio",
+ "tokio-test",
+ "tokio-tungstenite",
+ "tokio-util",
+ "tracing",
+ "tungstenite",
+ "url",
+ "uuid",
+ "wiremock",
+]
+
+[[package]]
+name = "EfficiencyCode-app-server"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-agent-extension",
+ "EfficiencyCode-analytics",
+ "EfficiencyCode-app-server-protocol",
+ "EfficiencyCode-app-server-transport",
+ "EfficiencyCode-arg0",
+ "EfficiencyCode-backend-client",
+ "EfficiencyCode-chatgpt",
+ "EfficiencyCode-cloud-config",
+ "EfficiencyCode-code-mode",
+ "EfficiencyCode-config",
+ "EfficiencyCode-connectors",
+ "EfficiencyCode-core",
+ "EfficiencyCode-core-plugins",
+ "EfficiencyCode-diagnostics",
+ "EfficiencyCode-exec-server",
+ "EfficiencyCode-extension-api",
+ "EfficiencyCode-external-agent-migration",
+ "EfficiencyCode-features",
+ "EfficiencyCode-feedback",
+ "EfficiencyCode-file-search",
+ "EfficiencyCode-file-watcher",
+ "EfficiencyCode-git-attribution",
+ "EfficiencyCode-git-utils",
+ "EfficiencyCode-goal-extension",
+ "EfficiencyCode-guardian",
+ "EfficiencyCode-home",
+ "EfficiencyCode-hooks",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-image-generation-extension",
+ "EfficiencyCode-login",
+ "EfficiencyCode-mcp",
+ "EfficiencyCode-mcp-extension",
+ "EfficiencyCode-memories-extension",
+ "EfficiencyCode-memories-write",
+ "EfficiencyCode-model-provider",
+ "EfficiencyCode-model-provider-info",
+ "EfficiencyCode-models-manager",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-plugin",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-queue-extension",
+ "EfficiencyCode-rmcp-client",
+ "EfficiencyCode-rollout",
+ "EfficiencyCode-sandboxing",
+ "EfficiencyCode-shell-command",
+ "EfficiencyCode-skills",
+ "EfficiencyCode-skills-extension",
+ "EfficiencyCode-state",
+ "EfficiencyCode-thread-store",
+ "EfficiencyCode-tools",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-cargo-bin",
+ "EfficiencyCode-utils-cli",
+ "EfficiencyCode-utils-json-to-toml",
+ "EfficiencyCode-utils-path-uri",
+ "EfficiencyCode-utils-pty",
+ "EfficiencyCode-web-search-extension",
+ "EfficiencyCode-windows-sandbox",
+ "anyhow",
+ "app_test_support",
+ "axum",
+ "base64 0.22.1",
+ "chrono",
+ "clap",
+ "core_test_support",
+ "flate2",
+ "futures",
+ "hmac 0.12.1",
+ "opentelemetry",
+ "opentelemetry_sdk",
+ "pretty_assertions",
+ "reqwest 0.12.28",
+ "rmcp",
+ "serde",
+ "serde_json",
+ "serial_test",
+ "sha2 0.10.9",
+ "shlex",
+ "tar",
+ "tempfile",
+ "test-case",
+ "thiserror 2.0.18",
+ "time",
+ "tokio",
+ "tokio-tungstenite",
+ "tokio-util",
+ "toml 0.9.11+spec-1.1.0",
+ "toml_edit 0.24.0+spec-1.1.0",
+ "tracing",
+ "tracing-opentelemetry",
+ "tracing-subscriber",
+ "url",
+ "uuid",
+ "wiremock",
+]
+
+[[package]]
+name = "EfficiencyCode-app-server-client"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-app-server",
+ "EfficiencyCode-app-server-protocol",
+ "EfficiencyCode-arg0",
+ "EfficiencyCode-config",
+ "EfficiencyCode-core",
+ "EfficiencyCode-exec-server",
+ "EfficiencyCode-feedback",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-uds",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-rustls-provider",
+ "futures",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "tempfile",
+ "tokio",
+ "tokio-tungstenite",
+ "toml 0.9.11+spec-1.1.0",
+ "tracing",
+ "url",
+]
+
+[[package]]
+name = "EfficiencyCode-app-server-daemon"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-app-server-protocol",
+ "EfficiencyCode-app-server-transport",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-uds",
+ "EfficiencyCode-utils-home-dir",
+ "anyhow",
+ "futures",
+ "libc",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "sha2 0.10.9",
+ "tempfile",
+ "tokio",
+ "tokio-tungstenite",
+]
+
+[[package]]
+name = "EfficiencyCode-app-server-protocol"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-app-server-protocol-noop-macros",
+ "EfficiencyCode-experimental-api-macros",
+ "EfficiencyCode-extension-items",
+ "EfficiencyCode-history",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-rollout",
+ "EfficiencyCode-secrets",
+ "EfficiencyCode-shell-command",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-cargo-bin",
+ "EfficiencyCode-utils-path-uri",
+ "anyhow",
+ "inventory",
+ "pretty_assertions",
+ "rmcp",
+ "schemars 0.8.22",
+ "serde",
+ "serde_json",
+ "serde_with",
+ "similar",
+ "strum_macros 0.28.0",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tracing",
+ "ts-rs",
+ "uuid",
+ "zstd",
+]
+
+[[package]]
+name = "EfficiencyCode-app-server-protocol-noop-macros"
+version = "0.0.0"
+
+[[package]]
+name = "EfficiencyCode-app-server-test-client"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-app-server-protocol",
+ "EfficiencyCode-core",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-cli",
+ "anyhow",
+ "clap",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "tokio",
+ "tracing",
+ "tracing-subscriber",
+ "tungstenite",
+ "url",
+ "uuid",
+]
+
+[[package]]
+name = "EfficiencyCode-app-server-transport"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-api",
+ "EfficiencyCode-app-server-protocol",
+ "EfficiencyCode-config",
+ "EfficiencyCode-core",
+ "EfficiencyCode-login",
+ "EfficiencyCode-model-provider",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-state",
+ "EfficiencyCode-uds",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-rustls-provider",
+ "anyhow",
+ "axum",
+ "base64 0.22.1",
+ "chrono",
+ "clap",
+ "constant_time_eq",
+ "futures",
+ "gethostname",
+ "hmac 0.12.1",
+ "httpdate",
+ "jsonwebtoken",
+ "owo-colors",
+ "pretty_assertions",
+ "rand 0.9.3",
+ "serde",
+ "serde_json",
+ "sha2 0.10.9",
+ "tempfile",
+ "time",
+ "tokio",
+ "tokio-tungstenite",
+ "tokio-util",
+ "tracing",
+ "url",
+ "uuid",
+]
+
+[[package]]
+name = "EfficiencyCode-apply-patch"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-exec-server",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-cargo-bin",
+ "EfficiencyCode-utils-path-uri",
+ "anyhow",
+ "assert_cmd",
+ "assert_matches",
+ "pretty_assertions",
+ "similar",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+ "tree-sitter",
+ "tree-sitter-bash",
+]
+
+[[package]]
+name = "EfficiencyCode-arg0"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-apply-patch",
+ "EfficiencyCode-exec-server",
+ "EfficiencyCode-install-context",
+ "EfficiencyCode-linux-sandbox",
+ "EfficiencyCode-sandboxing",
+ "EfficiencyCode-shell-escalation",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-home-dir",
+ "EfficiencyCode-windows-sandbox",
+ "anyhow",
+ "dotenvy",
+ "pretty_assertions",
+ "tempfile",
+ "tokio",
+]
+
+[[package]]
+name = "EfficiencyCode-async-utils"
+version = "0.0.0"
+dependencies = [
+ "pretty_assertions",
+ "tokio",
+ "tokio-util",
+]
+
+[[package]]
+name = "EfficiencyCode-aws-auth"
+version = "0.0.0"
+dependencies = [
+ "aws-config",
+ "aws-credential-types",
+ "aws-sigv4",
+ "aws-types",
+ "bytes",
+ "http 1.4.0",
+ "pretty_assertions",
+ "thiserror 2.0.18",
+ "tokio",
+]
+
+[[package]]
+name = "EfficiencyCode-backend-client"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-api",
+ "EfficiencyCode-backend-openapi-models",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-login",
+ "EfficiencyCode-model-provider",
+ "EfficiencyCode-protocol",
+ "anyhow",
+ "http 1.4.0",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "tokio",
+ "url",
+ "wiremock",
+]
+
+[[package]]
+name = "EfficiencyCode-backend-openapi-models"
+version = "0.0.0"
+dependencies = [
+ "serde",
+ "serde_json",
+ "serde_with",
+]
+
+[[package]]
+name = "EfficiencyCode-build-info"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-install-context",
+ "pretty_assertions",
+ "semver",
+ "serde",
+ "serde_json",
+ "tempfile",
+]
+
+[[package]]
+name = "EfficiencyCode-bwrap"
+version = "0.0.0"
+dependencies = [
+ "cc",
+ "libc",
+ "pkg-config",
+]
+
+[[package]]
+name = "EfficiencyCode-chatgpt"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-connectors",
+ "EfficiencyCode-core",
+ "EfficiencyCode-git-utils",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-login",
+ "EfficiencyCode-model-provider",
+ "EfficiencyCode-plugin",
+ "EfficiencyCode-utils-cargo-bin",
+ "EfficiencyCode-utils-cli",
+ "anyhow",
+ "clap",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "tempfile",
+ "tokio",
+]
+
+[[package]]
+name = "EfficiencyCode-cli"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-api",
+ "EfficiencyCode-app-server",
+ "EfficiencyCode-app-server-daemon",
+ "EfficiencyCode-app-server-protocol",
+ "EfficiencyCode-app-server-test-client",
+ "EfficiencyCode-arg0",
+ "EfficiencyCode-chatgpt",
+ "EfficiencyCode-cloud-config",
+ "EfficiencyCode-cloud-tasks",
+ "EfficiencyCode-config",
+ "EfficiencyCode-core",
+ "EfficiencyCode-core-plugins",
+ "EfficiencyCode-exec",
+ "EfficiencyCode-exec-server",
+ "EfficiencyCode-execpolicy",
+ "EfficiencyCode-extension-api",
+ "EfficiencyCode-features",
+ "EfficiencyCode-git-attribution",
+ "EfficiencyCode-git-utils",
+ "EfficiencyCode-history",
+ "EfficiencyCode-home",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-install-context",
+ "EfficiencyCode-login",
+ "EfficiencyCode-mcp",
+ "EfficiencyCode-mcp-server",
+ "EfficiencyCode-memories-write",
+ "EfficiencyCode-model-provider",
+ "EfficiencyCode-models-manager",
+ "EfficiencyCode-plugin",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-responses-api-proxy",
+ "EfficiencyCode-rmcp-client",
+ "EfficiencyCode-rollout",
+ "EfficiencyCode-rollout-trace",
+ "EfficiencyCode-sandboxing",
+ "EfficiencyCode-skills-extension",
+ "EfficiencyCode-state",
+ "EfficiencyCode-stdio-to-uds",
+ "EfficiencyCode-terminal-detection",
+ "EfficiencyCode-thread-store",
+ "EfficiencyCode-tui",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-cargo-bin",
+ "EfficiencyCode-utils-cli",
+ "EfficiencyCode-utils-path",
+ "EfficiencyCode-windows-sandbox",
+ "anyhow",
+ "app_test_support",
+ "assert_cmd",
+ "assert_matches",
+ "chrono",
+ "clap",
+ "clap_complete",
+ "crossterm",
+ "futures",
+ "http 1.4.0",
+ "insta",
+ "libc",
+ "os_info",
+ "owo-colors",
+ "predicates",
+ "pretty_assertions",
+ "regex-lite",
+ "serde",
+ "serde_json",
+ "sqlx",
+ "supports-color 3.0.2",
+ "sys-locale",
+ "tempfile",
+ "tokio",
+ "tokio-tungstenite",
+ "toml 0.9.11+spec-1.1.0",
+ "tracing",
+ "tracing-appender",
+ "tracing-subscriber",
+ "unicode-segmentation",
+ "url",
+ "which 8.0.0",
+ "windows-sys 0.52.0",
+ "wiremock",
+ "zstd",
+]
+
+[[package]]
+name = "EfficiencyCode-client"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-http-client",
+ "eventsource-stream",
+ "futures",
+ "http 1.4.0",
+ "rand 0.9.3",
+ "tokio",
+]
+
+[[package]]
+name = "EfficiencyCode-cloud-config"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-agent-identity",
+ "EfficiencyCode-backend-client",
+ "EfficiencyCode-config",
+ "EfficiencyCode-core",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-login",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-protocol",
+ "base64 0.22.1",
+ "chrono",
+ "hmac 0.12.1",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "sha2 0.10.9",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+ "tracing",
+]
+
+[[package]]
+name = "EfficiencyCode-cloud-tasks"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-cloud-tasks-client",
+ "EfficiencyCode-cloud-tasks-mock-client",
+ "EfficiencyCode-core",
+ "EfficiencyCode-git-utils",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-login",
+ "EfficiencyCode-model-provider",
+ "EfficiencyCode-tui",
+ "EfficiencyCode-utils-cli",
+ "anyhow",
+ "chrono",
+ "clap",
+ "crossterm",
+ "http 1.4.0",
+ "insta",
+ "owo-colors",
+ "pretty_assertions",
+ "ratatui",
+ "serde",
+ "serde_json",
+ "supports-color 3.0.2",
+ "tokio",
+ "tokio-stream",
+ "tracing",
+ "tracing-subscriber",
+ "unicode-segmentation",
+ "unicode-width 0.2.1",
+]
+
+[[package]]
+name = "EfficiencyCode-cloud-tasks-client"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-api",
+ "EfficiencyCode-backend-client",
+ "EfficiencyCode-git-utils",
+ "EfficiencyCode-http-client",
+ "anyhow",
+ "chrono",
+ "serde",
+ "serde_json",
+ "thiserror 2.0.18",
+]
+
+[[package]]
+name = "EfficiencyCode-cloud-tasks-mock-client"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-cloud-tasks-client",
+ "chrono",
+ "diffy",
+]
+
+[[package]]
+name = "EfficiencyCode-code-mode"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-code-mode-protocol",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-install-context",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-websocket-client",
+ "futures",
+ "http-body-util",
+ "pretty_assertions",
+ "prost",
+ "reqwest 0.12.28",
+ "serde_json",
+ "tokio",
+ "tokio-tungstenite",
+ "tokio-util",
+ "tonic",
+ "tower",
+ "tracing",
+ "uuid",
+]
+
+[[package]]
+name = "EfficiencyCode-code-mode-host"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-code-mode",
+ "EfficiencyCode-code-mode-protocol",
+ "EfficiencyCode-code-mode-runtime",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-cargo-bin",
+ "anyhow",
+ "axum",
+ "clap",
+ "futures",
+ "pretty_assertions",
+ "prost",
+ "serde_json",
+ "tempfile",
+ "tokio",
+ "tokio-stream",
+ "tokio-tungstenite",
+ "tokio-util",
+ "tonic",
+ "tracing",
+ "tracing-subscriber",
+ "uuid",
+]
+
+[[package]]
+name = "EfficiencyCode-code-mode-protocol"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-protocol",
+ "glob",
+ "pretty_assertions",
+ "prost",
+ "protoc-bin-vendored",
+ "serde",
+ "serde_json",
+ "tokio",
+ "tokio-util",
+ "tonic",
+ "tonic-prost",
+ "tonic-prost-build",
+]
+
+[[package]]
+name = "EfficiencyCode-code-mode-runtime"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-code-mode-protocol",
+ "EfficiencyCode-protocol",
+ "deno_core_icudata",
+ "futures",
+ "pretty_assertions",
+ "serde_json",
+ "tokio",
+ "tokio-util",
+ "tracing",
+ "v8",
+]
+
+[[package]]
+name = "EfficiencyCode-collaboration-mode-templates"
+version = "0.0.0"
+
+[[package]]
+name = "EfficiencyCode-config"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-execpolicy",
+ "EfficiencyCode-features",
+ "EfficiencyCode-file-system",
+ "EfficiencyCode-git-utils",
+ "EfficiencyCode-model-provider-info",
+ "EfficiencyCode-network-proxy",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-path",
+ "EfficiencyCode-utils-path-uri",
+ "anyhow",
+ "base64 0.22.1",
+ "core-foundation 0.9.4",
+ "dns-lookup",
+ "dunce",
+ "futures",
+ "gethostname",
+ "indexmap 2.14.0",
+ "libc",
+ "multimap",
+ "pretty_assertions",
+ "prost",
+ "regex-lite",
+ "schemars 0.8.22",
+ "serde",
+ "serde_ignored",
+ "serde_json",
+ "serde_path_to_error",
+ "sha2 0.10.9",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+ "tokio-stream",
+ "toml 0.9.11+spec-1.1.0",
+ "toml_edit 0.24.0+spec-1.1.0",
+ "tonic",
+ "tonic-prost",
+ "tonic-prost-build",
+ "tracing",
+ "wildmatch",
+ "winapi-util",
+ "windows-sys 0.52.0",
+]
+
+[[package]]
+name = "EfficiencyCode-connectors"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-config",
+ "EfficiencyCode-login",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-plugin",
+ "EfficiencyCode-protocol",
+ "anyhow",
+ "arc-swap",
+ "indexmap 2.14.0",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "sha1 0.10.6",
+ "tempfile",
+ "tokio",
+ "tracing",
+ "urlencoding",
+]
+
+[[package]]
+name = "EfficiencyCode-connectors-extension"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-connectors",
+ "EfficiencyCode-core-plugins",
+ "EfficiencyCode-plugin",
+ "EfficiencyCode-utils-path-uri",
+ "serde_json",
+ "thiserror 2.0.18",
+ "tracing",
+]
+
+[[package]]
+name = "EfficiencyCode-context-fragments"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-string",
+]
+
+[[package]]
+name = "EfficiencyCode-core"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-agent-graph-store",
+ "EfficiencyCode-analytics",
+ "EfficiencyCode-api",
+ "EfficiencyCode-app-server-protocol",
+ "EfficiencyCode-apply-patch",
+ "EfficiencyCode-async-utils",
+ "EfficiencyCode-code-mode",
+ "EfficiencyCode-config",
+ "EfficiencyCode-connectors",
+ "EfficiencyCode-context-fragments",
+ "EfficiencyCode-core-plugins",
+ "EfficiencyCode-diagnostics",
+ "EfficiencyCode-exec-server",
+ "EfficiencyCode-exec-server-test-support",
+ "EfficiencyCode-execpolicy",
+ "EfficiencyCode-extension-api",
+ "EfficiencyCode-extension-items",
+ "EfficiencyCode-features",
+ "EfficiencyCode-feedback",
+ "EfficiencyCode-file-system",
+ "EfficiencyCode-git-utils",
+ "EfficiencyCode-history",
+ "EfficiencyCode-home",
+ "EfficiencyCode-hooks",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-image-generation-extension",
+ "EfficiencyCode-install-context",
+ "EfficiencyCode-login",
+ "EfficiencyCode-mcp",
+ "EfficiencyCode-memories-read",
+ "EfficiencyCode-model-provider",
+ "EfficiencyCode-model-provider-info",
+ "EfficiencyCode-models-manager",
+ "EfficiencyCode-network-proxy",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-plugin",
+ "EfficiencyCode-prompts",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-response-debug-context",
+ "EfficiencyCode-rmcp-client",
+ "EfficiencyCode-rollout",
+ "EfficiencyCode-rollout-trace",
+ "EfficiencyCode-sandboxing",
+ "EfficiencyCode-shell-command",
+ "EfficiencyCode-shell-escalation",
+ "EfficiencyCode-skills",
+ "EfficiencyCode-skills-extension",
+ "EfficiencyCode-state",
+ "EfficiencyCode-terminal-detection",
+ "EfficiencyCode-test-binary-support",
+ "EfficiencyCode-thread-store",
+ "EfficiencyCode-tools",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-audio",
+ "EfficiencyCode-utils-cache",
+ "EfficiencyCode-utils-cargo-bin",
+ "EfficiencyCode-utils-home-dir",
+ "EfficiencyCode-utils-image",
+ "EfficiencyCode-utils-output-truncation",
+ "EfficiencyCode-utils-path",
+ "EfficiencyCode-utils-path-uri",
+ "EfficiencyCode-utils-plugins",
+ "EfficiencyCode-utils-pty",
+ "EfficiencyCode-utils-stream-parser",
+ "EfficiencyCode-utils-string",
+ "EfficiencyCode-web-search-extension",
+ "EfficiencyCode-windows-sandbox",
+ "anyhow",
+ "arc-swap",
+ "assert_cmd",
+ "assert_matches",
+ "async-channel",
+ "base64 0.22.1",
+ "bm25",
+ "chrono",
+ "clap",
+ "core_test_support",
+ "ctor 0.6.3",
+ "dirs",
+ "dunce",
+ "eventsource-stream",
+ "futures",
+ "http 1.4.0",
+ "iana-time-zone",
+ "image",
+ "indexmap 2.14.0",
+ "insta",
+ "libc",
+ "maplit",
+ "once_cell",
+ "openssl-sys",
+ "opentelemetry",
+ "opentelemetry_sdk",
+ "predicates",
+ "pretty_assertions",
+ "rand 0.9.3",
+ "regex-lite",
+ "rmcp",
+ "serde",
+ "serde_json",
+ "serial_test",
+ "sha1 0.10.6",
+ "shlex",
+ "similar",
+ "tempfile",
+ "test-case",
+ "test-log",
+ "thiserror 2.0.18",
+ "tokio",
+ "tokio-tungstenite",
+ "tokio-util",
+ "toml 0.9.11+spec-1.1.0",
+ "toml_edit 0.24.0+spec-1.1.0",
+ "tracing",
+ "tracing-opentelemetry",
+ "tracing-subscriber",
+ "tracing-test",
+ "url",
+ "uuid",
+ "walkdir",
+ "which 8.0.0",
+ "whoami 1.6.1",
+ "wiremock",
+ "zstd",
+]
+
+[[package]]
+name = "EfficiencyCode-core-api"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-analytics",
+ "EfficiencyCode-app-server-protocol",
+ "EfficiencyCode-arg0",
+ "EfficiencyCode-config",
+ "EfficiencyCode-core",
+ "EfficiencyCode-exec-server",
+ "EfficiencyCode-extension-api",
+ "EfficiencyCode-features",
+ "EfficiencyCode-history",
+ "EfficiencyCode-home",
+ "EfficiencyCode-image-generation-extension",
+ "EfficiencyCode-login",
+ "EfficiencyCode-model-provider-info",
+ "EfficiencyCode-models-manager",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-state",
+ "EfficiencyCode-utils-absolute-path",
+]
+
+[[package]]
+name = "EfficiencyCode-core-plugins"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-analytics",
+ "EfficiencyCode-app-server-protocol",
+ "EfficiencyCode-config",
+ "EfficiencyCode-connectors",
+ "EfficiencyCode-exec-server",
+ "EfficiencyCode-exec-server-test-support",
+ "EfficiencyCode-git-utils",
+ "EfficiencyCode-hooks",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-login",
+ "EfficiencyCode-mcp",
+ "EfficiencyCode-model-provider",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-plugin",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-shell-command",
+ "EfficiencyCode-skills",
+ "EfficiencyCode-tools",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-path",
+ "EfficiencyCode-utils-path-uri",
+ "EfficiencyCode-utils-plugins",
+ "anyhow",
+ "chrono",
+ "dirs",
+ "flate2",
+ "http 1.4.0",
+ "libc",
+ "pretty_assertions",
+ "regex",
+ "semver",
+ "serde",
+ "serde_json",
+ "serde_yaml",
+ "sha2 0.10.9",
+ "tar",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+ "toml 0.9.11+spec-1.1.0",
+ "tracing",
+ "tracing-subscriber",
+ "tracing-test",
+ "url",
+ "which 8.0.0",
+ "wiremock",
+ "zip",
+]
+
+[[package]]
+name = "EfficiencyCode-diagnostics"
+version = "0.0.0"
+dependencies = [
+ "libc",
+ "pretty_assertions",
+]
+
+[[package]]
+name = "EfficiencyCode-exec"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-app-server-client",
+ "EfficiencyCode-app-server-protocol",
+ "EfficiencyCode-apply-patch",
+ "EfficiencyCode-arg0",
+ "EfficiencyCode-cloud-config",
+ "EfficiencyCode-config",
+ "EfficiencyCode-core",
+ "EfficiencyCode-feedback",
+ "EfficiencyCode-git-utils",
+ "EfficiencyCode-history",
+ "EfficiencyCode-login",
+ "EfficiencyCode-model-provider-info",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-cargo-bin",
+ "EfficiencyCode-utils-cli",
+ "EfficiencyCode-utils-oss",
+ "EfficiencyCode-utils-sandbox-summary",
+ "anyhow",
+ "assert_cmd",
+ "clap",
+ "core_test_support",
+ "libc",
+ "opentelemetry",
+ "opentelemetry_sdk",
+ "owo-colors",
+ "predicates",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "supports-color 3.0.2",
+ "tempfile",
+ "tokio",
+ "tracing",
+ "tracing-opentelemetry",
+ "tracing-subscriber",
+ "ts-rs",
+ "uuid",
+ "walkdir",
+ "wiremock",
+]
+
+[[package]]
+name = "EfficiencyCode-exec-server"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-api",
+ "EfficiencyCode-config",
+ "EfficiencyCode-exec-server-protocol",
+ "EfficiencyCode-exec-server-test-support",
+ "EfficiencyCode-file-system",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-network-proxy",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-sandboxing",
+ "EfficiencyCode-test-binary-support",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-home-dir",
+ "EfficiencyCode-utils-path-uri",
+ "EfficiencyCode-utils-pty",
+ "EfficiencyCode-utils-rustls-provider",
+ "EfficiencyCode-websocket-client",
+ "anyhow",
+ "arc-swap",
+ "axum",
+ "base64 0.22.1",
+ "bytes",
+ "clatter",
+ "ctor 0.6.3",
+ "dirs",
+ "futures",
+ "http 1.4.0",
+ "libc",
+ "opentelemetry",
+ "opentelemetry_sdk",
+ "pretty_assertions",
+ "prost",
+ "rcgen",
+ "rustls",
+ "serde",
+ "serde_json",
+ "serial_test",
+ "tempfile",
+ "test-case",
+ "thiserror 2.0.18",
+ "tokio",
+ "tokio-tungstenite",
+ "tokio-util",
+ "toml 0.9.11+spec-1.1.0",
+ "tracing",
+ "tracing-opentelemetry",
+ "tracing-subscriber",
+ "url",
+ "uuid",
+ "windows-sys 0.52.0",
+ "wiremock",
+]
+
+[[package]]
+name = "EfficiencyCode-exec-server-protocol"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-file-system",
+ "EfficiencyCode-network-proxy",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-shell-command",
+ "EfficiencyCode-utils-path-uri",
+ "base64 0.22.1",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
+name = "EfficiencyCode-exec-server-test-support"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-exec-server",
+ "EfficiencyCode-http-client",
+]
+
+[[package]]
+name = "EfficiencyCode-execpolicy"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-utils-absolute-path",
+ "anyhow",
+ "clap",
+ "multimap",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "shlex",
+ "starlark",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+]
+
+[[package]]
+name = "EfficiencyCode-experimental-api-macros"
+version = "0.0.0"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 2.0.117",
+]
+
+[[package]]
+name = "EfficiencyCode-extension-api"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-config",
+ "EfficiencyCode-context-fragments",
+ "EfficiencyCode-exec-server-protocol",
+ "EfficiencyCode-mcp",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-tools",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-path-uri",
+ "pretty_assertions",
+ "serde_json",
+ "tokio",
+]
+
+[[package]]
+name = "EfficiencyCode-extension-items"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-utils-absolute-path",
+ "pretty_assertions",
+ "schemars 0.8.22",
+ "serde",
+ "serde_json",
+ "ts-rs",
+]
+
+[[package]]
+name = "EfficiencyCode-external-agent-migration"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-analytics",
+ "EfficiencyCode-app-server-protocol",
+ "EfficiencyCode-config",
+ "EfficiencyCode-core",
+ "EfficiencyCode-core-plugins",
+ "EfficiencyCode-hooks",
+ "EfficiencyCode-memories-write",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-plugin",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-rollout",
+ "EfficiencyCode-thread-store",
+ "EfficiencyCode-utils-output-truncation",
+ "chrono",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "serde_yaml",
+ "sha2 0.10.9",
+ "tempfile",
+ "tokio",
+ "toml 0.9.11+spec-1.1.0",
+ "tracing",
+]
+
+[[package]]
+name = "EfficiencyCode-features"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-otel",
+ "EfficiencyCode-protocol",
+ "pretty_assertions",
+ "schemars 0.8.22",
+ "serde",
+ "toml 0.9.11+spec-1.1.0",
+ "tracing",
+]
+
+[[package]]
+name = "EfficiencyCode-feedback"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-login",
+ "EfficiencyCode-protocol",
+ "anyhow",
+ "log",
+ "mime_guess",
+ "pretty_assertions",
+ "sentry",
+ "tracing",
+ "tracing-subscriber",
+]
+
+[[package]]
+name = "EfficiencyCode-file-search"
+version = "0.0.0"
+dependencies = [
+ "anyhow",
+ "clap",
+ "crossbeam-channel",
+ "ignore",
+ "nucleo",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "tempfile",
+ "tokio",
+]
+
+[[package]]
+name = "EfficiencyCode-file-system"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-path-uri",
+ "bytes",
+ "futures",
+ "serde",
+]
+
+[[package]]
+name = "EfficiencyCode-file-watcher"
+version = "0.0.0"
+dependencies = [
+ "notify",
+ "pretty_assertions",
+ "tempfile",
+ "tokio",
+ "tracing",
+]
+
+[[package]]
+name = "EfficiencyCode-git-attribution"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-backend-client",
+ "EfficiencyCode-extension-api",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-login",
+ "serde_json",
+ "tokio",
+ "wiremock",
+]
+
+[[package]]
+name = "EfficiencyCode-git-utils"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-file-system",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-path-uri",
+ "EfficiencyCode-utils-pty",
+ "anyhow",
+ "chrono",
+ "futures",
+ "gix",
+ "once_cell",
+ "pretty_assertions",
+ "regex",
+ "schemars 0.8.22",
+ "serde",
+ "similar",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+ "ts-rs",
+ "walkdir",
+]
+
+[[package]]
+name = "EfficiencyCode-goal-extension"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-analytics",
+ "EfficiencyCode-core",
+ "EfficiencyCode-extension-api",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-rollout",
+ "EfficiencyCode-state",
+ "EfficiencyCode-tools",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-template",
+ "anyhow",
+ "chrono",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "tempfile",
+ "tokio",
+ "tracing",
+]
+
+[[package]]
+name = "EfficiencyCode-guardian"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-core",
+ "EfficiencyCode-extension-api",
+ "EfficiencyCode-protocol",
+]
+
+[[package]]
+name = "EfficiencyCode-history"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-protocol",
+ "anyhow",
+ "pretty_assertions",
+ "schemars 0.8.22",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
+name = "EfficiencyCode-home"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-extension-api",
+ "EfficiencyCode-utils-absolute-path",
+ "pretty_assertions",
+ "tempfile",
+ "tokio",
+]
+
+[[package]]
+name = "EfficiencyCode-hooks"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-config",
+ "EfficiencyCode-plugin",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-output-truncation",
+ "EfficiencyCode-utils-pty",
+ "anyhow",
+ "async-channel",
+ "chrono",
+ "futures",
+ "pretty_assertions",
+ "regex",
+ "schemars 0.8.22",
+ "serde",
+ "serde_json",
+ "tempfile",
+ "tokio",
+ "tracing",
+ "uuid",
+]
+
+[[package]]
+name = "EfficiencyCode-http-client"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-utils-cargo-bin",
+ "EfficiencyCode-utils-rustls-provider",
+ "bytes",
+ "futures",
+ "http 1.4.0",
+ "opentelemetry",
+ "opentelemetry_sdk",
+ "pretty_assertions",
+ "rcgen",
+ "reqwest 0.12.28",
+ "rustls",
+ "rustls-native-certs",
+ "rustls-pki-types",
+ "serde",
+ "serde_json",
+ "sha2 0.10.9",
+ "system-configuration",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+ "tracing",
+ "tracing-opentelemetry",
+ "tracing-subscriber",
+ "windows-sys 0.52.0",
+ "zstd",
+]
+
+[[package]]
+name = "EfficiencyCode-image-generation-extension"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-api",
+ "EfficiencyCode-core",
+ "EfficiencyCode-exec-server",
+ "EfficiencyCode-extension-api",
+ "EfficiencyCode-extension-items",
+ "EfficiencyCode-login",
+ "EfficiencyCode-model-provider",
+ "EfficiencyCode-model-provider-info",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-tools",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-image",
+ "EfficiencyCode-utils-path-uri",
+ "base64 0.22.1",
+ "http 1.4.0",
+ "pretty_assertions",
+ "schemars 0.8.22",
+ "serde",
+ "serde_json",
+ "tokio",
+ "tracing",
+]
+
+[[package]]
+name = "EfficiencyCode-install-context"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-home-dir",
+ "pretty_assertions",
+ "semver",
+ "serde",
+ "serde_json",
+ "tempfile",
+]
+
+[[package]]
+name = "EfficiencyCode-keyring-store"
+version = "0.0.0"
+dependencies = [
+ "keyring",
+ "tracing",
+]
+
+[[package]]
+name = "EfficiencyCode-linux-sandbox"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-core",
+ "EfficiencyCode-install-context",
+ "EfficiencyCode-network-proxy",
+ "EfficiencyCode-process-hardening",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-sandboxing",
+ "EfficiencyCode-utils-absolute-path",
+ "clap",
+ "globset",
+ "landlock",
+ "libc",
+ "pretty_assertions",
+ "seccompiler",
+ "serde",
+ "serde_json",
+ "sha2 0.10.9",
+ "tempfile",
+ "tokio",
+ "url",
+]
+
+[[package]]
+name = "EfficiencyCode-lmstudio"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-core",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-model-provider-info",
+ "serde_json",
+ "tokio",
+ "tracing",
+ "which 8.0.0",
+ "wiremock",
+]
+
+[[package]]
+name = "EfficiencyCode-login"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-agent-identity",
+ "EfficiencyCode-config",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-keyring-store",
+ "EfficiencyCode-model-provider-info",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-secrets",
+ "EfficiencyCode-terminal-detection",
+ "EfficiencyCode-utils-template",
+ "anyhow",
+ "base64 0.22.1",
+ "chrono",
+ "core_test_support",
+ "http 1.4.0",
+ "jsonwebtoken",
+ "keyring",
+ "once_cell",
+ "os_info",
+ "pretty_assertions",
+ "rand 0.9.3",
+ "regex-lite",
+ "serde",
+ "serde_json",
+ "serial_test",
+ "sha2 0.10.9",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tiny_http",
+ "tokio",
+ "tracing",
+ "tracing-subscriber",
+ "url",
+ "urlencoding",
+ "webbrowser",
+ "wiremock",
+]
+
+[[package]]
+name = "EfficiencyCode-mcp"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-api",
+ "EfficiencyCode-async-utils",
+ "EfficiencyCode-config",
+ "EfficiencyCode-connectors",
+ "EfficiencyCode-diagnostics",
+ "EfficiencyCode-exec-server",
+ "EfficiencyCode-exec-server-test-support",
+ "EfficiencyCode-login",
+ "EfficiencyCode-model-provider",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-plugin",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-rmcp-client",
+ "EfficiencyCode-utils-path-uri",
+ "EfficiencyCode-utils-plugins",
+ "anyhow",
+ "arc-swap",
+ "async-channel",
+ "futures",
+ "lru 0.16.3",
+ "pretty_assertions",
+ "regex-lite",
+ "rmcp",
+ "serde",
+ "serde_json",
+ "sha1 0.10.6",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+ "tokio-util",
+ "tracing",
+ "url",
+]
+
+[[package]]
+name = "EfficiencyCode-mcp-extension"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-config",
+ "EfficiencyCode-connectors",
+ "EfficiencyCode-connectors-extension",
+ "EfficiencyCode-core",
+ "EfficiencyCode-core-plugins",
+ "EfficiencyCode-exec-server",
+ "EfficiencyCode-extension-api",
+ "EfficiencyCode-features",
+ "EfficiencyCode-login",
+ "EfficiencyCode-mcp",
+ "EfficiencyCode-plugin",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-path-uri",
+ "pretty_assertions",
+ "serde_json",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+ "tracing",
+]
+
+[[package]]
+name = "EfficiencyCode-mcp-server"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-arg0",
+ "EfficiencyCode-config",
+ "EfficiencyCode-core",
+ "EfficiencyCode-exec-server",
+ "EfficiencyCode-extension-api",
+ "EfficiencyCode-features",
+ "EfficiencyCode-git-attribution",
+ "EfficiencyCode-home",
+ "EfficiencyCode-image-generation-extension",
+ "EfficiencyCode-login",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-shell-command",
+ "EfficiencyCode-skills-extension",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-cli",
+ "EfficiencyCode-utils-json-to-toml",
+ "anyhow",
+ "app_test_support",
+ "core_test_support",
+ "mcp_test_support",
+ "os_info",
+ "pretty_assertions",
+ "rmcp",
+ "schemars 0.8.22",
+ "serde",
+ "serde_json",
+ "shlex",
+ "tempfile",
+ "tokio",
+ "tracing",
+ "tracing-subscriber",
+ "uuid",
+ "wiremock",
+]
+
+[[package]]
+name = "EfficiencyCode-memories-extension"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-core",
+ "EfficiencyCode-extension-api",
+ "EfficiencyCode-features",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-tools",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-output-truncation",
+ "EfficiencyCode-utils-template",
+ "pretty_assertions",
+ "schemars 0.8.22",
+ "serde",
+ "serde_json",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+]
+
+[[package]]
+name = "EfficiencyCode-memories-read"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-shell-command",
+ "EfficiencyCode-utils-absolute-path",
+ "pretty_assertions",
+]
+
+[[package]]
+name = "EfficiencyCode-memories-write"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-backend-client",
+ "EfficiencyCode-config",
+ "EfficiencyCode-core",
+ "EfficiencyCode-features",
+ "EfficiencyCode-git-utils",
+ "EfficiencyCode-login",
+ "EfficiencyCode-model-provider",
+ "EfficiencyCode-model-provider-info",
+ "EfficiencyCode-models-manager",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-rollout",
+ "EfficiencyCode-rollout-trace",
+ "EfficiencyCode-secrets",
+ "EfficiencyCode-state",
+ "EfficiencyCode-terminal-detection",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-output-truncation",
+ "EfficiencyCode-utils-template",
+ "anyhow",
+ "chrono",
+ "core_test_support",
+ "futures",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "tempfile",
+ "tokio",
+ "tracing",
+ "uuid",
+ "wiremock",
+]
+
+[[package]]
+name = "EfficiencyCode-message-history"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-config",
+ "memchr",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "tempfile",
+ "tokio",
+ "tracing",
+]
+
+[[package]]
+name = "EfficiencyCode-model-provider"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-agent-identity",
+ "EfficiencyCode-api",
+ "EfficiencyCode-aws-auth",
+ "EfficiencyCode-feedback",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-login",
+ "EfficiencyCode-model-provider-info",
+ "EfficiencyCode-models-manager",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-response-debug-context",
+ "http 1.4.0",
+ "pretty_assertions",
+ "serde_json",
+ "tokio",
+ "tracing",
+ "wiremock",
+]
+
+[[package]]
+name = "EfficiencyCode-model-provider-info"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-api",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-absolute-path",
+ "http 1.4.0",
+ "maplit",
+ "pretty_assertions",
+ "schemars 0.8.22",
+ "serde",
+ "tempfile",
+ "toml 0.9.11+spec-1.1.0",
+]
+
+[[package]]
+name = "EfficiencyCode-models-manager"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-collaboration-mode-templates",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-login",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-output-truncation",
+ "EfficiencyCode-utils-template",
+ "chrono",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "tempfile",
+ "tokio",
+ "tracing",
+]
+
+[[package]]
+name = "EfficiencyCode-network-proxy"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-home-dir",
+ "EfficiencyCode-utils-rustls-provider",
+ "EfficiencyCode-windows-sandbox",
+ "anyhow",
+ "base64 0.22.1",
+ "chrono",
+ "clap",
+ "globset",
+ "pretty_assertions",
+ "rama-core",
+ "rama-http",
+ "rama-http-backend",
+ "rama-net",
+ "rama-socks5",
+ "rama-tcp",
+ "rama-tls-rustls",
+ "rama-unix",
+ "rand 0.9.3",
+ "rustls-native-certs",
+ "schannel",
+ "security-framework 3.5.1",
+ "serde",
+ "serde_json",
+ "sha2 0.10.9",
+ "tempfile",
+ "thiserror 2.0.18",
+ "time",
+ "tokio",
+ "tracing",
+ "url",
+ "windows-sys 0.52.0",
+]
+
+[[package]]
+name = "EfficiencyCode-ollama"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-core",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-model-provider-info",
+ "assert_matches",
+ "async-stream",
+ "bytes",
+ "futures",
+ "memchr",
+ "pretty_assertions",
+ "semver",
+ "serde_json",
+ "tokio",
+ "tracing",
+ "wiremock",
+]
+
+[[package]]
+name = "EfficiencyCode-otel"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-api",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-string",
+ "chrono",
+ "eventsource-stream",
+ "gethostname",
+ "http 1.4.0",
+ "opentelemetry",
+ "opentelemetry-appender-tracing",
+ "opentelemetry-otlp",
+ "opentelemetry-semantic-conventions",
+ "opentelemetry_sdk",
+ "os_info",
+ "pretty_assertions",
+ "reqwest 0.12.28",
+ "serde",
+ "serde_json",
+ "strum_macros 0.28.0",
+ "thiserror 2.0.18",
+ "tokio",
+ "tokio-tungstenite",
+ "tracing",
+ "tracing-opentelemetry",
+ "tracing-subscriber",
+]
+
+[[package]]
+name = "EfficiencyCode-plugin"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-config",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-path-uri",
+ "EfficiencyCode-utils-plugins",
+ "pretty_assertions",
+ "thiserror 2.0.18",
+]
+
+[[package]]
+name = "EfficiencyCode-process-hardening"
+version = "0.0.0"
+dependencies = [
+ "libc",
+ "pretty_assertions",
+]
+
+[[package]]
+name = "EfficiencyCode-prompts"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-context-fragments",
+ "EfficiencyCode-execpolicy",
+ "EfficiencyCode-git-utils",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-template",
+ "anyhow",
+ "pretty_assertions",
+]
+
+[[package]]
+name = "EfficiencyCode-protocol"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-async-utils",
+ "EfficiencyCode-execpolicy",
+ "EfficiencyCode-extension-items",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-network-proxy",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-image",
+ "EfficiencyCode-utils-path-uri",
+ "EfficiencyCode-utils-string",
+ "anyhow",
+ "chardetng",
+ "chrono",
+ "encoding_rs",
+ "globset",
+ "http 1.4.0",
+ "icu_decimal",
+ "icu_locale_core",
+ "icu_provider",
+ "landlock",
+ "pretty_assertions",
+ "quick-xml 0.41.0",
+ "schemars 0.8.22",
+ "seccompiler",
+ "serde",
+ "serde_json",
+ "serde_with",
+ "strum 0.27.2",
+ "strum_macros 0.28.0",
+ "sys-locale",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+ "tracing",
+ "ts-rs",
+ "uuid",
+ "wildmatch",
+]
+
+[[package]]
+name = "EfficiencyCode-queue-extension"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-core",
+ "EfficiencyCode-extension-api",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-state",
+ "EfficiencyCode-thread-store",
+ "EfficiencyCode-utils-absolute-path",
+ "anyhow",
+ "core_test_support",
+ "pretty_assertions",
+ "serde_json",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+ "tracing",
+ "uuid",
+]
+
+[[package]]
+name = "EfficiencyCode-response-debug-context"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-api",
+ "base64 0.22.1",
+ "http 1.4.0",
+ "pretty_assertions",
+ "serde_json",
+]
+
+[[package]]
+name = "EfficiencyCode-responses-api-proxy"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-process-hardening",
+ "anyhow",
+ "clap",
+ "ctor 0.6.3",
+ "libc",
+ "pretty_assertions",
+ "reqwest 0.12.28",
+ "serde",
+ "serde_json",
+ "tiny_http",
+ "zeroize",
+]
+
+[[package]]
+name = "EfficiencyCode-rmcp-client"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-api",
+ "EfficiencyCode-config",
+ "EfficiencyCode-exec-server",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-keyring-store",
+ "EfficiencyCode-network-proxy",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-secrets",
+ "EfficiencyCode-utils-cargo-bin",
+ "EfficiencyCode-utils-home-dir",
+ "EfficiencyCode-utils-path-uri",
+ "EfficiencyCode-utils-pty",
+ "anyhow",
+ "axum",
+ "base64 0.22.1",
+ "bytes",
+ "futures",
+ "http 1.4.0",
+ "keyring",
+ "memchr",
+ "oauth2",
+ "pretty_assertions",
+ "rmcp",
+ "serde",
+ "serde_json",
+ "serial_test",
+ "sha2 0.10.9",
+ "sse-stream",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tiny_http",
+ "tokio",
+ "tracing",
+ "url",
+ "urlencoding",
+ "webbrowser",
+ "which 8.0.0",
+ "wiremock",
+]
+
+[[package]]
+name = "EfficiencyCode-rollout"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-extension-items",
+ "EfficiencyCode-file-search",
+ "EfficiencyCode-git-utils",
+ "EfficiencyCode-history",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-state",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-path",
+ "anyhow",
+ "chrono",
+ "pretty_assertions",
+ "regex",
+ "serde",
+ "serde_json",
+ "tempfile",
+ "time",
+ "tokio",
+ "tracing",
+ "uuid",
+ "zstd",
+]
+
+[[package]]
+name = "EfficiencyCode-rollout-trace"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-code-mode",
+ "EfficiencyCode-protocol",
+ "anyhow",
+ "http 1.4.0",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "tempfile",
+ "tracing",
+ "uuid",
+]
+
+[[package]]
+name = "EfficiencyCode-sandboxing"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-network-proxy",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-home-dir",
+ "EfficiencyCode-utils-path-uri",
+ "EfficiencyCode-utils-pty",
+ "EfficiencyCode-windows-sandbox",
+ "anyhow",
+ "dunce",
+ "libc",
+ "pretty_assertions",
+ "regex-lite",
+ "serde_json",
+ "tempfile",
+ "tokio",
+ "tracing",
+ "url",
+ "which 8.0.0",
+]
+
+[[package]]
+name = "EfficiencyCode-secrets"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-git-utils",
+ "EfficiencyCode-keyring-store",
+ "age",
+ "anyhow",
+ "base64 0.22.1",
+ "keyring",
+ "pretty_assertions",
+ "rand 0.9.3",
+ "regex",
+ "schemars 0.8.22",
+ "serde",
+ "serde_json",
+ "sha2 0.10.9",
+ "tempfile",
+ "tracing",
+]
+
+[[package]]
+name = "EfficiencyCode-shell-command"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-absolute-path",
+ "anyhow",
+ "base64 0.22.1",
+ "libc",
+ "once_cell",
+ "pretty_assertions",
+ "regex",
+ "serde",
+ "serde_json",
+ "shlex",
+ "tree-sitter",
+ "tree-sitter-bash",
+ "url",
+ "which 8.0.0",
+]
+
+[[package]]
+name = "EfficiencyCode-shell-escalation"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-absolute-path",
+ "anyhow",
+ "clap",
+ "libc",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "socket2 0.6.3",
+ "tempfile",
+ "tokio",
+ "tokio-util",
+ "tracing",
+ "tracing-subscriber",
+]
+
+[[package]]
+name = "EfficiencyCode-skills"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-shell-command",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-path-uri",
+ "include_dir",
+ "pretty_assertions",
+ "serde",
+ "serde_yaml",
+ "shlex",
+ "thiserror 2.0.18",
+ "tracing",
+]
+
+[[package]]
+name = "EfficiencyCode-skills-extension"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-analytics",
+ "EfficiencyCode-config",
+ "EfficiencyCode-exec-server",
+ "EfficiencyCode-extension-api",
+ "EfficiencyCode-mcp",
+ "EfficiencyCode-models-manager",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-skills",
+ "EfficiencyCode-tools",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-cargo-bin",
+ "EfficiencyCode-utils-path-uri",
+ "EfficiencyCode-utils-plugins",
+ "EfficiencyCode-utils-string",
+ "dirs",
+ "dunce",
+ "futures",
+ "insta",
+ "opentelemetry_sdk",
+ "pretty_assertions",
+ "schemars 0.8.22",
+ "serde",
+ "serde_json",
+ "serde_yaml",
+ "tempfile",
+ "tokio",
+ "toml 0.9.11+spec-1.1.0",
+ "tracing",
+ "url",
+]
+
+[[package]]
+name = "EfficiencyCode-state"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-git-utils",
+ "EfficiencyCode-history",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-absolute-path",
+ "anyhow",
+ "chrono",
+ "libsqlite3-sys",
+ "log",
+ "pretty_assertions",
+ "scopeguard",
+ "serde",
+ "serde_json",
+ "sqlx",
+ "strum 0.27.2",
+ "tokio",
+ "tracing",
+ "tracing-subscriber",
+ "uuid",
+]
+
+[[package]]
+name = "EfficiencyCode-stdio-to-uds"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-uds",
+ "EfficiencyCode-utils-cargo-bin",
+ "anyhow",
+ "pretty_assertions",
+ "tempfile",
+ "tokio",
+]
+
+[[package]]
+name = "EfficiencyCode-terminal-detection"
+version = "0.0.0"
+dependencies = [
+ "pretty_assertions",
+ "tracing",
+]
+
+[[package]]
+name = "EfficiencyCode-test-binary-support"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-arg0",
+ "tempfile",
+]
+
+[[package]]
+name = "EfficiencyCode-thread-manager-sample"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-core-api",
+ "anyhow",
+ "clap",
+ "serde_json",
+ "tracing",
+]
+
+[[package]]
+name = "EfficiencyCode-thread-store"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-app-server-protocol",
+ "EfficiencyCode-extension-items",
+ "EfficiencyCode-git-utils",
+ "EfficiencyCode-install-context",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-rollout",
+ "EfficiencyCode-state",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-path",
+ "EfficiencyCode-utils-path-uri",
+ "chrono",
+ "futures",
+ "pretty_assertions",
+ "pulldown-cmark",
+ "serde",
+ "serde_json",
+ "sqlx",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+ "tracing",
+ "uuid",
+ "zstd",
+]
+
+[[package]]
+name = "EfficiencyCode-tools"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-code-mode",
+ "EfficiencyCode-connectors",
+ "EfficiencyCode-extension-items",
+ "EfficiencyCode-features",
+ "EfficiencyCode-file-system",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-cargo-bin",
+ "EfficiencyCode-utils-output-truncation",
+ "EfficiencyCode-utils-pty",
+ "EfficiencyCode-utils-string",
+ "bitflags 2.13.1",
+ "jsonptr",
+ "pretty_assertions",
+ "rmcp",
+ "serde",
+ "serde_json",
+ "thiserror 2.0.18",
+ "tracing",
+ "urlencoding",
+]
+
+[[package]]
+name = "EfficiencyCode-tui"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-ansi-escape",
+ "EfficiencyCode-app-server-client",
+ "EfficiencyCode-app-server-protocol",
+ "EfficiencyCode-arg0",
+ "EfficiencyCode-cli",
+ "EfficiencyCode-cloud-config",
+ "EfficiencyCode-config",
+ "EfficiencyCode-connectors",
+ "EfficiencyCode-core-plugins",
+ "EfficiencyCode-exec-server",
+ "EfficiencyCode-features",
+ "EfficiencyCode-feedback",
+ "EfficiencyCode-file-search",
+ "EfficiencyCode-git-utils",
+ "EfficiencyCode-history",
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-install-context",
+ "EfficiencyCode-login",
+ "EfficiencyCode-mcp",
+ "EfficiencyCode-message-history",
+ "EfficiencyCode-model-provider",
+ "EfficiencyCode-model-provider-info",
+ "EfficiencyCode-models-manager",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-plugin",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-rollout",
+ "EfficiencyCode-sandboxing",
+ "EfficiencyCode-shell-command",
+ "EfficiencyCode-state",
+ "EfficiencyCode-terminal-detection",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-approval-presets",
+ "EfficiencyCode-utils-cargo-bin",
+ "EfficiencyCode-utils-cli",
+ "EfficiencyCode-utils-elapsed",
+ "EfficiencyCode-utils-fuzzy-match",
+ "EfficiencyCode-utils-home-dir",
+ "EfficiencyCode-utils-oss",
+ "EfficiencyCode-utils-path",
+ "EfficiencyCode-utils-path-uri",
+ "EfficiencyCode-utils-plugins",
+ "EfficiencyCode-utils-sandbox-summary",
+ "EfficiencyCode-utils-sleep-inhibitor",
+ "EfficiencyCode-utils-string",
+ "EfficiencyCode-windows-sandbox",
+ "anyhow",
+ "app_test_support",
+ "arboard",
+ "assert_matches",
+ "base64 0.22.1",
+ "chrono",
+ "clap",
+ "color-eyre",
+ "core_test_support",
+ "crossterm",
+ "derive_more 2.1.1",
+ "diffy",
+ "dirs",
+ "dunce",
+ "futures",
+ "http 1.4.0",
+ "image",
+ "insta",
+ "itertools 0.14.0",
+ "lazy_static",
+ "libc",
+ "pathdiff",
+ "pretty_assertions",
+ "pulldown-cmark",
+ "rand 0.9.3",
+ "ratatui",
+ "ratatui-macros",
+ "regex-lite",
+ "rmcp",
+ "serde",
+ "serde_json",
+ "serial_test",
+ "sha2 0.10.9",
+ "shlex",
+ "strum 0.27.2",
+ "strum_macros 0.28.0",
+ "supports-color 3.0.2",
+ "syntect",
+ "tempfile",
+ "textwrap 0.16.2",
+ "thiserror 2.0.18",
+ "tokio",
+ "tokio-stream",
+ "tokio-tungstenite",
+ "tokio-util",
+ "toml 0.9.11+spec-1.1.0",
+ "tracing",
+ "tracing-appender",
+ "tracing-subscriber",
+ "two-face",
+ "unicode-segmentation",
+ "unicode-width 0.2.1",
+ "url",
+ "urlencoding",
+ "uuid",
+ "vt100",
+ "webbrowser",
+ "which 8.0.0",
+ "windows-sys 0.52.0",
+ "winsplit",
+ "wiremock",
+]
+
+[[package]]
+name = "EfficiencyCode-uds"
+version = "0.0.0"
+dependencies = [
+ "async-io",
+ "pretty_assertions",
+ "tempfile",
+ "tokio",
+ "tokio-util",
+ "uds_windows",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-absolute-path"
+version = "0.0.0"
+dependencies = [
+ "dirs",
+ "dunce",
+ "pretty_assertions",
+ "schemars 0.8.22",
+ "serde",
+ "serde_json",
+ "tempfile",
+ "ts-rs",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-approval-presets"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-protocol",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-audio"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-cache",
+ "EfficiencyCode-utils-string",
+ "base64 0.22.1",
+ "pretty_assertions",
+ "symphonia",
+ "thiserror 2.0.18",
+ "tracing",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-cache"
+version = "0.0.0"
+dependencies = [
+ "lru 0.16.3",
+ "sha1 0.10.6",
+ "tokio",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-cargo-bin"
+version = "0.0.0"
+dependencies = [
+ "assert_cmd",
+ "runfiles",
+ "thiserror 2.0.18",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-cli"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-shell-command",
+ "clap",
+ "pretty_assertions",
+ "serde",
+ "toml 0.9.11+spec-1.1.0",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-elapsed"
+version = "0.0.0"
+
+[[package]]
+name = "EfficiencyCode-utils-fuzzy-match"
+version = "0.0.0"
+
+[[package]]
+name = "EfficiencyCode-utils-home-dir"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-utils-absolute-path",
+ "dirs",
+ "pretty_assertions",
+ "tempfile",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-image"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-utils-cache",
+ "base64 0.22.1",
+ "divan",
+ "image",
+ "mime_guess",
+ "thiserror 2.0.18",
+ "tokio",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-json-to-toml"
+version = "0.0.0"
+dependencies = [
+ "pretty_assertions",
+ "serde_json",
+ "toml 0.9.11+spec-1.1.0",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-oss"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-core",
+ "EfficiencyCode-lmstudio",
+ "EfficiencyCode-model-provider-info",
+ "EfficiencyCode-ollama",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-output-truncation"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-string",
+ "pretty_assertions",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-path"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-utils-absolute-path",
+ "dunce",
+ "pretty_assertions",
+ "tempfile",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-path-uri"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-utils-absolute-path",
+ "base64 0.22.1",
+ "pretty_assertions",
+ "schemars 0.8.22",
+ "serde",
+ "serde_json",
+ "thiserror 2.0.18",
+ "ts-rs",
+ "url",
+ "urlencoding",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-plugins"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-exec-server",
+ "EfficiencyCode-exec-server-protocol",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-path-uri",
+ "serde",
+ "serde_json",
+ "tempfile",
+ "tokio",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-pty"
+version = "0.0.0"
+dependencies = [
+ "anyhow",
+ "filedescriptor",
+ "lazy_static",
+ "libc",
+ "log",
+ "portable-pty",
+ "pretty_assertions",
+ "shared_library",
+ "tokio",
+ "winapi",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-readiness"
+version = "0.0.0"
+dependencies = [
+ "assert_matches",
+ "thiserror 2.0.18",
+ "time",
+ "tokio",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-rustls-provider"
+version = "0.0.0"
+dependencies = [
+ "rustls",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-sandbox-summary"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-absolute-path",
+ "pretty_assertions",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-sleep-inhibitor"
+version = "0.0.0"
+dependencies = [
+ "core-foundation 0.9.4",
+ "libc",
+ "tracing",
+ "windows-sys 0.61.2",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-stream-parser"
+version = "0.0.0"
+dependencies = [
+ "pretty_assertions",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-string"
+version = "0.0.0"
+dependencies = [
+ "pretty_assertions",
+ "regex-lite",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
+name = "EfficiencyCode-utils-template"
+version = "0.0.0"
+dependencies = [
+ "pretty_assertions",
+]
+
+[[package]]
+name = "EfficiencyCode-v8-poc"
+version = "0.0.0"
+dependencies = [
+ "pretty_assertions",
+ "v8",
+]
+
+[[package]]
+name = "EfficiencyCode-web-search-extension"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-api",
+ "EfficiencyCode-core",
+ "EfficiencyCode-extension-api",
+ "EfficiencyCode-extension-items",
+ "EfficiencyCode-login",
+ "EfficiencyCode-model-provider",
+ "EfficiencyCode-model-provider-info",
+ "EfficiencyCode-otel",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-tools",
+ "http 1.4.0",
+ "pretty_assertions",
+ "schemars 0.8.22",
+ "serde_json",
+ "url",
+]
+
+[[package]]
+name = "EfficiencyCode-websocket-client"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-http-client",
+ "EfficiencyCode-utils-rustls-provider",
+ "futures",
+ "pretty_assertions",
+ "rcgen",
+ "rustls",
+ "tokio",
+ "tokio-rustls",
+ "tokio-tungstenite",
+ "url",
+]
+
+[[package]]
+name = "EfficiencyCode-windows-sandbox"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-otel",
+ "EfficiencyCode-protocol",
+ "EfficiencyCode-utils-absolute-path",
+ "EfficiencyCode-utils-pty",
+ "EfficiencyCode-utils-string",
+ "anyhow",
+ "base64 0.22.1",
+ "chrono",
+ "dirs-next",
+ "dunce",
+ "glob",
+ "pretty_assertions",
+ "rand 0.8.6",
+ "serde",
+ "serde_json",
+ "tempfile",
+ "tokio",
+ "tracing-appender",
+ "windows 0.58.0",
+ "windows-sys 0.52.0",
+]
+
+[[package]]
+name = "EfficiencyCode-workload-identity"
+version = "0.0.0"
+dependencies = [
+ "EfficiencyCode-http-client",
+ "pretty_assertions",
+ "serde",
+ "serde_json",
+ "tempfile",
+ "thiserror 2.0.18",
+ "tokio",
+ "url",
+ "wiremock",
+]
+
+[[package]]
 name = "Inflector"
 version = "0.11.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -396,9 +3284,6 @@ checksum = "2a4385e2e34eb35d6b3efe798b9eb88096925d87726c0798709bf56d9ed84af3"
 name = "app_test_support"
 version = "0.0.0"
 dependencies = [
- "anyhow",
- "base64 0.22.1",
- "chrono",
  "EfficiencyCode-app-server-protocol",
  "EfficiencyCode-config",
  "EfficiencyCode-core",
@@ -408,6 +3293,9 @@ dependencies = [
  "EfficiencyCode-models-manager",
  "EfficiencyCode-protocol",
  "EfficiencyCode-utils-cargo-bin",
+ "anyhow",
+ "base64 0.22.1",
+ "chrono",
  "core_test_support",
  "pretty_assertions",
  "serde",
@@ -1875,2894 +4763,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "EfficiencyCode-agent-extension"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "EfficiencyCode-core",
- "EfficiencyCode-protocol",
- "core_test_support",
- "pretty_assertions",
- "tokio",
-]
-
-[[package]]
-name = "EfficiencyCode-agent-graph-store"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-protocol",
- "EfficiencyCode-state",
- "EfficiencyCode-utils-absolute-path",
- "pretty_assertions",
- "serde",
- "serde_json",
- "tempfile",
- "thiserror 2.0.18",
- "tokio",
-]
-
-[[package]]
-name = "EfficiencyCode-agent-identity"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "base64 0.22.1",
- "chrono",
- "EfficiencyCode-http-client",
- "EfficiencyCode-protocol",
- "crypto_box",
- "ed25519-dalek",
- "http 1.4.0",
- "jsonwebtoken",
- "pretty_assertions",
- "rand 0.9.3",
- "serde",
- "serde_json",
- "sha2 0.10.9",
-]
-
-[[package]]
-name = "EfficiencyCode-analytics"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-app-server-protocol",
- "EfficiencyCode-git-utils",
- "EfficiencyCode-login",
- "EfficiencyCode-model-provider",
- "EfficiencyCode-plugin",
- "EfficiencyCode-protocol",
- "EfficiencyCode-state",
- "EfficiencyCode-utils-absolute-path",
- "os_info",
- "pretty_assertions",
- "serde",
- "serde_json",
- "sha1 0.10.6",
- "tokio",
- "tracing",
-]
-
-[[package]]
-name = "EfficiencyCode-ansi-escape"
-version = "0.0.0"
-dependencies = [
- "ansi-to-tui",
- "ratatui",
- "tracing",
-]
-
-[[package]]
-name = "EfficiencyCode-api"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "assert_matches",
- "async-channel",
- "base64 0.22.1",
- "bytes",
- "chrono",
- "EfficiencyCode-client",
- "EfficiencyCode-http-client",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-rustls-provider",
- "EfficiencyCode-websocket-client",
- "eventsource-stream",
- "futures",
- "http 1.4.0",
- "pretty_assertions",
- "regex-lite",
- "schemars 0.8.22",
- "serde",
- "serde_json",
- "thiserror 2.0.18",
- "tokio",
- "tokio-test",
- "tokio-tungstenite",
- "tokio-util",
- "tracing",
- "tungstenite",
- "url",
- "uuid",
- "wiremock",
-]
-
-[[package]]
-name = "EfficiencyCode-app-server"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "app_test_support",
- "axum",
- "base64 0.22.1",
- "chrono",
- "clap",
- "EfficiencyCode-agent-extension",
- "EfficiencyCode-analytics",
- "EfficiencyCode-app-server-protocol",
- "EfficiencyCode-app-server-transport",
- "EfficiencyCode-arg0",
- "EfficiencyCode-backend-client",
- "EfficiencyCode-chatgpt",
- "EfficiencyCode-cloud-config",
- "EfficiencyCode-code-mode",
- "EfficiencyCode-config",
- "EfficiencyCode-connectors",
- "EfficiencyCode-core",
- "EfficiencyCode-core-plugins",
- "EfficiencyCode-diagnostics",
- "EfficiencyCode-exec-server",
- "EfficiencyCode-extension-api",
- "EfficiencyCode-external-agent-migration",
- "EfficiencyCode-features",
- "EfficiencyCode-feedback",
- "EfficiencyCode-file-search",
- "EfficiencyCode-file-watcher",
- "EfficiencyCode-git-attribution",
- "EfficiencyCode-git-utils",
- "EfficiencyCode-goal-extension",
- "EfficiencyCode-guardian",
- "EfficiencyCode-home",
- "EfficiencyCode-hooks",
- "EfficiencyCode-http-client",
- "EfficiencyCode-image-generation-extension",
- "EfficiencyCode-login",
- "EfficiencyCode-mcp",
- "EfficiencyCode-mcp-extension",
- "EfficiencyCode-memories-extension",
- "EfficiencyCode-memories-write",
- "EfficiencyCode-model-provider",
- "EfficiencyCode-model-provider-info",
- "EfficiencyCode-models-manager",
- "EfficiencyCode-otel",
- "EfficiencyCode-plugin",
- "EfficiencyCode-protocol",
- "EfficiencyCode-queue-extension",
- "EfficiencyCode-rmcp-client",
- "EfficiencyCode-rollout",
- "EfficiencyCode-sandboxing",
- "EfficiencyCode-shell-command",
- "EfficiencyCode-skills",
- "EfficiencyCode-skills-extension",
- "EfficiencyCode-state",
- "EfficiencyCode-thread-store",
- "EfficiencyCode-tools",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-cargo-bin",
- "EfficiencyCode-utils-cli",
- "EfficiencyCode-utils-json-to-toml",
- "EfficiencyCode-utils-path-uri",
- "EfficiencyCode-utils-pty",
- "EfficiencyCode-web-search-extension",
- "EfficiencyCode-windows-sandbox",
- "core_test_support",
- "flate2",
- "futures",
- "hmac 0.12.1",
- "opentelemetry",
- "opentelemetry_sdk",
- "pretty_assertions",
- "reqwest 0.12.28",
- "rmcp",
- "serde",
- "serde_json",
- "serial_test",
- "sha2 0.10.9",
- "shlex",
- "tar",
- "tempfile",
- "test-case",
- "thiserror 2.0.18",
- "time",
- "tokio",
- "tokio-tungstenite",
- "tokio-util",
- "toml 0.9.11+spec-1.1.0",
- "toml_edit 0.24.0+spec-1.1.0",
- "tracing",
- "tracing-opentelemetry",
- "tracing-subscriber",
- "url",
- "uuid",
- "wiremock",
-]
-
-[[package]]
-name = "EfficiencyCode-app-server-client"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-app-server",
- "EfficiencyCode-app-server-protocol",
- "EfficiencyCode-arg0",
- "EfficiencyCode-config",
- "EfficiencyCode-core",
- "EfficiencyCode-exec-server",
- "EfficiencyCode-feedback",
- "EfficiencyCode-protocol",
- "EfficiencyCode-uds",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-rustls-provider",
- "futures",
- "pretty_assertions",
- "serde",
- "serde_json",
- "tempfile",
- "tokio",
- "tokio-tungstenite",
- "toml 0.9.11+spec-1.1.0",
- "tracing",
- "url",
-]
-
-[[package]]
-name = "EfficiencyCode-app-server-daemon"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "EfficiencyCode-app-server-protocol",
- "EfficiencyCode-app-server-transport",
- "EfficiencyCode-http-client",
- "EfficiencyCode-uds",
- "EfficiencyCode-utils-home-dir",
- "futures",
- "libc",
- "pretty_assertions",
- "serde",
- "serde_json",
- "sha2 0.10.9",
- "tempfile",
- "tokio",
- "tokio-tungstenite",
-]
-
-[[package]]
-name = "EfficiencyCode-app-server-protocol"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "EfficiencyCode-app-server-protocol-noop-macros",
- "EfficiencyCode-experimental-api-macros",
- "EfficiencyCode-extension-items",
- "EfficiencyCode-history",
- "EfficiencyCode-protocol",
- "EfficiencyCode-rollout",
- "EfficiencyCode-secrets",
- "EfficiencyCode-shell-command",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-cargo-bin",
- "EfficiencyCode-utils-path-uri",
- "inventory",
- "pretty_assertions",
- "rmcp",
- "schemars 0.8.22",
- "serde",
- "serde_json",
- "serde_with",
- "similar",
- "strum_macros 0.28.0",
- "tempfile",
- "thiserror 2.0.18",
- "tracing",
- "ts-rs",
- "uuid",
- "zstd",
-]
-
-[[package]]
-name = "EfficiencyCode-app-server-protocol-noop-macros"
-version = "0.0.0"
-
-[[package]]
-name = "EfficiencyCode-app-server-test-client"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "clap",
- "EfficiencyCode-app-server-protocol",
- "EfficiencyCode-core",
- "EfficiencyCode-otel",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-cli",
- "pretty_assertions",
- "serde",
- "serde_json",
- "tokio",
- "tracing",
- "tracing-subscriber",
- "tungstenite",
- "url",
- "uuid",
-]
-
-[[package]]
-name = "EfficiencyCode-app-server-transport"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "axum",
- "base64 0.22.1",
- "chrono",
- "clap",
- "EfficiencyCode-api",
- "EfficiencyCode-app-server-protocol",
- "EfficiencyCode-config",
- "EfficiencyCode-core",
- "EfficiencyCode-login",
- "EfficiencyCode-model-provider",
- "EfficiencyCode-protocol",
- "EfficiencyCode-state",
- "EfficiencyCode-uds",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-rustls-provider",
- "constant_time_eq",
- "futures",
- "gethostname",
- "hmac 0.12.1",
- "httpdate",
- "jsonwebtoken",
- "owo-colors",
- "pretty_assertions",
- "rand 0.9.3",
- "serde",
- "serde_json",
- "sha2 0.10.9",
- "tempfile",
- "time",
- "tokio",
- "tokio-tungstenite",
- "tokio-util",
- "tracing",
- "url",
- "uuid",
-]
-
-[[package]]
-name = "EfficiencyCode-apply-patch"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "assert_cmd",
- "assert_matches",
- "EfficiencyCode-exec-server",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-cargo-bin",
- "EfficiencyCode-utils-path-uri",
- "pretty_assertions",
- "similar",
- "tempfile",
- "thiserror 2.0.18",
- "tokio",
- "tree-sitter",
- "tree-sitter-bash",
-]
-
-[[package]]
-name = "EfficiencyCode-arg0"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "EfficiencyCode-apply-patch",
- "EfficiencyCode-exec-server",
- "EfficiencyCode-install-context",
- "EfficiencyCode-linux-sandbox",
- "EfficiencyCode-sandboxing",
- "EfficiencyCode-shell-escalation",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-home-dir",
- "EfficiencyCode-windows-sandbox",
- "dotenvy",
- "pretty_assertions",
- "tempfile",
- "tokio",
-]
-
-[[package]]
-name = "EfficiencyCode-async-utils"
-version = "0.0.0"
-dependencies = [
- "pretty_assertions",
- "tokio",
- "tokio-util",
-]
-
-[[package]]
-name = "EfficiencyCode-aws-auth"
-version = "0.0.0"
-dependencies = [
- "aws-config",
- "aws-credential-types",
- "aws-sigv4",
- "aws-types",
- "bytes",
- "http 1.4.0",
- "pretty_assertions",
- "thiserror 2.0.18",
- "tokio",
-]
-
-[[package]]
-name = "EfficiencyCode-backend-client"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "EfficiencyCode-api",
- "EfficiencyCode-backend-openapi-models",
- "EfficiencyCode-http-client",
- "EfficiencyCode-login",
- "EfficiencyCode-model-provider",
- "EfficiencyCode-protocol",
- "http 1.4.0",
- "pretty_assertions",
- "serde",
- "serde_json",
- "tokio",
- "url",
- "wiremock",
-]
-
-[[package]]
-name = "EfficiencyCode-backend-openapi-models"
-version = "0.0.0"
-dependencies = [
- "serde",
- "serde_json",
- "serde_with",
-]
-
-[[package]]
-name = "EfficiencyCode-build-info"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-install-context",
- "pretty_assertions",
- "semver",
- "serde",
- "serde_json",
- "tempfile",
-]
-
-[[package]]
-name = "EfficiencyCode-bwrap"
-version = "0.0.0"
-dependencies = [
- "cc",
- "libc",
- "pkg-config",
-]
-
-[[package]]
-name = "EfficiencyCode-chatgpt"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "clap",
- "EfficiencyCode-connectors",
- "EfficiencyCode-core",
- "EfficiencyCode-git-utils",
- "EfficiencyCode-http-client",
- "EfficiencyCode-login",
- "EfficiencyCode-model-provider",
- "EfficiencyCode-plugin",
- "EfficiencyCode-utils-cargo-bin",
- "EfficiencyCode-utils-cli",
- "pretty_assertions",
- "serde",
- "serde_json",
- "tempfile",
- "tokio",
-]
-
-[[package]]
-name = "EfficiencyCode-cli"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "app_test_support",
- "assert_cmd",
- "assert_matches",
- "chrono",
- "clap",
- "clap_complete",
- "EfficiencyCode-api",
- "EfficiencyCode-app-server",
- "EfficiencyCode-app-server-daemon",
- "EfficiencyCode-app-server-protocol",
- "EfficiencyCode-app-server-test-client",
- "EfficiencyCode-arg0",
- "EfficiencyCode-chatgpt",
- "EfficiencyCode-cloud-config",
- "EfficiencyCode-cloud-tasks",
- "EfficiencyCode-config",
- "EfficiencyCode-core",
- "EfficiencyCode-core-plugins",
- "EfficiencyCode-exec",
- "EfficiencyCode-exec-server",
- "EfficiencyCode-execpolicy",
- "EfficiencyCode-extension-api",
- "EfficiencyCode-features",
- "EfficiencyCode-git-attribution",
- "EfficiencyCode-git-utils",
- "EfficiencyCode-history",
- "EfficiencyCode-home",
- "EfficiencyCode-http-client",
- "EfficiencyCode-install-context",
- "EfficiencyCode-login",
- "EfficiencyCode-mcp",
- "EfficiencyCode-mcp-server",
- "EfficiencyCode-memories-write",
- "EfficiencyCode-model-provider",
- "EfficiencyCode-models-manager",
- "EfficiencyCode-plugin",
- "EfficiencyCode-protocol",
- "EfficiencyCode-responses-api-proxy",
- "EfficiencyCode-rmcp-client",
- "EfficiencyCode-rollout",
- "EfficiencyCode-rollout-trace",
- "EfficiencyCode-sandboxing",
- "EfficiencyCode-skills-extension",
- "EfficiencyCode-state",
- "EfficiencyCode-stdio-to-uds",
- "EfficiencyCode-terminal-detection",
- "EfficiencyCode-thread-store",
- "EfficiencyCode-tui",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-cargo-bin",
- "EfficiencyCode-utils-cli",
- "EfficiencyCode-utils-path",
- "EfficiencyCode-windows-sandbox",
- "crossterm",
- "futures",
- "http 1.4.0",
- "insta",
- "libc",
- "os_info",
- "owo-colors",
- "predicates",
- "pretty_assertions",
- "regex-lite",
- "serde",
- "serde_json",
- "sqlx",
- "supports-color 3.0.2",
- "sys-locale",
- "tempfile",
- "tokio",
- "tokio-tungstenite",
- "toml 0.9.11+spec-1.1.0",
- "tracing",
- "tracing-appender",
- "tracing-subscriber",
- "unicode-segmentation",
- "url",
- "which 8.0.0",
- "windows-sys 0.52.0",
- "wiremock",
- "zstd",
-]
-
-[[package]]
-name = "EfficiencyCode-client"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-http-client",
- "eventsource-stream",
- "futures",
- "http 1.4.0",
- "rand 0.9.3",
- "tokio",
-]
-
-[[package]]
-name = "EfficiencyCode-cloud-config"
-version = "0.0.0"
-dependencies = [
- "base64 0.22.1",
- "chrono",
- "EfficiencyCode-agent-identity",
- "EfficiencyCode-backend-client",
- "EfficiencyCode-config",
- "EfficiencyCode-core",
- "EfficiencyCode-http-client",
- "EfficiencyCode-login",
- "EfficiencyCode-otel",
- "EfficiencyCode-protocol",
- "hmac 0.12.1",
- "pretty_assertions",
- "serde",
- "serde_json",
- "sha2 0.10.9",
- "tempfile",
- "thiserror 2.0.18",
- "tokio",
- "tracing",
-]
-
-[[package]]
-name = "EfficiencyCode-cloud-tasks"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "chrono",
- "clap",
- "EfficiencyCode-cloud-tasks-client",
- "EfficiencyCode-cloud-tasks-mock-client",
- "EfficiencyCode-core",
- "EfficiencyCode-git-utils",
- "EfficiencyCode-http-client",
- "EfficiencyCode-login",
- "EfficiencyCode-model-provider",
- "EfficiencyCode-tui",
- "EfficiencyCode-utils-cli",
- "crossterm",
- "http 1.4.0",
- "insta",
- "owo-colors",
- "pretty_assertions",
- "ratatui",
- "serde",
- "serde_json",
- "supports-color 3.0.2",
- "tokio",
- "tokio-stream",
- "tracing",
- "tracing-subscriber",
- "unicode-segmentation",
- "unicode-width 0.2.1",
-]
-
-[[package]]
-name = "EfficiencyCode-cloud-tasks-client"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "chrono",
- "EfficiencyCode-api",
- "EfficiencyCode-backend-client",
- "EfficiencyCode-git-utils",
- "EfficiencyCode-http-client",
- "serde",
- "serde_json",
- "thiserror 2.0.18",
-]
-
-[[package]]
-name = "EfficiencyCode-cloud-tasks-mock-client"
-version = "0.0.0"
-dependencies = [
- "chrono",
- "EfficiencyCode-cloud-tasks-client",
- "diffy",
-]
-
-[[package]]
-name = "EfficiencyCode-code-mode"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-code-mode-protocol",
- "EfficiencyCode-http-client",
- "EfficiencyCode-install-context",
- "EfficiencyCode-protocol",
- "EfficiencyCode-websocket-client",
- "futures",
- "http-body-util",
- "pretty_assertions",
- "prost",
- "reqwest 0.12.28",
- "serde_json",
- "tokio",
- "tokio-tungstenite",
- "tokio-util",
- "tonic",
- "tower",
- "tracing",
- "uuid",
-]
-
-[[package]]
-name = "EfficiencyCode-code-mode-host"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "axum",
- "clap",
- "EfficiencyCode-code-mode",
- "EfficiencyCode-code-mode-protocol",
- "EfficiencyCode-code-mode-runtime",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-cargo-bin",
- "futures",
- "pretty_assertions",
- "prost",
- "serde_json",
- "tempfile",
- "tokio",
- "tokio-stream",
- "tokio-tungstenite",
- "tokio-util",
- "tonic",
- "tracing",
- "tracing-subscriber",
- "uuid",
-]
-
-[[package]]
-name = "EfficiencyCode-code-mode-protocol"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-protocol",
- "glob",
- "pretty_assertions",
- "prost",
- "protoc-bin-vendored",
- "serde",
- "serde_json",
- "tokio",
- "tokio-util",
- "tonic",
- "tonic-prost",
- "tonic-prost-build",
-]
-
-[[package]]
-name = "EfficiencyCode-code-mode-runtime"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-code-mode-protocol",
- "EfficiencyCode-protocol",
- "deno_core_icudata",
- "futures",
- "pretty_assertions",
- "serde_json",
- "tokio",
- "tokio-util",
- "tracing",
- "v8",
-]
-
-[[package]]
-name = "EfficiencyCode-collaboration-mode-templates"
-version = "0.0.0"
-
-[[package]]
-name = "EfficiencyCode-config"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "base64 0.22.1",
- "EfficiencyCode-execpolicy",
- "EfficiencyCode-features",
- "EfficiencyCode-file-system",
- "EfficiencyCode-git-utils",
- "EfficiencyCode-model-provider-info",
- "EfficiencyCode-network-proxy",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-path",
- "EfficiencyCode-utils-path-uri",
- "core-foundation 0.9.4",
- "dns-lookup",
- "dunce",
- "futures",
- "gethostname",
- "indexmap 2.14.0",
- "libc",
- "multimap",
- "pretty_assertions",
- "prost",
- "regex-lite",
- "schemars 0.8.22",
- "serde",
- "serde_ignored",
- "serde_json",
- "serde_path_to_error",
- "sha2 0.10.9",
- "tempfile",
- "thiserror 2.0.18",
- "tokio",
- "tokio-stream",
- "toml 0.9.11+spec-1.1.0",
- "toml_edit 0.24.0+spec-1.1.0",
- "tonic",
- "tonic-prost",
- "tonic-prost-build",
- "tracing",
- "wildmatch",
- "winapi-util",
- "windows-sys 0.52.0",
-]
-
-[[package]]
-name = "EfficiencyCode-connectors"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "arc-swap",
- "EfficiencyCode-config",
- "EfficiencyCode-login",
- "EfficiencyCode-otel",
- "EfficiencyCode-plugin",
- "EfficiencyCode-protocol",
- "indexmap 2.14.0",
- "pretty_assertions",
- "serde",
- "serde_json",
- "sha1 0.10.6",
- "tempfile",
- "tokio",
- "tracing",
- "urlencoding",
-]
-
-[[package]]
-name = "EfficiencyCode-connectors-extension"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-connectors",
- "EfficiencyCode-core-plugins",
- "EfficiencyCode-plugin",
- "EfficiencyCode-utils-path-uri",
- "serde_json",
- "thiserror 2.0.18",
- "tracing",
-]
-
-[[package]]
-name = "EfficiencyCode-context-fragments"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-string",
-]
-
-[[package]]
-name = "EfficiencyCode-core"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "arc-swap",
- "assert_cmd",
- "assert_matches",
- "async-channel",
- "base64 0.22.1",
- "bm25",
- "chrono",
- "clap",
- "EfficiencyCode-agent-graph-store",
- "EfficiencyCode-analytics",
- "EfficiencyCode-api",
- "EfficiencyCode-app-server-protocol",
- "EfficiencyCode-apply-patch",
- "EfficiencyCode-async-utils",
- "EfficiencyCode-code-mode",
- "EfficiencyCode-config",
- "EfficiencyCode-connectors",
- "EfficiencyCode-context-fragments",
- "EfficiencyCode-core-plugins",
- "EfficiencyCode-diagnostics",
- "EfficiencyCode-exec-server",
- "EfficiencyCode-exec-server-test-support",
- "EfficiencyCode-execpolicy",
- "EfficiencyCode-extension-api",
- "EfficiencyCode-extension-items",
- "EfficiencyCode-features",
- "EfficiencyCode-feedback",
- "EfficiencyCode-file-system",
- "EfficiencyCode-git-utils",
- "EfficiencyCode-history",
- "EfficiencyCode-home",
- "EfficiencyCode-hooks",
- "EfficiencyCode-http-client",
- "EfficiencyCode-image-generation-extension",
- "EfficiencyCode-install-context",
- "EfficiencyCode-login",
- "EfficiencyCode-mcp",
- "EfficiencyCode-memories-read",
- "EfficiencyCode-model-provider",
- "EfficiencyCode-model-provider-info",
- "EfficiencyCode-models-manager",
- "EfficiencyCode-network-proxy",
- "EfficiencyCode-otel",
- "EfficiencyCode-plugin",
- "EfficiencyCode-prompts",
- "EfficiencyCode-protocol",
- "EfficiencyCode-response-debug-context",
- "EfficiencyCode-rmcp-client",
- "EfficiencyCode-rollout",
- "EfficiencyCode-rollout-trace",
- "EfficiencyCode-sandboxing",
- "EfficiencyCode-shell-command",
- "EfficiencyCode-shell-escalation",
- "EfficiencyCode-skills",
- "EfficiencyCode-skills-extension",
- "EfficiencyCode-state",
- "EfficiencyCode-terminal-detection",
- "EfficiencyCode-test-binary-support",
- "EfficiencyCode-thread-store",
- "EfficiencyCode-tools",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-audio",
- "EfficiencyCode-utils-cache",
- "EfficiencyCode-utils-cargo-bin",
- "EfficiencyCode-utils-home-dir",
- "EfficiencyCode-utils-image",
- "EfficiencyCode-utils-output-truncation",
- "EfficiencyCode-utils-path",
- "EfficiencyCode-utils-path-uri",
- "EfficiencyCode-utils-plugins",
- "EfficiencyCode-utils-pty",
- "EfficiencyCode-utils-stream-parser",
- "EfficiencyCode-utils-string",
- "EfficiencyCode-web-search-extension",
- "EfficiencyCode-windows-sandbox",
- "core_test_support",
- "ctor 0.6.3",
- "dirs",
- "dunce",
- "eventsource-stream",
- "futures",
- "http 1.4.0",
- "iana-time-zone",
- "image",
- "indexmap 2.14.0",
- "insta",
- "libc",
- "maplit",
- "once_cell",
- "openssl-sys",
- "opentelemetry",
- "opentelemetry_sdk",
- "predicates",
- "pretty_assertions",
- "rand 0.9.3",
- "regex-lite",
- "rmcp",
- "serde",
- "serde_json",
- "serial_test",
- "sha1 0.10.6",
- "shlex",
- "similar",
- "tempfile",
- "test-case",
- "test-log",
- "thiserror 2.0.18",
- "tokio",
- "tokio-tungstenite",
- "tokio-util",
- "toml 0.9.11+spec-1.1.0",
- "toml_edit 0.24.0+spec-1.1.0",
- "tracing",
- "tracing-opentelemetry",
- "tracing-subscriber",
- "tracing-test",
- "url",
- "uuid",
- "walkdir",
- "which 8.0.0",
- "whoami 1.6.1",
- "wiremock",
- "zstd",
-]
-
-[[package]]
-name = "EfficiencyCode-core-api"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-analytics",
- "EfficiencyCode-app-server-protocol",
- "EfficiencyCode-arg0",
- "EfficiencyCode-config",
- "EfficiencyCode-core",
- "EfficiencyCode-exec-server",
- "EfficiencyCode-extension-api",
- "EfficiencyCode-features",
- "EfficiencyCode-history",
- "EfficiencyCode-home",
- "EfficiencyCode-image-generation-extension",
- "EfficiencyCode-login",
- "EfficiencyCode-model-provider-info",
- "EfficiencyCode-models-manager",
- "EfficiencyCode-protocol",
- "EfficiencyCode-state",
- "EfficiencyCode-utils-absolute-path",
-]
-
-[[package]]
-name = "EfficiencyCode-core-plugins"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "chrono",
- "EfficiencyCode-analytics",
- "EfficiencyCode-app-server-protocol",
- "EfficiencyCode-config",
- "EfficiencyCode-connectors",
- "EfficiencyCode-exec-server",
- "EfficiencyCode-exec-server-test-support",
- "EfficiencyCode-git-utils",
- "EfficiencyCode-hooks",
- "EfficiencyCode-http-client",
- "EfficiencyCode-login",
- "EfficiencyCode-mcp",
- "EfficiencyCode-model-provider",
- "EfficiencyCode-otel",
- "EfficiencyCode-plugin",
- "EfficiencyCode-protocol",
- "EfficiencyCode-shell-command",
- "EfficiencyCode-skills",
- "EfficiencyCode-tools",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-path",
- "EfficiencyCode-utils-path-uri",
- "EfficiencyCode-utils-plugins",
- "dirs",
- "flate2",
- "http 1.4.0",
- "libc",
- "pretty_assertions",
- "regex",
- "semver",
- "serde",
- "serde_json",
- "serde_yaml",
- "sha2 0.10.9",
- "tar",
- "tempfile",
- "thiserror 2.0.18",
- "tokio",
- "toml 0.9.11+spec-1.1.0",
- "tracing",
- "tracing-subscriber",
- "tracing-test",
- "url",
- "which 8.0.0",
- "wiremock",
- "zip",
-]
-
-[[package]]
-name = "EfficiencyCode-diagnostics"
-version = "0.0.0"
-dependencies = [
- "libc",
- "pretty_assertions",
-]
-
-[[package]]
-name = "EfficiencyCode-exec"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "assert_cmd",
- "clap",
- "EfficiencyCode-app-server-client",
- "EfficiencyCode-app-server-protocol",
- "EfficiencyCode-apply-patch",
- "EfficiencyCode-arg0",
- "EfficiencyCode-cloud-config",
- "EfficiencyCode-config",
- "EfficiencyCode-core",
- "EfficiencyCode-feedback",
- "EfficiencyCode-git-utils",
- "EfficiencyCode-history",
- "EfficiencyCode-login",
- "EfficiencyCode-model-provider-info",
- "EfficiencyCode-otel",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-cargo-bin",
- "EfficiencyCode-utils-cli",
- "EfficiencyCode-utils-oss",
- "EfficiencyCode-utils-sandbox-summary",
- "core_test_support",
- "libc",
- "opentelemetry",
- "opentelemetry_sdk",
- "owo-colors",
- "predicates",
- "pretty_assertions",
- "serde",
- "serde_json",
- "supports-color 3.0.2",
- "tempfile",
- "tokio",
- "tracing",
- "tracing-opentelemetry",
- "tracing-subscriber",
- "ts-rs",
- "uuid",
- "walkdir",
- "wiremock",
-]
-
-[[package]]
-name = "EfficiencyCode-exec-server"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "arc-swap",
- "axum",
- "base64 0.22.1",
- "bytes",
- "clatter",
- "EfficiencyCode-api",
- "EfficiencyCode-config",
- "EfficiencyCode-exec-server-protocol",
- "EfficiencyCode-exec-server-test-support",
- "EfficiencyCode-file-system",
- "EfficiencyCode-http-client",
- "EfficiencyCode-network-proxy",
- "EfficiencyCode-otel",
- "EfficiencyCode-protocol",
- "EfficiencyCode-sandboxing",
- "EfficiencyCode-test-binary-support",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-home-dir",
- "EfficiencyCode-utils-path-uri",
- "EfficiencyCode-utils-pty",
- "EfficiencyCode-utils-rustls-provider",
- "EfficiencyCode-websocket-client",
- "ctor 0.6.3",
- "dirs",
- "futures",
- "http 1.4.0",
- "libc",
- "opentelemetry",
- "opentelemetry_sdk",
- "pretty_assertions",
- "prost",
- "rcgen",
- "rustls",
- "serde",
- "serde_json",
- "serial_test",
- "tempfile",
- "test-case",
- "thiserror 2.0.18",
- "tokio",
- "tokio-tungstenite",
- "tokio-util",
- "toml 0.9.11+spec-1.1.0",
- "tracing",
- "tracing-opentelemetry",
- "tracing-subscriber",
- "url",
- "uuid",
- "windows-sys 0.52.0",
- "wiremock",
-]
-
-[[package]]
-name = "EfficiencyCode-exec-server-protocol"
-version = "0.0.0"
-dependencies = [
- "base64 0.22.1",
- "EfficiencyCode-file-system",
- "EfficiencyCode-network-proxy",
- "EfficiencyCode-protocol",
- "EfficiencyCode-shell-command",
- "EfficiencyCode-utils-path-uri",
- "pretty_assertions",
- "serde",
- "serde_json",
-]
-
-[[package]]
-name = "EfficiencyCode-exec-server-test-support"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-exec-server",
- "EfficiencyCode-http-client",
-]
-
-[[package]]
-name = "EfficiencyCode-execpolicy"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "clap",
- "EfficiencyCode-utils-absolute-path",
- "multimap",
- "pretty_assertions",
- "serde",
- "serde_json",
- "shlex",
- "starlark",
- "tempfile",
- "thiserror 2.0.18",
- "tokio",
-]
-
-[[package]]
-name = "EfficiencyCode-experimental-api-macros"
-version = "0.0.0"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn 2.0.117",
-]
-
-[[package]]
-name = "EfficiencyCode-extension-api"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-config",
- "EfficiencyCode-context-fragments",
- "EfficiencyCode-exec-server-protocol",
- "EfficiencyCode-mcp",
- "EfficiencyCode-protocol",
- "EfficiencyCode-tools",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-path-uri",
- "pretty_assertions",
- "serde_json",
- "tokio",
-]
-
-[[package]]
-name = "EfficiencyCode-extension-items"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-utils-absolute-path",
- "pretty_assertions",
- "schemars 0.8.22",
- "serde",
- "serde_json",
- "ts-rs",
-]
-
-[[package]]
-name = "EfficiencyCode-external-agent-migration"
-version = "0.0.0"
-dependencies = [
- "chrono",
- "EfficiencyCode-analytics",
- "EfficiencyCode-app-server-protocol",
- "EfficiencyCode-config",
- "EfficiencyCode-core",
- "EfficiencyCode-core-plugins",
- "EfficiencyCode-hooks",
- "EfficiencyCode-memories-write",
- "EfficiencyCode-otel",
- "EfficiencyCode-plugin",
- "EfficiencyCode-protocol",
- "EfficiencyCode-rollout",
- "EfficiencyCode-thread-store",
- "EfficiencyCode-utils-output-truncation",
- "pretty_assertions",
- "serde",
- "serde_json",
- "serde_yaml",
- "sha2 0.10.9",
- "tempfile",
- "tokio",
- "toml 0.9.11+spec-1.1.0",
- "tracing",
-]
-
-[[package]]
-name = "EfficiencyCode-features"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-otel",
- "EfficiencyCode-protocol",
- "pretty_assertions",
- "schemars 0.8.22",
- "serde",
- "toml 0.9.11+spec-1.1.0",
- "tracing",
-]
-
-[[package]]
-name = "EfficiencyCode-feedback"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "EfficiencyCode-login",
- "EfficiencyCode-protocol",
- "log",
- "mime_guess",
- "pretty_assertions",
- "sentry",
- "tracing",
- "tracing-subscriber",
-]
-
-[[package]]
-name = "EfficiencyCode-file-search"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "clap",
- "crossbeam-channel",
- "ignore",
- "nucleo",
- "pretty_assertions",
- "serde",
- "serde_json",
- "tempfile",
- "tokio",
-]
-
-[[package]]
-name = "EfficiencyCode-file-system"
-version = "0.0.0"
-dependencies = [
- "bytes",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-path-uri",
- "futures",
- "serde",
-]
-
-[[package]]
-name = "EfficiencyCode-file-watcher"
-version = "0.0.0"
-dependencies = [
- "notify",
- "pretty_assertions",
- "tempfile",
- "tokio",
- "tracing",
-]
-
-[[package]]
-name = "EfficiencyCode-git-attribution"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-backend-client",
- "EfficiencyCode-extension-api",
- "EfficiencyCode-http-client",
- "EfficiencyCode-login",
- "serde_json",
- "tokio",
- "wiremock",
-]
-
-[[package]]
-name = "EfficiencyCode-git-utils"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "chrono",
- "EfficiencyCode-file-system",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-path-uri",
- "EfficiencyCode-utils-pty",
- "futures",
- "gix",
- "once_cell",
- "pretty_assertions",
- "regex",
- "schemars 0.8.22",
- "serde",
- "similar",
- "tempfile",
- "thiserror 2.0.18",
- "tokio",
- "ts-rs",
- "walkdir",
-]
-
-[[package]]
-name = "EfficiencyCode-goal-extension"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "chrono",
- "EfficiencyCode-analytics",
- "EfficiencyCode-core",
- "EfficiencyCode-extension-api",
- "EfficiencyCode-otel",
- "EfficiencyCode-protocol",
- "EfficiencyCode-rollout",
- "EfficiencyCode-state",
- "EfficiencyCode-tools",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-template",
- "pretty_assertions",
- "serde",
- "serde_json",
- "tempfile",
- "tokio",
- "tracing",
-]
-
-[[package]]
-name = "EfficiencyCode-guardian"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-core",
- "EfficiencyCode-extension-api",
- "EfficiencyCode-protocol",
-]
-
-[[package]]
-name = "EfficiencyCode-history"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "EfficiencyCode-protocol",
- "pretty_assertions",
- "schemars 0.8.22",
- "serde",
- "serde_json",
-]
-
-[[package]]
-name = "EfficiencyCode-home"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-extension-api",
- "EfficiencyCode-utils-absolute-path",
- "pretty_assertions",
- "tempfile",
- "tokio",
-]
-
-[[package]]
-name = "EfficiencyCode-hooks"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "async-channel",
- "chrono",
- "EfficiencyCode-config",
- "EfficiencyCode-plugin",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-output-truncation",
- "EfficiencyCode-utils-pty",
- "futures",
- "pretty_assertions",
- "regex",
- "schemars 0.8.22",
- "serde",
- "serde_json",
- "tempfile",
- "tokio",
- "tracing",
- "uuid",
-]
-
-[[package]]
-name = "EfficiencyCode-http-client"
-version = "0.0.0"
-dependencies = [
- "bytes",
- "EfficiencyCode-utils-cargo-bin",
- "EfficiencyCode-utils-rustls-provider",
- "futures",
- "http 1.4.0",
- "opentelemetry",
- "opentelemetry_sdk",
- "pretty_assertions",
- "rcgen",
- "reqwest 0.12.28",
- "rustls",
- "rustls-native-certs",
- "rustls-pki-types",
- "serde",
- "serde_json",
- "sha2 0.10.9",
- "system-configuration",
- "tempfile",
- "thiserror 2.0.18",
- "tokio",
- "tracing",
- "tracing-opentelemetry",
- "tracing-subscriber",
- "windows-sys 0.52.0",
- "zstd",
-]
-
-[[package]]
-name = "EfficiencyCode-image-generation-extension"
-version = "0.0.0"
-dependencies = [
- "base64 0.22.1",
- "EfficiencyCode-api",
- "EfficiencyCode-core",
- "EfficiencyCode-exec-server",
- "EfficiencyCode-extension-api",
- "EfficiencyCode-extension-items",
- "EfficiencyCode-login",
- "EfficiencyCode-model-provider",
- "EfficiencyCode-model-provider-info",
- "EfficiencyCode-protocol",
- "EfficiencyCode-tools",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-image",
- "EfficiencyCode-utils-path-uri",
- "http 1.4.0",
- "pretty_assertions",
- "schemars 0.8.22",
- "serde",
- "serde_json",
- "tokio",
- "tracing",
-]
-
-[[package]]
-name = "EfficiencyCode-install-context"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-home-dir",
- "pretty_assertions",
- "semver",
- "serde",
- "serde_json",
- "tempfile",
-]
-
-[[package]]
-name = "EfficiencyCode-keyring-store"
-version = "0.0.0"
-dependencies = [
- "keyring",
- "tracing",
-]
-
-[[package]]
-name = "EfficiencyCode-linux-sandbox"
-version = "0.0.0"
-dependencies = [
- "clap",
- "EfficiencyCode-core",
- "EfficiencyCode-install-context",
- "EfficiencyCode-network-proxy",
- "EfficiencyCode-process-hardening",
- "EfficiencyCode-protocol",
- "EfficiencyCode-sandboxing",
- "EfficiencyCode-utils-absolute-path",
- "globset",
- "landlock",
- "libc",
- "pretty_assertions",
- "seccompiler",
- "serde",
- "serde_json",
- "sha2 0.10.9",
- "tempfile",
- "tokio",
- "url",
-]
-
-[[package]]
-name = "EfficiencyCode-lmstudio"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-core",
- "EfficiencyCode-http-client",
- "EfficiencyCode-model-provider-info",
- "serde_json",
- "tokio",
- "tracing",
- "which 8.0.0",
- "wiremock",
-]
-
-[[package]]
-name = "EfficiencyCode-login"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "base64 0.22.1",
- "chrono",
- "EfficiencyCode-agent-identity",
- "EfficiencyCode-config",
- "EfficiencyCode-http-client",
- "EfficiencyCode-keyring-store",
- "EfficiencyCode-model-provider-info",
- "EfficiencyCode-otel",
- "EfficiencyCode-protocol",
- "EfficiencyCode-secrets",
- "EfficiencyCode-terminal-detection",
- "EfficiencyCode-utils-template",
- "core_test_support",
- "http 1.4.0",
- "jsonwebtoken",
- "keyring",
- "once_cell",
- "os_info",
- "pretty_assertions",
- "rand 0.9.3",
- "regex-lite",
- "serde",
- "serde_json",
- "serial_test",
- "sha2 0.10.9",
- "tempfile",
- "thiserror 2.0.18",
- "tiny_http",
- "tokio",
- "tracing",
- "tracing-subscriber",
- "url",
- "urlencoding",
- "webbrowser",
- "wiremock",
-]
-
-[[package]]
-name = "EfficiencyCode-mcp"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "arc-swap",
- "async-channel",
- "EfficiencyCode-api",
- "EfficiencyCode-async-utils",
- "EfficiencyCode-config",
- "EfficiencyCode-connectors",
- "EfficiencyCode-diagnostics",
- "EfficiencyCode-exec-server",
- "EfficiencyCode-exec-server-test-support",
- "EfficiencyCode-login",
- "EfficiencyCode-model-provider",
- "EfficiencyCode-otel",
- "EfficiencyCode-plugin",
- "EfficiencyCode-protocol",
- "EfficiencyCode-rmcp-client",
- "EfficiencyCode-utils-path-uri",
- "EfficiencyCode-utils-plugins",
- "futures",
- "lru 0.16.3",
- "pretty_assertions",
- "regex-lite",
- "rmcp",
- "serde",
- "serde_json",
- "sha1 0.10.6",
- "tempfile",
- "thiserror 2.0.18",
- "tokio",
- "tokio-util",
- "tracing",
- "url",
-]
-
-[[package]]
-name = "EfficiencyCode-mcp-extension"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-config",
- "EfficiencyCode-connectors",
- "EfficiencyCode-connectors-extension",
- "EfficiencyCode-core",
- "EfficiencyCode-core-plugins",
- "EfficiencyCode-exec-server",
- "EfficiencyCode-extension-api",
- "EfficiencyCode-features",
- "EfficiencyCode-login",
- "EfficiencyCode-mcp",
- "EfficiencyCode-plugin",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-path-uri",
- "pretty_assertions",
- "serde_json",
- "tempfile",
- "thiserror 2.0.18",
- "tokio",
- "tracing",
-]
-
-[[package]]
-name = "EfficiencyCode-mcp-server"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "app_test_support",
- "EfficiencyCode-arg0",
- "EfficiencyCode-config",
- "EfficiencyCode-core",
- "EfficiencyCode-exec-server",
- "EfficiencyCode-extension-api",
- "EfficiencyCode-features",
- "EfficiencyCode-git-attribution",
- "EfficiencyCode-home",
- "EfficiencyCode-image-generation-extension",
- "EfficiencyCode-login",
- "EfficiencyCode-otel",
- "EfficiencyCode-protocol",
- "EfficiencyCode-shell-command",
- "EfficiencyCode-skills-extension",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-cli",
- "EfficiencyCode-utils-json-to-toml",
- "core_test_support",
- "mcp_test_support",
- "os_info",
- "pretty_assertions",
- "rmcp",
- "schemars 0.8.22",
- "serde",
- "serde_json",
- "shlex",
- "tempfile",
- "tokio",
- "tracing",
- "tracing-subscriber",
- "uuid",
- "wiremock",
-]
-
-[[package]]
-name = "EfficiencyCode-memories-extension"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-core",
- "EfficiencyCode-extension-api",
- "EfficiencyCode-features",
- "EfficiencyCode-otel",
- "EfficiencyCode-tools",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-output-truncation",
- "EfficiencyCode-utils-template",
- "pretty_assertions",
- "schemars 0.8.22",
- "serde",
- "serde_json",
- "tempfile",
- "thiserror 2.0.18",
- "tokio",
-]
-
-[[package]]
-name = "EfficiencyCode-memories-read"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-protocol",
- "EfficiencyCode-shell-command",
- "EfficiencyCode-utils-absolute-path",
- "pretty_assertions",
-]
-
-[[package]]
-name = "EfficiencyCode-memories-write"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "chrono",
- "EfficiencyCode-backend-client",
- "EfficiencyCode-config",
- "EfficiencyCode-core",
- "EfficiencyCode-features",
- "EfficiencyCode-git-utils",
- "EfficiencyCode-login",
- "EfficiencyCode-model-provider",
- "EfficiencyCode-model-provider-info",
- "EfficiencyCode-models-manager",
- "EfficiencyCode-otel",
- "EfficiencyCode-protocol",
- "EfficiencyCode-rollout",
- "EfficiencyCode-rollout-trace",
- "EfficiencyCode-secrets",
- "EfficiencyCode-state",
- "EfficiencyCode-terminal-detection",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-output-truncation",
- "EfficiencyCode-utils-template",
- "core_test_support",
- "futures",
- "pretty_assertions",
- "serde",
- "serde_json",
- "tempfile",
- "tokio",
- "tracing",
- "uuid",
- "wiremock",
-]
-
-[[package]]
-name = "EfficiencyCode-message-history"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-config",
- "memchr",
- "pretty_assertions",
- "serde",
- "serde_json",
- "tempfile",
- "tokio",
- "tracing",
-]
-
-[[package]]
-name = "EfficiencyCode-model-provider"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-agent-identity",
- "EfficiencyCode-api",
- "EfficiencyCode-aws-auth",
- "EfficiencyCode-feedback",
- "EfficiencyCode-http-client",
- "EfficiencyCode-login",
- "EfficiencyCode-model-provider-info",
- "EfficiencyCode-models-manager",
- "EfficiencyCode-otel",
- "EfficiencyCode-protocol",
- "EfficiencyCode-response-debug-context",
- "http 1.4.0",
- "pretty_assertions",
- "serde_json",
- "tokio",
- "tracing",
- "wiremock",
-]
-
-[[package]]
-name = "EfficiencyCode-model-provider-info"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-api",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-absolute-path",
- "http 1.4.0",
- "maplit",
- "pretty_assertions",
- "schemars 0.8.22",
- "serde",
- "tempfile",
- "toml 0.9.11+spec-1.1.0",
-]
-
-[[package]]
-name = "EfficiencyCode-models-manager"
-version = "0.0.0"
-dependencies = [
- "chrono",
- "EfficiencyCode-collaboration-mode-templates",
- "EfficiencyCode-http-client",
- "EfficiencyCode-login",
- "EfficiencyCode-otel",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-output-truncation",
- "EfficiencyCode-utils-template",
- "pretty_assertions",
- "serde",
- "serde_json",
- "tempfile",
- "tokio",
- "tracing",
-]
-
-[[package]]
-name = "EfficiencyCode-network-proxy"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "base64 0.22.1",
- "chrono",
- "clap",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-home-dir",
- "EfficiencyCode-utils-rustls-provider",
- "EfficiencyCode-windows-sandbox",
- "globset",
- "pretty_assertions",
- "rama-core",
- "rama-http",
- "rama-http-backend",
- "rama-net",
- "rama-socks5",
- "rama-tcp",
- "rama-tls-rustls",
- "rama-unix",
- "rand 0.9.3",
- "rustls-native-certs",
- "schannel",
- "security-framework 3.5.1",
- "serde",
- "serde_json",
- "sha2 0.10.9",
- "tempfile",
- "thiserror 2.0.18",
- "time",
- "tokio",
- "tracing",
- "url",
- "windows-sys 0.52.0",
-]
-
-[[package]]
-name = "EfficiencyCode-ollama"
-version = "0.0.0"
-dependencies = [
- "assert_matches",
- "async-stream",
- "bytes",
- "EfficiencyCode-core",
- "EfficiencyCode-http-client",
- "EfficiencyCode-model-provider-info",
- "futures",
- "memchr",
- "pretty_assertions",
- "semver",
- "serde_json",
- "tokio",
- "tracing",
- "wiremock",
-]
-
-[[package]]
-name = "EfficiencyCode-otel"
-version = "0.0.0"
-dependencies = [
- "chrono",
- "EfficiencyCode-api",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-string",
- "eventsource-stream",
- "gethostname",
- "http 1.4.0",
- "opentelemetry",
- "opentelemetry-appender-tracing",
- "opentelemetry-otlp",
- "opentelemetry-semantic-conventions",
- "opentelemetry_sdk",
- "os_info",
- "pretty_assertions",
- "reqwest 0.12.28",
- "serde",
- "serde_json",
- "strum_macros 0.28.0",
- "thiserror 2.0.18",
- "tokio",
- "tokio-tungstenite",
- "tracing",
- "tracing-opentelemetry",
- "tracing-subscriber",
-]
-
-[[package]]
-name = "EfficiencyCode-plugin"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-config",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-path-uri",
- "EfficiencyCode-utils-plugins",
- "pretty_assertions",
- "thiserror 2.0.18",
-]
-
-[[package]]
-name = "EfficiencyCode-process-hardening"
-version = "0.0.0"
-dependencies = [
- "libc",
- "pretty_assertions",
-]
-
-[[package]]
-name = "EfficiencyCode-prompts"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "EfficiencyCode-context-fragments",
- "EfficiencyCode-execpolicy",
- "EfficiencyCode-git-utils",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-template",
- "pretty_assertions",
-]
-
-[[package]]
-name = "EfficiencyCode-protocol"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "chardetng",
- "chrono",
- "EfficiencyCode-async-utils",
- "EfficiencyCode-execpolicy",
- "EfficiencyCode-extension-items",
- "EfficiencyCode-http-client",
- "EfficiencyCode-network-proxy",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-image",
- "EfficiencyCode-utils-path-uri",
- "EfficiencyCode-utils-string",
- "encoding_rs",
- "globset",
- "http 1.4.0",
- "icu_decimal",
- "icu_locale_core",
- "icu_provider",
- "landlock",
- "pretty_assertions",
- "quick-xml 0.41.0",
- "schemars 0.8.22",
- "seccompiler",
- "serde",
- "serde_json",
- "serde_with",
- "strum 0.27.2",
- "strum_macros 0.28.0",
- "sys-locale",
- "tempfile",
- "thiserror 2.0.18",
- "tokio",
- "tracing",
- "ts-rs",
- "uuid",
- "wildmatch",
-]
-
-[[package]]
-name = "EfficiencyCode-queue-extension"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "EfficiencyCode-core",
- "EfficiencyCode-extension-api",
- "EfficiencyCode-protocol",
- "EfficiencyCode-state",
- "EfficiencyCode-thread-store",
- "EfficiencyCode-utils-absolute-path",
- "core_test_support",
- "pretty_assertions",
- "serde_json",
- "tempfile",
- "thiserror 2.0.18",
- "tokio",
- "tracing",
- "uuid",
-]
-
-[[package]]
-name = "EfficiencyCode-response-debug-context"
-version = "0.0.0"
-dependencies = [
- "base64 0.22.1",
- "EfficiencyCode-api",
- "http 1.4.0",
- "pretty_assertions",
- "serde_json",
-]
-
-[[package]]
-name = "EfficiencyCode-responses-api-proxy"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "clap",
- "EfficiencyCode-process-hardening",
- "ctor 0.6.3",
- "libc",
- "pretty_assertions",
- "reqwest 0.12.28",
- "serde",
- "serde_json",
- "tiny_http",
- "zeroize",
-]
-
-[[package]]
-name = "EfficiencyCode-rmcp-client"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "axum",
- "base64 0.22.1",
- "bytes",
- "EfficiencyCode-api",
- "EfficiencyCode-config",
- "EfficiencyCode-exec-server",
- "EfficiencyCode-http-client",
- "EfficiencyCode-keyring-store",
- "EfficiencyCode-network-proxy",
- "EfficiencyCode-protocol",
- "EfficiencyCode-secrets",
- "EfficiencyCode-utils-cargo-bin",
- "EfficiencyCode-utils-home-dir",
- "EfficiencyCode-utils-path-uri",
- "EfficiencyCode-utils-pty",
- "futures",
- "http 1.4.0",
- "keyring",
- "memchr",
- "oauth2",
- "pretty_assertions",
- "rmcp",
- "serde",
- "serde_json",
- "serial_test",
- "sha2 0.10.9",
- "sse-stream",
- "tempfile",
- "thiserror 2.0.18",
- "tiny_http",
- "tokio",
- "tracing",
- "url",
- "urlencoding",
- "webbrowser",
- "which 8.0.0",
- "wiremock",
-]
-
-[[package]]
-name = "EfficiencyCode-rollout"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "chrono",
- "EfficiencyCode-extension-items",
- "EfficiencyCode-file-search",
- "EfficiencyCode-git-utils",
- "EfficiencyCode-history",
- "EfficiencyCode-otel",
- "EfficiencyCode-protocol",
- "EfficiencyCode-state",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-path",
- "pretty_assertions",
- "regex",
- "serde",
- "serde_json",
- "tempfile",
- "time",
- "tokio",
- "tracing",
- "uuid",
- "zstd",
-]
-
-[[package]]
-name = "EfficiencyCode-rollout-trace"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "EfficiencyCode-code-mode",
- "EfficiencyCode-protocol",
- "http 1.4.0",
- "pretty_assertions",
- "serde",
- "serde_json",
- "tempfile",
- "tracing",
- "uuid",
-]
-
-[[package]]
-name = "EfficiencyCode-sandboxing"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "EfficiencyCode-network-proxy",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-home-dir",
- "EfficiencyCode-utils-path-uri",
- "EfficiencyCode-utils-pty",
- "EfficiencyCode-windows-sandbox",
- "dunce",
- "libc",
- "pretty_assertions",
- "regex-lite",
- "serde_json",
- "tempfile",
- "tokio",
- "tracing",
- "url",
- "which 8.0.0",
-]
-
-[[package]]
-name = "EfficiencyCode-secrets"
-version = "0.0.0"
-dependencies = [
- "age",
- "anyhow",
- "base64 0.22.1",
- "EfficiencyCode-git-utils",
- "EfficiencyCode-keyring-store",
- "keyring",
- "pretty_assertions",
- "rand 0.9.3",
- "regex",
- "schemars 0.8.22",
- "serde",
- "serde_json",
- "sha2 0.10.9",
- "tempfile",
- "tracing",
-]
-
-[[package]]
-name = "EfficiencyCode-shell-command"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "base64 0.22.1",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-absolute-path",
- "libc",
- "once_cell",
- "pretty_assertions",
- "regex",
- "serde",
- "serde_json",
- "shlex",
- "tree-sitter",
- "tree-sitter-bash",
- "url",
- "which 8.0.0",
-]
-
-[[package]]
-name = "EfficiencyCode-shell-escalation"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "clap",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-absolute-path",
- "libc",
- "pretty_assertions",
- "serde",
- "serde_json",
- "socket2 0.6.3",
- "tempfile",
- "tokio",
- "tokio-util",
- "tracing",
- "tracing-subscriber",
-]
-
-[[package]]
-name = "EfficiencyCode-skills"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-protocol",
- "EfficiencyCode-shell-command",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-path-uri",
- "include_dir",
- "pretty_assertions",
- "serde",
- "serde_yaml",
- "shlex",
- "thiserror 2.0.18",
- "tracing",
-]
-
-[[package]]
-name = "EfficiencyCode-skills-extension"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-analytics",
- "EfficiencyCode-config",
- "EfficiencyCode-exec-server",
- "EfficiencyCode-extension-api",
- "EfficiencyCode-mcp",
- "EfficiencyCode-models-manager",
- "EfficiencyCode-otel",
- "EfficiencyCode-protocol",
- "EfficiencyCode-skills",
- "EfficiencyCode-tools",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-cargo-bin",
- "EfficiencyCode-utils-path-uri",
- "EfficiencyCode-utils-plugins",
- "EfficiencyCode-utils-string",
- "dirs",
- "dunce",
- "futures",
- "insta",
- "opentelemetry_sdk",
- "pretty_assertions",
- "schemars 0.8.22",
- "serde",
- "serde_json",
- "serde_yaml",
- "tempfile",
- "tokio",
- "toml 0.9.11+spec-1.1.0",
- "tracing",
- "url",
-]
-
-[[package]]
-name = "EfficiencyCode-state"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "chrono",
- "EfficiencyCode-git-utils",
- "EfficiencyCode-history",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-absolute-path",
- "libsqlite3-sys",
- "log",
- "pretty_assertions",
- "scopeguard",
- "serde",
- "serde_json",
- "sqlx",
- "strum 0.27.2",
- "tokio",
- "tracing",
- "tracing-subscriber",
- "uuid",
-]
-
-[[package]]
-name = "EfficiencyCode-stdio-to-uds"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "EfficiencyCode-uds",
- "EfficiencyCode-utils-cargo-bin",
- "pretty_assertions",
- "tempfile",
- "tokio",
-]
-
-[[package]]
-name = "EfficiencyCode-terminal-detection"
-version = "0.0.0"
-dependencies = [
- "pretty_assertions",
- "tracing",
-]
-
-[[package]]
-name = "EfficiencyCode-test-binary-support"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-arg0",
- "tempfile",
-]
-
-[[package]]
-name = "EfficiencyCode-thread-manager-sample"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "clap",
- "EfficiencyCode-core-api",
- "serde_json",
- "tracing",
-]
-
-[[package]]
-name = "EfficiencyCode-thread-store"
-version = "0.0.0"
-dependencies = [
- "chrono",
- "EfficiencyCode-app-server-protocol",
- "EfficiencyCode-extension-items",
- "EfficiencyCode-git-utils",
- "EfficiencyCode-install-context",
- "EfficiencyCode-otel",
- "EfficiencyCode-protocol",
- "EfficiencyCode-rollout",
- "EfficiencyCode-state",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-path",
- "EfficiencyCode-utils-path-uri",
- "futures",
- "pretty_assertions",
- "pulldown-cmark",
- "serde",
- "serde_json",
- "sqlx",
- "tempfile",
- "thiserror 2.0.18",
- "tokio",
- "tracing",
- "uuid",
- "zstd",
-]
-
-[[package]]
-name = "EfficiencyCode-tools"
-version = "0.0.0"
-dependencies = [
- "bitflags 2.13.1",
- "EfficiencyCode-code-mode",
- "EfficiencyCode-connectors",
- "EfficiencyCode-extension-items",
- "EfficiencyCode-features",
- "EfficiencyCode-file-system",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-cargo-bin",
- "EfficiencyCode-utils-output-truncation",
- "EfficiencyCode-utils-pty",
- "EfficiencyCode-utils-string",
- "jsonptr",
- "pretty_assertions",
- "rmcp",
- "serde",
- "serde_json",
- "thiserror 2.0.18",
- "tracing",
- "urlencoding",
-]
-
-[[package]]
-name = "EfficiencyCode-tui"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "app_test_support",
- "arboard",
- "assert_matches",
- "base64 0.22.1",
- "chrono",
- "clap",
- "EfficiencyCode-ansi-escape",
- "EfficiencyCode-app-server-client",
- "EfficiencyCode-app-server-protocol",
- "EfficiencyCode-arg0",
- "EfficiencyCode-cli",
- "EfficiencyCode-cloud-config",
- "EfficiencyCode-config",
- "EfficiencyCode-connectors",
- "EfficiencyCode-core-plugins",
- "EfficiencyCode-exec-server",
- "EfficiencyCode-features",
- "EfficiencyCode-feedback",
- "EfficiencyCode-file-search",
- "EfficiencyCode-git-utils",
- "EfficiencyCode-history",
- "EfficiencyCode-http-client",
- "EfficiencyCode-install-context",
- "EfficiencyCode-login",
- "EfficiencyCode-mcp",
- "EfficiencyCode-message-history",
- "EfficiencyCode-model-provider",
- "EfficiencyCode-model-provider-info",
- "EfficiencyCode-models-manager",
- "EfficiencyCode-otel",
- "EfficiencyCode-plugin",
- "EfficiencyCode-protocol",
- "EfficiencyCode-rollout",
- "EfficiencyCode-sandboxing",
- "EfficiencyCode-shell-command",
- "EfficiencyCode-state",
- "EfficiencyCode-terminal-detection",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-approval-presets",
- "EfficiencyCode-utils-cargo-bin",
- "EfficiencyCode-utils-cli",
- "EfficiencyCode-utils-elapsed",
- "EfficiencyCode-utils-fuzzy-match",
- "EfficiencyCode-utils-home-dir",
- "EfficiencyCode-utils-oss",
- "EfficiencyCode-utils-path",
- "EfficiencyCode-utils-path-uri",
- "EfficiencyCode-utils-plugins",
- "EfficiencyCode-utils-sandbox-summary",
- "EfficiencyCode-utils-sleep-inhibitor",
- "EfficiencyCode-utils-string",
- "EfficiencyCode-windows-sandbox",
- "color-eyre",
- "core_test_support",
- "crossterm",
- "derive_more 2.1.1",
- "diffy",
- "dirs",
- "dunce",
- "futures",
- "http 1.4.0",
- "image",
- "insta",
- "itertools 0.14.0",
- "lazy_static",
- "libc",
- "pathdiff",
- "pretty_assertions",
- "pulldown-cmark",
- "rand 0.9.3",
- "ratatui",
- "ratatui-macros",
- "regex-lite",
- "rmcp",
- "serde",
- "serde_json",
- "serial_test",
- "sha2 0.10.9",
- "shlex",
- "strum 0.27.2",
- "strum_macros 0.28.0",
- "supports-color 3.0.2",
- "syntect",
- "tempfile",
- "textwrap 0.16.2",
- "thiserror 2.0.18",
- "tokio",
- "tokio-stream",
- "tokio-tungstenite",
- "tokio-util",
- "toml 0.9.11+spec-1.1.0",
- "tracing",
- "tracing-appender",
- "tracing-subscriber",
- "two-face",
- "unicode-segmentation",
- "unicode-width 0.2.1",
- "url",
- "urlencoding",
- "uuid",
- "vt100",
- "webbrowser",
- "which 8.0.0",
- "windows-sys 0.52.0",
- "winsplit",
- "wiremock",
-]
-
-[[package]]
-name = "EfficiencyCode-uds"
-version = "0.0.0"
-dependencies = [
- "async-io",
- "pretty_assertions",
- "tempfile",
- "tokio",
- "tokio-util",
- "uds_windows",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-absolute-path"
-version = "0.0.0"
-dependencies = [
- "dirs",
- "dunce",
- "pretty_assertions",
- "schemars 0.8.22",
- "serde",
- "serde_json",
- "tempfile",
- "ts-rs",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-approval-presets"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-protocol",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-audio"
-version = "0.0.0"
-dependencies = [
- "base64 0.22.1",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-cache",
- "EfficiencyCode-utils-string",
- "pretty_assertions",
- "symphonia",
- "thiserror 2.0.18",
- "tracing",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-cache"
-version = "0.0.0"
-dependencies = [
- "lru 0.16.3",
- "sha1 0.10.6",
- "tokio",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-cargo-bin"
-version = "0.0.0"
-dependencies = [
- "assert_cmd",
- "runfiles",
- "thiserror 2.0.18",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-cli"
-version = "0.0.0"
-dependencies = [
- "clap",
- "EfficiencyCode-protocol",
- "EfficiencyCode-shell-command",
- "pretty_assertions",
- "serde",
- "toml 0.9.11+spec-1.1.0",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-elapsed"
-version = "0.0.0"
-
-[[package]]
-name = "EfficiencyCode-utils-fuzzy-match"
-version = "0.0.0"
-
-[[package]]
-name = "EfficiencyCode-utils-home-dir"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-utils-absolute-path",
- "dirs",
- "pretty_assertions",
- "tempfile",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-image"
-version = "0.0.0"
-dependencies = [
- "base64 0.22.1",
- "EfficiencyCode-utils-cache",
- "divan",
- "image",
- "mime_guess",
- "thiserror 2.0.18",
- "tokio",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-json-to-toml"
-version = "0.0.0"
-dependencies = [
- "pretty_assertions",
- "serde_json",
- "toml 0.9.11+spec-1.1.0",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-oss"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-core",
- "EfficiencyCode-lmstudio",
- "EfficiencyCode-model-provider-info",
- "EfficiencyCode-ollama",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-output-truncation"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-string",
- "pretty_assertions",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-path"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-utils-absolute-path",
- "dunce",
- "pretty_assertions",
- "tempfile",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-path-uri"
-version = "0.0.0"
-dependencies = [
- "base64 0.22.1",
- "EfficiencyCode-utils-absolute-path",
- "pretty_assertions",
- "schemars 0.8.22",
- "serde",
- "serde_json",
- "thiserror 2.0.18",
- "ts-rs",
- "url",
- "urlencoding",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-plugins"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-exec-server",
- "EfficiencyCode-exec-server-protocol",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-path-uri",
- "serde",
- "serde_json",
- "tempfile",
- "tokio",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-pty"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "filedescriptor",
- "lazy_static",
- "libc",
- "log",
- "portable-pty",
- "pretty_assertions",
- "shared_library",
- "tokio",
- "winapi",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-readiness"
-version = "0.0.0"
-dependencies = [
- "assert_matches",
- "thiserror 2.0.18",
- "time",
- "tokio",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-rustls-provider"
-version = "0.0.0"
-dependencies = [
- "rustls",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-sandbox-summary"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-absolute-path",
- "pretty_assertions",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-sleep-inhibitor"
-version = "0.0.0"
-dependencies = [
- "core-foundation 0.9.4",
- "libc",
- "tracing",
- "windows-sys 0.61.2",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-stream-parser"
-version = "0.0.0"
-dependencies = [
- "pretty_assertions",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-string"
-version = "0.0.0"
-dependencies = [
- "pretty_assertions",
- "regex-lite",
- "serde",
- "serde_json",
-]
-
-[[package]]
-name = "EfficiencyCode-utils-template"
-version = "0.0.0"
-dependencies = [
- "pretty_assertions",
-]
-
-[[package]]
-name = "EfficiencyCode-v8-poc"
-version = "0.0.0"
-dependencies = [
- "pretty_assertions",
- "v8",
-]
-
-[[package]]
-name = "EfficiencyCode-web-search-extension"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-api",
- "EfficiencyCode-core",
- "EfficiencyCode-extension-api",
- "EfficiencyCode-extension-items",
- "EfficiencyCode-login",
- "EfficiencyCode-model-provider",
- "EfficiencyCode-model-provider-info",
- "EfficiencyCode-otel",
- "EfficiencyCode-protocol",
- "EfficiencyCode-tools",
- "http 1.4.0",
- "pretty_assertions",
- "schemars 0.8.22",
- "serde_json",
- "url",
-]
-
-[[package]]
-name = "EfficiencyCode-websocket-client"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-http-client",
- "EfficiencyCode-utils-rustls-provider",
- "futures",
- "pretty_assertions",
- "rcgen",
- "rustls",
- "tokio",
- "tokio-rustls",
- "tokio-tungstenite",
- "url",
-]
-
-[[package]]
-name = "EfficiencyCode-windows-sandbox"
-version = "0.0.0"
-dependencies = [
- "anyhow",
- "base64 0.22.1",
- "chrono",
- "EfficiencyCode-otel",
- "EfficiencyCode-protocol",
- "EfficiencyCode-utils-absolute-path",
- "EfficiencyCode-utils-pty",
- "EfficiencyCode-utils-string",
- "dirs-next",
- "dunce",
- "glob",
- "pretty_assertions",
- "rand 0.8.6",
- "serde",
- "serde_json",
- "tempfile",
- "tokio",
- "tracing-appender",
- "windows 0.58.0",
- "windows-sys 0.52.0",
-]
-
-[[package]]
-name = "EfficiencyCode-workload-identity"
-version = "0.0.0"
-dependencies = [
- "EfficiencyCode-http-client",
- "pretty_assertions",
- "serde",
- "serde_json",
- "tempfile",
- "thiserror 2.0.18",
- "tokio",
- "url",
- "wiremock",
-]
-
-[[package]]
 name = "color-eyre"
 version = "0.6.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4991,9 +4991,6 @@ dependencies = [
 name = "core_test_support"
 version = "0.0.0"
 dependencies = [
- "anyhow",
- "assert_cmd",
- "base64 0.22.1",
  "EfficiencyCode-arg0",
  "EfficiencyCode-config",
  "EfficiencyCode-core",
@@ -5010,6 +5007,9 @@ dependencies = [
  "EfficiencyCode-utils-absolute-path",
  "EfficiencyCode-utils-cargo-bin",
  "EfficiencyCode-utils-path-uri",
+ "anyhow",
+ "assert_cmd",
+ "base64 0.22.1",
  "ctor 0.6.3",
  "futures",
  "notify",
@@ -7586,9 +7586,9 @@ dependencies = [
 
 [[package]]
 name = "glob"
-version = "0.3.3"
+version = "0.3.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0cc23270f6e1808e30a928bdc84dea0b9b4136a8bc82338574f23baf47bbd280"
+checksum = "e4eba85ea1d0a966a983acd07deee566e67395d2d96b6fb39e62b5a833f1eb0b"
 
 [[package]]
 name = "globset"
@@ -9200,11 +9200,11 @@ dependencies = [
 name = "mcp_test_support"
 version = "0.0.0"
 dependencies = [
- "anyhow",
  "EfficiencyCode-login",
  "EfficiencyCode-mcp-server",
  "EfficiencyCode-terminal-detection",
  "EfficiencyCode-utils-cargo-bin",
+ "anyhow",
  "core_test_support",
  "os_info",
  "pretty_assertions",
