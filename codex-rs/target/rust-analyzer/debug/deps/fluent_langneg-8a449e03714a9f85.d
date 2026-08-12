@@ -1,0 +1,10 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\fluent_langneg-8a449e03714a9f85.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-langneg-0.13.1\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-langneg-0.13.1\src\accepted_languages.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-langneg-0.13.1\src\negotiate\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-langneg-0.13.1\src\negotiate\likely_subtags.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libfluent_langneg-8a449e03714a9f85.rlib: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-langneg-0.13.1\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-langneg-0.13.1\src\accepted_languages.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-langneg-0.13.1\src\negotiate\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-langneg-0.13.1\src\negotiate\likely_subtags.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libfluent_langneg-8a449e03714a9f85.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-langneg-0.13.1\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-langneg-0.13.1\src\accepted_languages.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-langneg-0.13.1\src\negotiate\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-langneg-0.13.1\src\negotiate\likely_subtags.rs
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-langneg-0.13.1\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-langneg-0.13.1\src\accepted_languages.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-langneg-0.13.1\src\negotiate\mod.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-langneg-0.13.1\src\negotiate\likely_subtags.rs:

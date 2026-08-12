@@ -1,0 +1,9 @@
+load("//:defs.bzl", "EfficiencyCode_rust_crate")
+
+EfficiencyCode_rust_crate(
+    name = "web-search",
+    compile_data = [
+        "web_run_description.md",
+    ],
+    crate_name = "EfficiencyCode_web_search_extension",
+)

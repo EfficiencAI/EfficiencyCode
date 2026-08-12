@@ -1,0 +1,6 @@
+load("//:defs.bzl", "EfficiencyCode_rust_crate")
+
+EfficiencyCode_rust_crate(
+    name = "file-watcher",
+    crate_name = "EfficiencyCode_file_watcher",
+)

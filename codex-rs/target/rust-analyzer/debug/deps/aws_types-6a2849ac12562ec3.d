@@ -1,0 +1,18 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\aws_types-6a2849ac12562ec3.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\app_name.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\build_metadata.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\endpoint_config.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\origin.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\os_shim_internal.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\region.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\request_id.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\sdk_config.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\service_config.rs D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\build\aws-types-ba6049ea81fe4ed0\out/build_env.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libaws_types-6a2849ac12562ec3.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\app_name.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\build_metadata.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\endpoint_config.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\origin.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\os_shim_internal.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\region.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\request_id.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\sdk_config.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\service_config.rs D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\build\aws-types-ba6049ea81fe4ed0\out/build_env.rs
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\app_name.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\build_metadata.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\endpoint_config.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\origin.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\os_shim_internal.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\region.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\request_id.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\sdk_config.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aws-types-1.3.11\src\service_config.rs:
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\build\aws-types-ba6049ea81fe4ed0\out/build_env.rs:
+
+# env-dep:CARGO_PKG_VERSION=1.3.11
+# env-dep:OUT_DIR=D:\\code\\RustFiles\\EfficiencyCode/codex-rs/target/rust-analyzer\\debug\\build\\aws-types-ba6049ea81fe4ed0\\out

@@ -1,0 +1,29 @@
+[package]
+edition.workspace = true
+license.workspace = true
+name = "EfficiencyCode-extension-api"
+version.workspace = true
+
+[lib]
+name = "EfficiencyCode_extension_api"
+path = "src/lib.rs"
+test = false
+doctest = false
+
+[lints]
+workspace = true
+
+[dependencies]
+EfficiencyCode-config = { workspace = true }
+EfficiencyCode-context-fragments = { workspace = true }
+EfficiencyCode-exec-server-protocol = { workspace = true }
+EfficiencyCode-mcp = { workspace = true }
+EfficiencyCode-protocol = { workspace = true }
+EfficiencyCode-tools = { workspace = true }
+EfficiencyCode-utils-absolute-path = { workspace = true }
+EfficiencyCode-utils-path-uri = { workspace = true }
+serde_json = { workspace = true }
+
+[dev-dependencies]
+pretty_assertions = { workspace = true }
+tokio = { workspace = true, features = ["macros", "rt-multi-thread"] }

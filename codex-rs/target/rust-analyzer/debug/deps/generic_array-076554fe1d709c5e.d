@@ -1,0 +1,12 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\generic_array-076554fe1d709c5e.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\hex.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\impls.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\impl_zeroize.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\arr.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\functional.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\iter.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\sequence.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libgeneric_array-076554fe1d709c5e.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\hex.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\impls.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\impl_zeroize.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\arr.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\functional.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\iter.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\sequence.rs
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\hex.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\impls.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\impl_zeroize.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\arr.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\functional.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\iter.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\sequence.rs:

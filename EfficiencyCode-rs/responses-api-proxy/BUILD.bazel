@@ -1,0 +1,6 @@
+load("//:defs.bzl", "EfficiencyCode_rust_crate")
+
+EfficiencyCode_rust_crate(
+    name = "responses-api-proxy",
+    crate_name = "EfficiencyCode_responses_api_proxy",
+)

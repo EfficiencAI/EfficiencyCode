@@ -1,0 +1,10 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\toml_writer-442d893a1bdbdd1e.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\toml_writer-1.0.6+spec-1.1.0\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\toml_writer-1.0.6+spec-1.1.0\src\integer.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\toml_writer-1.0.6+spec-1.1.0\src\key.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\toml_writer-1.0.6+spec-1.1.0\src\string.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\toml_writer-1.0.6+spec-1.1.0\src\value.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\toml_writer-1.0.6+spec-1.1.0\src\write.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libtoml_writer-442d893a1bdbdd1e.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\toml_writer-1.0.6+spec-1.1.0\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\toml_writer-1.0.6+spec-1.1.0\src\integer.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\toml_writer-1.0.6+spec-1.1.0\src\key.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\toml_writer-1.0.6+spec-1.1.0\src\string.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\toml_writer-1.0.6+spec-1.1.0\src\value.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\toml_writer-1.0.6+spec-1.1.0\src\write.rs
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\toml_writer-1.0.6+spec-1.1.0\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\toml_writer-1.0.6+spec-1.1.0\src\integer.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\toml_writer-1.0.6+spec-1.1.0\src\key.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\toml_writer-1.0.6+spec-1.1.0\src\string.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\toml_writer-1.0.6+spec-1.1.0\src\value.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\toml_writer-1.0.6+spec-1.1.0\src\write.rs:

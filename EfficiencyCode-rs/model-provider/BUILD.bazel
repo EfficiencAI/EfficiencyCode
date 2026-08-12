@@ -1,0 +1,6 @@
+load("//:defs.bzl", "EfficiencyCode_rust_crate")
+
+EfficiencyCode_rust_crate(
+    name = "model-provider",
+    crate_name = "EfficiencyCode_model_provider",
+)

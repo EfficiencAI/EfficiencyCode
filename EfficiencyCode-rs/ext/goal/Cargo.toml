@@ -1,0 +1,37 @@
+[package]
+edition.workspace = true
+license.workspace = true
+name = "EfficiencyCode-goal-extension"
+version.workspace = true
+
+[lib]
+name = "EfficiencyCode_goal_extension"
+path = "src/lib.rs"
+test = false
+doctest = false
+
+[lints]
+workspace = true
+
+[dependencies]
+EfficiencyCode-analytics = { workspace = true }
+EfficiencyCode-core = { workspace = true }
+EfficiencyCode-extension-api = { workspace = true }
+EfficiencyCode-otel = { workspace = true }
+EfficiencyCode-protocol = { workspace = true }
+EfficiencyCode-rollout = { workspace = true }
+EfficiencyCode-state = { workspace = true }
+EfficiencyCode-tools = { workspace = true }
+EfficiencyCode-utils-template = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+tokio = { workspace = true, features = ["sync"] }
+tracing = { workspace = true }
+
+[dev-dependencies]
+anyhow = { workspace = true }
+chrono = { workspace = true }
+EfficiencyCode-utils-absolute-path = { workspace = true }
+pretty_assertions = { workspace = true }
+tempfile = { workspace = true }
+tokio = { workspace = true, features = ["macros", "rt-multi-thread"] }

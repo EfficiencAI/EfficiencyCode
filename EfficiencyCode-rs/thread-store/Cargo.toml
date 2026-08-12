@@ -1,0 +1,43 @@
+[package]
+edition.workspace = true
+license.workspace = true
+name = "EfficiencyCode-thread-store"
+version.workspace = true
+
+[lib]
+name = "EfficiencyCode_thread_store"
+path = "src/lib.rs"
+doctest = false
+
+[lints]
+workspace = true
+
+[dependencies]
+chrono = { workspace = true, features = ["serde"] }
+EfficiencyCode-app-server-protocol = { workspace = true }
+EfficiencyCode-extension-items = { workspace = true }
+EfficiencyCode-git-utils = { workspace = true }
+EfficiencyCode-install-context = { workspace = true }
+EfficiencyCode-otel = { workspace = true }
+EfficiencyCode-protocol = { workspace = true }
+EfficiencyCode-rollout = { workspace = true }
+EfficiencyCode-state = { workspace = true }
+EfficiencyCode-utils-absolute-path = { workspace = true }
+EfficiencyCode-utils-path = { workspace = true }
+EfficiencyCode-utils-path-uri = { workspace = true }
+futures = { workspace = true }
+pulldown-cmark = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+sqlx = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+zstd = { workspace = true }
+
+[dev-dependencies]
+EfficiencyCode-utils-absolute-path = { workspace = true }
+pretty_assertions = { workspace = true }
+tempfile = { workspace = true }
+tokio = { workspace = true, features = ["macros", "rt-multi-thread"] }
+uuid = { workspace = true }

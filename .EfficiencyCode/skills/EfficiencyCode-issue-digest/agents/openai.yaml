@@ -1,0 +1,4 @@
+interface:
+  display_name: "EfficiencyCode Issue Digest"
+  short_description: "Summarize EfficiencyCode issues by labels or all areas"
+  default_prompt: "Use $EfficiencyCode-issue-digest to run the EfficiencyCode issue digest for labels tui and exec over the previous 24 hours."

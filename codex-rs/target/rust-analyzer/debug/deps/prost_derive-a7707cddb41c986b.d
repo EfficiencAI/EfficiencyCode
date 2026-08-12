@@ -1,0 +1,11 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\prost_derive-a7707cddb41c986b.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\field\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\field\group.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\field\map.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\field\message.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\field\oneof.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\field\scalar.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\prost_derive-a7707cddb41c986b.dll: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\field\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\field\group.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\field\map.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\field\message.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\field\oneof.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\field\scalar.rs
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\field\mod.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\field\group.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\field\map.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\field\message.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\field\oneof.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\prost-derive-0.14.3\src\field\scalar.rs:

@@ -1,0 +1,50 @@
+[package]
+edition.workspace = true
+license.workspace = true
+name = "EfficiencyCode-mcp"
+version.workspace = true
+
+[lib]
+name = "EfficiencyCode_mcp"
+path = "src/lib.rs"
+doctest = false
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+arc-swap = { workspace = true }
+async-channel = { workspace = true }
+EfficiencyCode-async-utils = { workspace = true }
+EfficiencyCode-api = { workspace = true }
+EfficiencyCode-config = { workspace = true }
+EfficiencyCode-connectors = { workspace = true }
+EfficiencyCode-diagnostics = { workspace = true }
+EfficiencyCode-exec-server = { workspace = true }
+EfficiencyCode-login = { workspace = true }
+EfficiencyCode-model-provider = { workspace = true }
+EfficiencyCode-otel = { workspace = true }
+EfficiencyCode-protocol = { workspace = true }
+EfficiencyCode-rmcp-client = { workspace = true }
+EfficiencyCode-utils-path-uri = { workspace = true }
+EfficiencyCode-utils-plugins = { workspace = true }
+futures = { workspace = true }
+lru = { workspace = true }
+regex-lite = { workspace = true }
+rmcp = { workspace = true, default-features = false, features = ["base64", "macros", "schemars", "server"] }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+sha1 = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true, features = ["io-util", "macros", "rt-multi-thread"] }
+tokio-util = { workspace = true, features = ["rt"] }
+tracing = { workspace = true }
+url = { workspace = true }
+
+[dev-dependencies]
+EfficiencyCode-exec-server-test-support = { workspace = true }
+EfficiencyCode-plugin = { workspace = true }
+pretty_assertions = { workspace = true }
+rmcp = { workspace = true, default-features = false, features = ["base64", "macros", "schemars", "server"] }
+tempfile = { workspace = true }

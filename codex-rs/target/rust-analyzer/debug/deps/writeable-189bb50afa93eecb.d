@@ -1,0 +1,12 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\writeable-189bb50afa93eecb.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\cmp.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\impls.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\ops.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\parts_write_adapter.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\testing.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\to_string_or_borrow.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\try_writeable.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libwriteable-189bb50afa93eecb.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\cmp.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\impls.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\ops.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\parts_write_adapter.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\testing.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\to_string_or_borrow.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\try_writeable.rs
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\cmp.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\impls.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\ops.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\parts_write_adapter.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\testing.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\to_string_or_borrow.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\writeable-0.6.2\src\try_writeable.rs:

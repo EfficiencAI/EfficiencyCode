@@ -1,0 +1,7 @@
+load("//:defs.bzl", "EfficiencyCode_rust_crate")
+
+EfficiencyCode_rust_crate(
+    name = "test-binary-support",
+    crate_name = "EfficiencyCode_test_binary_support",
+    crate_srcs = ["lib.rs"],
+)

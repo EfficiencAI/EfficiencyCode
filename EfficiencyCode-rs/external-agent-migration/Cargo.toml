@@ -1,0 +1,41 @@
+[package]
+name = "EfficiencyCode-external-agent-migration"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+doctest = false
+name = "EfficiencyCode_external_agent_migration"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+chrono = { workspace = true }
+EfficiencyCode-analytics = { workspace = true }
+EfficiencyCode-config = { workspace = true }
+EfficiencyCode-core = { workspace = true }
+EfficiencyCode-core-plugins = { workspace = true }
+EfficiencyCode-hooks = { workspace = true }
+EfficiencyCode-memories-write = { workspace = true }
+EfficiencyCode-otel = { workspace = true }
+EfficiencyCode-plugin = { workspace = true }
+EfficiencyCode-protocol = { workspace = true }
+EfficiencyCode-rollout = { workspace = true }
+EfficiencyCode-thread-store = { workspace = true }
+EfficiencyCode-utils-output-truncation = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+serde_yaml = { workspace = true }
+sha2 = { workspace = true }
+toml = { workspace = true }
+tokio = { workspace = true, features = ["rt", "sync"] }
+tracing = { workspace = true }
+
+[dev-dependencies]
+EfficiencyCode-app-server-protocol = { workspace = true }
+pretty_assertions = { workspace = true }
+tempfile = { workspace = true }
+tokio = { workspace = true, features = ["macros", "rt-multi-thread"] }

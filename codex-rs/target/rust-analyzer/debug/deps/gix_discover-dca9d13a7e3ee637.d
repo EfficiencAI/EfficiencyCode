@@ -1,0 +1,12 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\gix_discover-dca9d13a7e3ee637.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\repository.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\is.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\upwards\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\upwards\types.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\upwards\util.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\path.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\parse.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libgix_discover-dca9d13a7e3ee637.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\repository.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\is.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\upwards\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\upwards\types.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\upwards\util.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\path.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\parse.rs
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\repository.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\is.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\upwards\mod.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\upwards\types.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\upwards\util.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\path.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-discover-0.49.0\src\parse.rs:

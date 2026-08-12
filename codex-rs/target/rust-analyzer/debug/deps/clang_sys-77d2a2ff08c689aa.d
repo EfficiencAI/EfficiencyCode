@@ -1,0 +1,14 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\clang_sys-77d2a2ff08c689aa.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clang-sys-1.8.1\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clang-sys-1.8.1\src\support.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clang-sys-1.8.1\src\link.rs D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\build\clang-sys-43aea170edf0c8c6\out/macros.rs D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\build\clang-sys-43aea170edf0c8c6\out/common.rs D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\build\clang-sys-43aea170edf0c8c6\out/dynamic.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libclang_sys-77d2a2ff08c689aa.rlib: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clang-sys-1.8.1\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clang-sys-1.8.1\src\support.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clang-sys-1.8.1\src\link.rs D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\build\clang-sys-43aea170edf0c8c6\out/macros.rs D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\build\clang-sys-43aea170edf0c8c6\out/common.rs D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\build\clang-sys-43aea170edf0c8c6\out/dynamic.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libclang_sys-77d2a2ff08c689aa.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clang-sys-1.8.1\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clang-sys-1.8.1\src\support.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clang-sys-1.8.1\src\link.rs D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\build\clang-sys-43aea170edf0c8c6\out/macros.rs D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\build\clang-sys-43aea170edf0c8c6\out/common.rs D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\build\clang-sys-43aea170edf0c8c6\out/dynamic.rs
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clang-sys-1.8.1\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clang-sys-1.8.1\src\support.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\clang-sys-1.8.1\src\link.rs:
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\build\clang-sys-43aea170edf0c8c6\out/macros.rs:
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\build\clang-sys-43aea170edf0c8c6\out/common.rs:
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\build\clang-sys-43aea170edf0c8c6\out/dynamic.rs:
+
+# env-dep:OUT_DIR=D:\\code\\RustFiles\\EfficiencyCode/codex-rs/target/rust-analyzer\\debug\\build\\clang-sys-43aea170edf0c8c6\\out

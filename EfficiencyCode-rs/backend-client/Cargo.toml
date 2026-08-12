@@ -1,0 +1,31 @@
+[package]
+name = "EfficiencyCode-backend-client"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[lib]
+path = "src/lib.rs"
+doctest = false
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+http = { workspace = true }
+url = { workspace = true }
+EfficiencyCode-backend-openapi-models = { path = "../EfficiencyCode-backend-openapi-models" }
+EfficiencyCode-api = { workspace = true }
+EfficiencyCode-http-client = { workspace = true }
+EfficiencyCode-login = { workspace = true }
+EfficiencyCode-model-provider = { workspace = true }
+EfficiencyCode-protocol = { workspace = true }
+
+[dev-dependencies]
+pretty_assertions = "1"
+tokio = { workspace = true, features = ["macros", "rt"] }
+wiremock = { workspace = true }

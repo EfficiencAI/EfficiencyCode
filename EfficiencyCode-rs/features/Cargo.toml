@@ -1,0 +1,24 @@
+[package]
+edition.workspace = true
+license.workspace = true
+name = "EfficiencyCode-features"
+version.workspace = true
+
+[lib]
+doctest = false
+name = "EfficiencyCode_features"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+EfficiencyCode-otel = { workspace = true }
+EfficiencyCode-protocol = { workspace = true }
+schemars = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+toml = { workspace = true }
+tracing = { workspace = true, features = ["log"] }
+
+[dev-dependencies]
+pretty_assertions = { workspace = true }

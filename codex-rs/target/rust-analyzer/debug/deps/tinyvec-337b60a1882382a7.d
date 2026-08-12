@@ -1,0 +1,11 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\tinyvec-337b60a1882382a7.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\array.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\array\const_generic_impl.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\arrayvec.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\arrayvec_drain.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\slicevec.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\tinyvec.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libtinyvec-337b60a1882382a7.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\array.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\array\const_generic_impl.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\arrayvec.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\arrayvec_drain.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\slicevec.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\tinyvec.rs
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\array.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\array\const_generic_impl.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\arrayvec.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\arrayvec_drain.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\slicevec.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec-1.10.0\src\tinyvec.rs:

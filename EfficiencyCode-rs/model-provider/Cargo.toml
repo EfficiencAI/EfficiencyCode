@@ -1,0 +1,35 @@
+[package]
+edition.workspace = true
+license.workspace = true
+name = "EfficiencyCode-model-provider"
+version.workspace = true
+
+[lib]
+doctest = false
+name = "EfficiencyCode_model_provider"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+EfficiencyCode-api = { workspace = true }
+EfficiencyCode-agent-identity = { workspace = true }
+EfficiencyCode-aws-auth = { workspace = true }
+EfficiencyCode-http-client = { workspace = true }
+EfficiencyCode-feedback = { workspace = true }
+EfficiencyCode-login = { workspace = true }
+EfficiencyCode-model-provider-info = { workspace = true }
+EfficiencyCode-models-manager = { workspace = true }
+EfficiencyCode-otel = { workspace = true }
+EfficiencyCode-protocol = { workspace = true }
+EfficiencyCode-response-debug-context = { workspace = true }
+http = { workspace = true }
+tokio = { workspace = true, features = ["sync", "time"] }
+tracing = { workspace = true, features = ["log"] }
+
+[dev-dependencies]
+pretty_assertions = { workspace = true }
+serde_json = { workspace = true }
+tokio = { workspace = true, features = ["macros", "rt"] }
+wiremock = { workspace = true }

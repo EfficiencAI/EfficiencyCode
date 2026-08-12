@@ -1,0 +1,6 @@
+load("//:defs.bzl", "EfficiencyCode_rust_crate")
+
+EfficiencyCode_rust_crate(
+    name = "stream-parser",
+    crate_name = "EfficiencyCode_utils_stream_parser",
+)

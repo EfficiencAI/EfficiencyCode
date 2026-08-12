@@ -1,0 +1,67 @@
+[package]
+edition.workspace = true
+license.workspace = true
+name = "EfficiencyCode-core-plugins"
+version.workspace = true
+
+[lib]
+doctest = false
+name = "EfficiencyCode_core_plugins"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+EfficiencyCode-analytics = { workspace = true }
+EfficiencyCode-app-server-protocol = { workspace = true }
+EfficiencyCode-config = { workspace = true }
+EfficiencyCode-connectors = { workspace = true }
+EfficiencyCode-exec-server = { workspace = true }
+EfficiencyCode-git-utils = { workspace = true }
+EfficiencyCode-hooks = { workspace = true }
+EfficiencyCode-http-client = { workspace = true }
+EfficiencyCode-login = { workspace = true }
+EfficiencyCode-mcp = { workspace = true }
+EfficiencyCode-model-provider = { workspace = true }
+EfficiencyCode-otel = { workspace = true }
+EfficiencyCode-plugin = { workspace = true }
+EfficiencyCode-protocol = { workspace = true }
+EfficiencyCode-skills = { workspace = true }
+EfficiencyCode-shell-command = { workspace = true }
+EfficiencyCode-tools = { workspace = true }
+EfficiencyCode-utils-absolute-path = { workspace = true }
+EfficiencyCode-utils-path = { workspace = true }
+EfficiencyCode-utils-path-uri = { workspace = true }
+EfficiencyCode-utils-plugins = { workspace = true }
+chrono = { workspace = true }
+dirs = { workspace = true }
+flate2 = { workspace = true }
+http = { workspace = true }
+regex = { workspace = true }
+semver = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+serde_yaml = { workspace = true }
+sha2 = { workspace = true }
+tar = { workspace = true }
+tempfile = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true, features = ["fs", "macros", "rt", "time"] }
+toml = { workspace = true }
+tracing = { workspace = true }
+url = { workspace = true }
+zip = { workspace = true }
+
+[target.'cfg(target_os = "macos")'.dependencies]
+which = { workspace = true }
+
+[dev-dependencies]
+EfficiencyCode-exec-server-test-support = { workspace = true }
+libc = { workspace = true }
+pretty_assertions = { workspace = true }
+tempfile = { workspace = true }
+tracing-subscriber = { workspace = true }
+tracing-test = { workspace = true, features = ["no-env-filter"] }
+wiremock = { workspace = true }

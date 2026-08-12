@@ -13,12 +13,12 @@ from _bootstrap import (
 
 ensure_local_sdk_src()
 
-from openai_codex import Codex
+from openai_EfficiencyCode import EfficiencyCode
 
-with Codex(config=runtime_config()) as codex:
-    print("Server:", server_label(codex.metadata))
+with EfficiencyCode(config=runtime_config()) as EfficiencyCode:
+    print("Server:", server_label(EfficiencyCode.metadata))
 
-    thread = codex.thread_start(model="gpt-5.4", config={"model_reasoning_effort": "high"})
+    thread = EfficiencyCode.thread_start(model="gpt-5.4", config={"model_reasoning_effort": "high"})
     result = thread.run("Say hello in one sentence.")
     print("Items:", len(result.items))
     print("Text:", result.final_response)

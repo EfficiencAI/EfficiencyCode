@@ -1,0 +1,14 @@
+load("//:defs.bzl", "EfficiencyCode_rust_crate")
+
+EfficiencyCode_rust_crate(
+    name = "windows-sandbox-rs",
+    binary_test_target_compatible_with = ["@platforms//os:windows"],
+    build_script_data = [
+        "EfficiencyCode-windows-sandbox-setup.manifest",
+    ],
+    crate_name = "EfficiencyCode_windows_sandbox",
+    test_data_extra = [
+        ":EfficiencyCode-command-runner",
+        ":EfficiencyCode-windows-sandbox-setup",
+    ],
+)

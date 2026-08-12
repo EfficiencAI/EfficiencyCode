@@ -1,0 +1,7 @@
+load("//:defs.bzl", "EfficiencyCode_rust_crate")
+
+EfficiencyCode_rust_crate(
+    name = "shell-command",
+    compile_data = ["src/command_safety/powershell_parser.ps1"],
+    crate_name = "EfficiencyCode_shell_command",
+)

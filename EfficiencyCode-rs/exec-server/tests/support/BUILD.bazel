@@ -1,0 +1,7 @@
+load("//:defs.bzl", "EfficiencyCode_rust_crate")
+
+EfficiencyCode_rust_crate(
+    name = "support",
+    crate_name = "EfficiencyCode_exec_server_test_support",
+    crate_srcs = glob(["*.rs"]),
+)

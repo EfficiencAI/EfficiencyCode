@@ -1,0 +1,11 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\sentry-01584736861197c4.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\defaults.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\init.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\transports\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\transports\ratelimit.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\transports\tokio_thread.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\transports\reqwest.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libsentry-01584736861197c4.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\defaults.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\init.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\transports\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\transports\ratelimit.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\transports\tokio_thread.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\transports\reqwest.rs
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\defaults.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\init.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\transports\mod.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\transports\ratelimit.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\transports\tokio_thread.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-0.46.1\src\transports\reqwest.rs:

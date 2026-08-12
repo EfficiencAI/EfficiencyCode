@@ -1,0 +1,12 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\gix_hash-87ac333b732e598d.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\oid.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\hasher.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\io.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\object_id.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\prefix.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\verify.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\kind.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libgix_hash-87ac333b732e598d.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\oid.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\hasher.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\io.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\object_id.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\prefix.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\verify.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\kind.rs
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\oid.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\hasher.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\io.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\object_id.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\prefix.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\verify.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\gix-hash-0.23.0\src\kind.rs:

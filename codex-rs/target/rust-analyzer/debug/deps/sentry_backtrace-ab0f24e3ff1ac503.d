@@ -1,0 +1,10 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\sentry_backtrace-ab0f24e3ff1ac503.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-backtrace-0.46.1\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-backtrace-0.46.1\src\integration.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-backtrace-0.46.1\src\parse.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-backtrace-0.46.1\src\process.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-backtrace-0.46.1\src\trim.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-backtrace-0.46.1\src\utils.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libsentry_backtrace-ab0f24e3ff1ac503.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-backtrace-0.46.1\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-backtrace-0.46.1\src\integration.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-backtrace-0.46.1\src\parse.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-backtrace-0.46.1\src\process.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-backtrace-0.46.1\src\trim.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-backtrace-0.46.1\src\utils.rs
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-backtrace-0.46.1\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-backtrace-0.46.1\src\integration.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-backtrace-0.46.1\src\parse.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-backtrace-0.46.1\src\process.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-backtrace-0.46.1\src\trim.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\sentry-backtrace-0.46.1\src\utils.rs:

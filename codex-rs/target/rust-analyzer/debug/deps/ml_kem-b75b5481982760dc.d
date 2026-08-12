@@ -1,0 +1,14 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\ml_kem-b75b5481982760dc.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\util.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\algebra.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\crypto.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\compress.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\encode.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\pke.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\kem.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\param.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\../README.md
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libml_kem-b75b5481982760dc.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\util.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\algebra.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\crypto.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\compress.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\encode.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\pke.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\kem.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\param.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\../README.md
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\util.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\algebra.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\crypto.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\compress.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\encode.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\pke.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\kem.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\param.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ml-kem-0.2.3\src\../README.md:

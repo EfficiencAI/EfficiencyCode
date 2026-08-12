@@ -1,0 +1,9 @@
+load("//:defs.bzl", "EfficiencyCode_rust_crate")
+
+EfficiencyCode_rust_crate(
+    name = "image-generation",
+    compile_data = [
+        "imagegen_description.md",
+    ],
+    crate_name = "EfficiencyCode_image_generation_extension",
+)

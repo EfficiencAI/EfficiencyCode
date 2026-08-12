@@ -1,0 +1,38 @@
+[package]
+edition.workspace = true
+license.workspace = true
+name = "EfficiencyCode-mcp-extension"
+version.workspace = true
+
+[lib]
+name = "EfficiencyCode_mcp_extension"
+path = "src/lib.rs"
+doctest = false
+
+[lints]
+workspace = true
+
+[dependencies]
+EfficiencyCode-core = { workspace = true }
+EfficiencyCode-core-plugins = { workspace = true }
+EfficiencyCode-config = { workspace = true }
+EfficiencyCode-connectors = { workspace = true }
+EfficiencyCode-connectors-extension = { workspace = true }
+EfficiencyCode-exec-server = { workspace = true }
+EfficiencyCode-extension-api = { workspace = true }
+EfficiencyCode-features = { workspace = true }
+EfficiencyCode-mcp = { workspace = true }
+EfficiencyCode-plugin = { workspace = true }
+EfficiencyCode-protocol = { workspace = true }
+EfficiencyCode-utils-absolute-path = { workspace = true }
+EfficiencyCode-utils-path-uri = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+tokio = { workspace = true, features = ["sync"] }
+
+[dev-dependencies]
+EfficiencyCode-login = { workspace = true }
+pretty_assertions = { workspace = true }
+tempfile = { workspace = true }
+tokio = { workspace = true, features = ["macros", "rt-multi-thread"] }

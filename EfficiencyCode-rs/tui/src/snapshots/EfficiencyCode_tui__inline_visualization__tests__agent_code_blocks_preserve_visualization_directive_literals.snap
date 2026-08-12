@@ -1,0 +1,11 @@
+---
+source: tui/src/inline_visualization_tests.rs
+expression: text
+---
+• Fenced:
+
+  ::EfficiencyCode-inline-vis{file="chart.html"}
+
+  Indented:
+
+      ::EfficiencyCode-inline-vis{file="chart.html"}

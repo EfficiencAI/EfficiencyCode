@@ -1,0 +1,61 @@
+[package]
+name = "EfficiencyCode-mcp-server"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "EfficiencyCode-mcp-server"
+path = "src/main.rs"
+
+[lib]
+name = "EfficiencyCode_mcp_server"
+path = "src/lib.rs"
+doctest = false
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+EfficiencyCode-arg0 = { workspace = true }
+EfficiencyCode-config = { workspace = true }
+EfficiencyCode-core = { workspace = true }
+EfficiencyCode-home = { workspace = true }
+EfficiencyCode-image-generation-extension = { workspace = true }
+EfficiencyCode-exec-server = { workspace = true }
+EfficiencyCode-extension-api = { workspace = true }
+EfficiencyCode-features = { workspace = true }
+EfficiencyCode-git-attribution = { workspace = true }
+EfficiencyCode-login = { workspace = true }
+EfficiencyCode-otel = { workspace = true }
+EfficiencyCode-protocol = { workspace = true }
+EfficiencyCode-skills-extension = { workspace = true }
+EfficiencyCode-utils-cli = { workspace = true }
+EfficiencyCode-utils-json-to-toml = { workspace = true }
+rmcp = { workspace = true }
+schemars = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+shlex = { workspace = true }
+tokio = { workspace = true, features = [
+    "io-std",
+    "macros",
+    "process",
+    "rt-multi-thread",
+    "signal",
+] }
+tracing = { workspace = true, features = ["log"] }
+tracing-subscriber = { workspace = true, features = ["env-filter", "fmt"] }
+uuid = { workspace = true, features = ["v7"] }
+
+[dev-dependencies]
+app_test_support = { workspace = true }
+EfficiencyCode-utils-absolute-path = { workspace = true }
+EfficiencyCode-shell-command = { workspace = true }
+core_test_support = { workspace = true }
+mcp_test_support = { workspace = true }
+os_info = { workspace = true }
+pretty_assertions = { workspace = true }
+tempfile = { workspace = true }
+wiremock = { workspace = true }

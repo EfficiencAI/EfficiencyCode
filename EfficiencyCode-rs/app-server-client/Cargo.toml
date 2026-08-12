@@ -1,0 +1,40 @@
+[package]
+name = "EfficiencyCode-app-server-client"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "EfficiencyCode_app_server_client"
+path = "src/lib.rs"
+doctest = false
+
+[lints]
+workspace = true
+
+[dependencies]
+EfficiencyCode-app-server = { workspace = true }
+EfficiencyCode-app-server-protocol = { workspace = true }
+EfficiencyCode-arg0 = { workspace = true }
+EfficiencyCode-config = { workspace = true }
+EfficiencyCode-core = { workspace = true }
+EfficiencyCode-exec-server = { workspace = true }
+EfficiencyCode-feedback = { workspace = true }
+EfficiencyCode-protocol = { workspace = true }
+EfficiencyCode-uds = { workspace = true }
+EfficiencyCode-utils-absolute-path = { workspace = true }
+EfficiencyCode-utils-rustls-provider = { workspace = true }
+futures = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tokio = { workspace = true, features = ["sync", "time", "rt"] }
+tokio-tungstenite = { workspace = true }
+toml = { workspace = true }
+tracing = { workspace = true }
+url = { workspace = true }
+
+[dev-dependencies]
+pretty_assertions = { workspace = true }
+serde_json = { workspace = true }
+tempfile = { workspace = true }
+tokio = { workspace = true, features = ["macros", "rt-multi-thread"] }

@@ -1,0 +1,9 @@
+load("//:defs.bzl", "EfficiencyCode_rust_crate")
+
+EfficiencyCode_rust_crate(
+    name = "rmcp-client",
+    crate_name = "EfficiencyCode_rmcp_client",
+    extra_binaries = [
+        "//EfficiencyCode-rs/cli:EfficiencyCode",
+    ],
+)

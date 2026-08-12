@@ -1,0 +1,15 @@
+---
+source: tui/src/model_migration.rs
+expression: terminal.backend()
+---
+
+> EfficiencyCode just got an upgrade. Introducing gpt-5.1-EfficiencyCode-max.
+
+  We recommend switching from gpt-5-EfficiencyCode to
+  gpt-5.1-EfficiencyCode-max.
+
+  EfficiencyCode-optimized flagship for deep and fast reasoning.
+  Learn more about gpt-5.1-EfficiencyCode-max at
+  https://www.EfficiencyCode.com/models/gpt-5.1-EfficiencyCode-max
+
+  Press enter to continue

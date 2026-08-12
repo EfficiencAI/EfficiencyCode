@@ -1,0 +1,19 @@
+[package]
+name = "EfficiencyCode-utils-sandbox-summary"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+EfficiencyCode-protocol = { workspace = true }
+EfficiencyCode-utils-absolute-path = { workspace = true }
+
+[dev-dependencies]
+EfficiencyCode-utils-absolute-path = { workspace = true }
+pretty_assertions = { workspace = true }
+
+[lib]
+doctest = false

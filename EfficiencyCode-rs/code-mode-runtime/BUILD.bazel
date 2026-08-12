@@ -1,0 +1,6 @@
+load("//:defs.bzl", "EfficiencyCode_rust_crate")
+
+EfficiencyCode_rust_crate(
+    name = "code-mode-runtime",
+    crate_name = "EfficiencyCode_code_mode_runtime",
+)

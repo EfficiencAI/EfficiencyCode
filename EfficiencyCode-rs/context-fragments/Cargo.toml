@@ -1,0 +1,18 @@
+[package]
+edition.workspace = true
+license.workspace = true
+name = "EfficiencyCode-context-fragments"
+version.workspace = true
+
+[lib]
+name = "EfficiencyCode_context_fragments"
+path = "src/lib.rs"
+test = false
+doctest = false
+
+[lints]
+workspace = true
+
+[dependencies]
+EfficiencyCode-protocol = { workspace = true }
+EfficiencyCode-utils-string = { workspace = true }

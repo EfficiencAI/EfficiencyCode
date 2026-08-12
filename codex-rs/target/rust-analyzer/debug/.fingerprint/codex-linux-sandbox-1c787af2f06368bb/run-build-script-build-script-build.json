@@ -1,0 +1,1 @@
+{"rustc":8891013984288978370,"features":"","declared_features":"","target":0,"profile":0,"path":0,"deps":[[6945861034636732475,"build_script_build",false,16255898769523770169]],"local":[{"RerunIfEnvChanged":{"var":"CODEX_BWRAP_SHA256","val":null}}],"rustflags":["-C","link-arg=/STACK:8388608","-C","target-feature=+crt-static"],"config":0,"compile_kind":0}

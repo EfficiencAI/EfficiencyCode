@@ -11,12 +11,12 @@ ensure_local_sdk_src()
 
 import asyncio
 
-from openai_codex import AsyncCodex
+from openai_EfficiencyCode import AsyncEfficiencyCode
 
 
 async def main() -> None:
-    async with AsyncCodex(config=runtime_config()) as codex:
-        thread = await codex.thread_start(
+    async with AsyncEfficiencyCode(config=runtime_config()) as EfficiencyCode:
+        thread = await EfficiencyCode.thread_start(
             model="gpt-5.4", config={"model_reasoning_effort": "high"}
         )
         turn = await thread.turn("Explain SIMD in 3 short bullets.")

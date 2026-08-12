@@ -1,0 +1,79 @@
+[package]
+name = "EfficiencyCode-exec"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+autotests = false
+
+[[bin]]
+name = "EfficiencyCode-exec"
+path = "src/main.rs"
+
+[lib]
+name = "EfficiencyCode_exec"
+path = "src/lib.rs"
+doctest = false
+
+[[test]]
+name = "all"
+path = "tests/all.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+clap = { workspace = true, features = ["derive"] }
+EfficiencyCode-arg0 = { workspace = true }
+EfficiencyCode-app-server-client = { workspace = true }
+EfficiencyCode-app-server-protocol = { workspace = true }
+EfficiencyCode-cloud-config = { workspace = true }
+EfficiencyCode-config = { workspace = true }
+EfficiencyCode-core = { workspace = true }
+EfficiencyCode-feedback = { workspace = true }
+EfficiencyCode-git-utils = { workspace = true }
+EfficiencyCode-history = { workspace = true }
+EfficiencyCode-login = { workspace = true }
+EfficiencyCode-model-provider-info = { workspace = true }
+EfficiencyCode-otel = { workspace = true }
+EfficiencyCode-protocol = { workspace = true }
+EfficiencyCode-utils-absolute-path = { workspace = true }
+EfficiencyCode-utils-cli = { workspace = true }
+EfficiencyCode-utils-oss = { workspace = true }
+EfficiencyCode-utils-sandbox-summary = { workspace = true }
+owo-colors = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+supports-color = { workspace = true }
+tokio = { workspace = true, features = [
+    "io-std",
+    "macros",
+    "process",
+    "rt-multi-thread",
+    "signal",
+] }
+tracing = { workspace = true, features = ["log"] }
+tracing-subscriber = { workspace = true, features = ["env-filter"] }
+ts-rs = { workspace = true, features = [
+    "uuid-impl",
+    "serde-json-impl",
+    "no-serde-warnings",
+] }
+uuid = { workspace = true }
+
+
+[dev-dependencies]
+assert_cmd = { workspace = true }
+EfficiencyCode-apply-patch = { workspace = true }
+EfficiencyCode-utils-cargo-bin = { workspace = true }
+core_test_support = { workspace = true }
+libc = { workspace = true }
+opentelemetry = { workspace = true }
+opentelemetry_sdk = { workspace = true }
+predicates = { workspace = true }
+pretty_assertions = { workspace = true }
+tempfile = { workspace = true }
+tracing-opentelemetry = { workspace = true }
+uuid = { workspace = true }
+walkdir = { workspace = true }
+wiremock = { workspace = true }

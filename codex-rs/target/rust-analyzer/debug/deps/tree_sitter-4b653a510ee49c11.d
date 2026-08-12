@@ -1,0 +1,13 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\tree_sitter-4b653a510ee49c11.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tree-sitter-0.25.10\binding_rust\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tree-sitter-0.25.10\binding_rust\ffi.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tree-sitter-0.25.10\binding_rust\util.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tree-sitter-0.25.10\binding_rust\./README.md D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tree-sitter-0.25.10\binding_rust\./bindings.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tree-sitter-0.25.10\binding_rust\../src/parser.h D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\build\tree-sitter-24275ddb018a4367\out/stdlib-symbols.txt
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libtree_sitter-4b653a510ee49c11.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tree-sitter-0.25.10\binding_rust\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tree-sitter-0.25.10\binding_rust\ffi.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tree-sitter-0.25.10\binding_rust\util.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tree-sitter-0.25.10\binding_rust\./README.md D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tree-sitter-0.25.10\binding_rust\./bindings.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tree-sitter-0.25.10\binding_rust\../src/parser.h D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\build\tree-sitter-24275ddb018a4367\out/stdlib-symbols.txt
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tree-sitter-0.25.10\binding_rust\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tree-sitter-0.25.10\binding_rust\ffi.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tree-sitter-0.25.10\binding_rust\util.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tree-sitter-0.25.10\binding_rust\./README.md:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tree-sitter-0.25.10\binding_rust\./bindings.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tree-sitter-0.25.10\binding_rust\../src/parser.h:
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\build\tree-sitter-24275ddb018a4367\out/stdlib-symbols.txt:
+
+# env-dep:OUT_DIR=D:\\code\\RustFiles\\EfficiencyCode/codex-rs/target/rust-analyzer\\debug\\build\\tree-sitter-24275ddb018a4367\\out

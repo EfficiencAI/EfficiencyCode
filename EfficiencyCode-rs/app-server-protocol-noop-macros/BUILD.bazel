@@ -1,0 +1,7 @@
+load("//:defs.bzl", "EfficiencyCode_rust_crate")
+
+EfficiencyCode_rust_crate(
+    name = "app-server-protocol-noop-macros",
+    crate_name = "EfficiencyCode_app_server_protocol_noop_macros",
+    proc_macro = True,
+)

@@ -1,0 +1,12 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\color_eyre-74c4b1451e1140a8.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\config.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\fmt.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\handler.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\private.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\section\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\section\help.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\writers.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libcolor_eyre-74c4b1451e1140a8.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\config.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\fmt.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\handler.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\private.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\section\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\section\help.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\writers.rs
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\config.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\fmt.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\handler.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\private.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\section\mod.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\section\help.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\color-eyre-0.6.5\src\writers.rs:

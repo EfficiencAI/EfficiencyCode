@@ -1,0 +1,17 @@
+[package]
+name = "EfficiencyCode-exec-server-test-support"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+path = "lib.rs"
+test = false
+doctest = false
+
+[lints]
+workspace = true
+
+[dependencies]
+EfficiencyCode-exec-server = { workspace = true }
+EfficiencyCode-http-client = { workspace = true }

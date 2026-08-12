@@ -1,0 +1,167 @@
+[package]
+name = "EfficiencyCode-tui"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+autobins = false
+
+[[bin]]
+name = "EfficiencyCode-tui"
+path = "src/main.rs"
+
+[[bin]]
+name = "md-events"
+path = "src/bin/md-events.rs"
+
+[lib]
+name = "EfficiencyCode_tui"
+path = "src/lib.rs"
+doctest = false
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+base64 = { workspace = true }
+chrono = { workspace = true, features = ["serde"] }
+clap = { workspace = true, features = ["derive"] }
+EfficiencyCode-ansi-escape = { workspace = true }
+EfficiencyCode-app-server-client = { workspace = true }
+EfficiencyCode-app-server-protocol = { workspace = true }
+EfficiencyCode-arg0 = { workspace = true }
+EfficiencyCode-install-context = { workspace = true }
+EfficiencyCode-cloud-config = { workspace = true }
+EfficiencyCode-config = { workspace = true }
+EfficiencyCode-connectors = { workspace = true }
+EfficiencyCode-core-plugins = { workspace = true }
+EfficiencyCode-history = { workspace = true }
+EfficiencyCode-exec-server = { workspace = true }
+EfficiencyCode-features = { workspace = true }
+EfficiencyCode-feedback = { workspace = true }
+EfficiencyCode-file-search = { workspace = true }
+EfficiencyCode-git-utils = { workspace = true }
+EfficiencyCode-http-client = { workspace = true }
+EfficiencyCode-login = { workspace = true }
+EfficiencyCode-message-history = { workspace = true }
+EfficiencyCode-model-provider = { workspace = true }
+EfficiencyCode-model-provider-info = { workspace = true }
+EfficiencyCode-models-manager = { workspace = true }
+EfficiencyCode-otel = { workspace = true }
+EfficiencyCode-plugin = { workspace = true }
+EfficiencyCode-protocol = { workspace = true }
+EfficiencyCode-rollout = { workspace = true }
+EfficiencyCode-sandboxing = { workspace = true }
+EfficiencyCode-shell-command = { workspace = true }
+EfficiencyCode-state = { workspace = true }
+EfficiencyCode-terminal-detection = { workspace = true }
+EfficiencyCode-utils-approval-presets = { workspace = true }
+EfficiencyCode-utils-absolute-path = { workspace = true }
+EfficiencyCode-utils-cli = { workspace = true }
+EfficiencyCode-utils-elapsed = { workspace = true }
+EfficiencyCode-utils-fuzzy-match = { workspace = true }
+EfficiencyCode-utils-home-dir = { workspace = true }
+EfficiencyCode-utils-oss = { workspace = true }
+EfficiencyCode-utils-path = { workspace = true }
+EfficiencyCode-utils-path-uri = { workspace = true }
+EfficiencyCode-utils-plugins = { workspace = true }
+EfficiencyCode-utils-sandbox-summary = { workspace = true }
+EfficiencyCode-utils-sleep-inhibitor = { workspace = true }
+EfficiencyCode-utils-string = { workspace = true }
+color-eyre = { workspace = true }
+crossterm = { workspace = true, features = ["bracketed-paste", "event-stream"] }
+derive_more = { workspace = true, features = ["is_variant"] }
+diffy = { workspace = true }
+dirs = { workspace = true }
+dunce = { workspace = true }
+image = { workspace = true, features = ["jpeg", "png", "gif", "webp"] }
+itertools = { workspace = true }
+lazy_static = { workspace = true }
+pathdiff = { workspace = true }
+pulldown-cmark = { workspace = true }
+rand = { workspace = true }
+ratatui = { workspace = true, features = [
+    "scrolling-regions",
+    "unstable-backend-writer",
+    "unstable-rendered-line-info",
+    "unstable-widget-ref",
+] }
+ratatui-macros = { workspace = true }
+regex-lite = { workspace = true }
+rmcp = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true, features = ["preserve_order"] }
+sha2 = { workspace = true }
+shlex = { workspace = true }
+strum = { workspace = true }
+strum_macros = { workspace = true }
+supports-color = { workspace = true }
+tempfile = { workspace = true }
+textwrap = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true, features = [
+    "io-std",
+    "macros",
+    "process",
+    "rt-multi-thread",
+    "signal",
+    "test-util",
+    "time",
+] }
+tokio-stream = { workspace = true, features = ["sync"] }
+toml = { workspace = true }
+tracing = { workspace = true, features = ["log"] }
+tracing-appender = { workspace = true }
+tracing-subscriber = { workspace = true, features = ["env-filter"] }
+syntect = "5"
+two-face = { version = "0.5", default-features = false, features = ["syntect-default-onig"] }
+unicode-segmentation = { workspace = true }
+unicode-width = { workspace = true }
+url = { workspace = true }
+urlencoding = { workspace = true }
+webbrowser = { workspace = true }
+uuid = { workspace = true }
+
+EfficiencyCode-windows-sandbox = { workspace = true }
+tokio-util = { workspace = true, features = ["time"] }
+
+[target.'cfg(unix)'.dependencies]
+libc = { workspace = true }
+
+[target.'cfg(windows)'.dependencies]
+which = { workspace = true }
+windows-sys = { version = "0.52", features = [
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_Storage_FileSystem",
+    "Win32_System_Console",
+    "Win32_System_IO",
+    "Win32_System_Pipes",
+    "Win32_System_Threading",
+] }
+winsplit = "0.1"
+
+# Clipboard support via `arboard` is not available on Android/Termux.
+# Only include it for non-Android targets so the crate builds on Android.
+[target.'cfg(not(target_os = "android"))'.dependencies]
+arboard = { workspace = true }
+
+
+[dev-dependencies]
+app_test_support = { workspace = true }
+EfficiencyCode-cli = { workspace = true }
+EfficiencyCode-mcp = { workspace = true }
+core_test_support = { workspace = true }
+EfficiencyCode-utils-cargo-bin = { workspace = true }
+assert_matches = { workspace = true }
+chrono = { workspace = true, features = ["serde"] }
+futures = { workspace = true }
+http = { workspace = true }
+insta = { workspace = true }
+pretty_assertions = { workspace = true }
+rand = { workspace = true }
+serial_test = { workspace = true }
+tokio-tungstenite = { workspace = true }
+vt100 = { workspace = true }
+uuid = { workspace = true }
+wiremock = { workspace = true }

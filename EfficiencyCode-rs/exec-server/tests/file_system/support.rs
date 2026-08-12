@@ -1,0 +1,129 @@
+use std::fmt;
+use std::sync::Arc;
+
+use EfficiencyCode_exec_server::Environment;
+use EfficiencyCode_exec_server::ExecServerRuntimePaths;
+use EfficiencyCode_exec_server::ExecutorFileSystem;
+use EfficiencyCode_exec_server::FileSystemSandboxContext;
+use EfficiencyCode_exec_server::LocalFileSystem;
+use EfficiencyCode_protocol::config_types::WindowsSandboxLevel;
+use EfficiencyCode_protocol::models::PermissionProfile;
+use EfficiencyCode_protocol::permissions::FileSystemAccessMode;
+use EfficiencyCode_protocol::permissions::FileSystemPath;
+use EfficiencyCode_protocol::permissions::FileSystemSandboxEntry;
+use EfficiencyCode_protocol::permissions::FileSystemSandboxPolicy;
+use EfficiencyCode_protocol::permissions::FileSystemSpecialPath;
+use EfficiencyCode_protocol::permissions::NetworkSandboxPolicy;
+use EfficiencyCode_utils_absolute_path::AbsolutePathBuf;
+use anyhow::Result;
+
+use crate::common::exec_server::ExecServerHarness;
+use crate::common::exec_server::TestEfficiencyCodeHelperPaths;
+use crate::common::exec_server::exec_server;
+use crate::common::exec_server::test_EfficiencyCode_helper_paths;
+
+pub(crate) struct FileSystemContext {
+    pub(crate) file_system: Arc<dyn ExecutorFileSystem>,
+    _helper_paths: Option<TestEfficiencyCodeHelperPaths>,
+    _server: Option<ExecServerHarness>,
+}
+
+#[derive(Clone, Copy, Debug)]
+pub(crate) enum FileSystemImplementation {
+    Local,
+    Remote,
+}
+
+impl fmt::Display for FileSystemImplementation {
+    fn fmt(&self, formatter: &mut fmt::Formatter<'_>) -> fmt::Result {
+        match self {
+            Self::Local => formatter.write_str("local"),
+            Self::Remote => formatter.write_str("remote"),
+        }
+    }
+}
+
+pub(crate) async fn create_file_system_context(
+    implementation: FileSystemImplementation,
+) -> Result<FileSystemContext> {
+    match implementation {
+        FileSystemImplementation::Local => {
+            let helper_paths = test_EfficiencyCode_helper_paths()?;
+            let runtime_paths = ExecServerRuntimePaths::new(
+                helper_paths.EfficiencyCode_exe.clone(),
+                helper_paths.EfficiencyCode_linux_sandbox_exe.clone(),
+            )?;
+            Ok(FileSystemContext {
+                file_system: Arc::new(LocalFileSystem::with_runtime_paths(runtime_paths)),
+                _helper_paths: Some(helper_paths),
+                _server: None,
+            })
+        }
+        FileSystemImplementation::Remote => {
+            let server = exec_server().await?;
+            let environment =
+                Environment::create_for_tests(Some(server.websocket_url().to_string()))?;
+            Ok(FileSystemContext {
+                file_system: environment.get_filesystem(),
+                _helper_paths: None,
+                _server: Some(server),
+            })
+        }
+    }
+}
+
+pub(crate) fn absolute_path(path: std::path::PathBuf) -> AbsolutePathBuf {
+    assert!(
+        path.is_absolute(),
+        "path must be absolute: {}",
+        path.display()
+    );
+    AbsolutePathBuf::try_from(path).expect("path should be absolute")
+}
+
+pub(crate) fn read_only_sandbox(readable_root: std::path::PathBuf) -> FileSystemSandboxContext {
+    let readable_root = absolute_path(readable_root);
+    sandbox_context(vec![FileSystemSandboxEntry {
+        path: FileSystemPath::Path {
+            path: readable_root,
+        },
+        access: FileSystemAccessMode::Read,
+        missing_path_behavior: None,
+    }])
+}
+
+pub(crate) fn workspace_write_sandbox(
+    writable_root: std::path::PathBuf,
+) -> FileSystemSandboxContext {
+    let writable_root = absolute_path(writable_root);
+    sandbox_context(vec![FileSystemSandboxEntry {
+        path: FileSystemPath::Path {
+            path: writable_root,
+        },
+        access: FileSystemAccessMode::Write,
+        missing_path_behavior: None,
+    }])
+}
+
+fn sandbox_context(mut entries: Vec<FileSystemSandboxEntry>) -> FileSystemSandboxContext {
+    if cfg!(windows) {
+        // Restricted-token sandboxing cannot enforce read restrictions, so leave the root
+        // readable while exercising the requested write restrictions.
+        entries.push(FileSystemSandboxEntry::new(
+            FileSystemPath::Special {
+                value: FileSystemSpecialPath::Root,
+            },
+            FileSystemAccessMode::Read,
+        ));
+    }
+    let mut sandbox = FileSystemSandboxContext::from_permission_profile(
+        PermissionProfile::from_runtime_permissions(
+            &FileSystemSandboxPolicy::restricted(entries),
+            NetworkSandboxPolicy::Restricted,
+        ),
+    );
+    if cfg!(windows) {
+        sandbox.windows_sandbox_level = WindowsSandboxLevel::RestrictedToken;
+    }
+    sandbox
+}

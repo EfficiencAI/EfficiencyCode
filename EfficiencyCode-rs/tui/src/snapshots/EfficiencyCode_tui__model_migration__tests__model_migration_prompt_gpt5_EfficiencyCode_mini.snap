@@ -1,0 +1,15 @@
+---
+source: tui/src/model_migration.rs
+expression: terminal.backend()
+---
+
+> EfficiencyCode just got an upgrade. Introducing gpt-5.1-EfficiencyCode-mini.
+
+  We recommend switching from gpt-5-EfficiencyCode-mini to
+  gpt-5.1-EfficiencyCode-mini.
+
+  Optimized for EfficiencyCode. Cheaper, faster, but less capable.
+  Learn more about gpt-5.1-EfficiencyCode-mini at
+  https://www.EfficiencyCode.com/models/gpt-5.1-EfficiencyCode-mini
+
+  Press enter to continue

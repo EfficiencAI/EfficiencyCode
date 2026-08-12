@@ -1,0 +1,6 @@
+load("//:defs.bzl", "EfficiencyCode_rust_crate")
+
+EfficiencyCode_rust_crate(
+    name = "queue",
+    crate_name = "EfficiencyCode_queue_extension",
+)

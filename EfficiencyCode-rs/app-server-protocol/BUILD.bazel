@@ -1,0 +1,11 @@
+load("//:defs.bzl", "EfficiencyCode_rust_crate")
+
+EfficiencyCode_rust_crate(
+    name = "app-server-protocol",
+    compile_data = glob(["schema/precomputed/**"]),
+    crate_name = "EfficiencyCode_app_server_protocol",
+    test_data_extra = glob(
+        ["schema/**"],
+        allow_empty = True,
+    ),
+)

@@ -1,0 +1,10 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\linktime_proc_macro-05c84484fa860f42.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\linktime-proc-macro-0.1.0\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\linktime-proc-macro-0.1.0\src\generate.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\linktime-proc-macro-0.1.0\src\hash\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\linktime-proc-macro-0.1.0\src\hash\xx3.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\linktime-proc-macro-0.1.0\src\tokens.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\linktime-proc-macro-0.1.0\src\../README.md
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\linktime_proc_macro-05c84484fa860f42.dll: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\linktime-proc-macro-0.1.0\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\linktime-proc-macro-0.1.0\src\generate.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\linktime-proc-macro-0.1.0\src\hash\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\linktime-proc-macro-0.1.0\src\hash\xx3.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\linktime-proc-macro-0.1.0\src\tokens.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\linktime-proc-macro-0.1.0\src\../README.md
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\linktime-proc-macro-0.1.0\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\linktime-proc-macro-0.1.0\src\generate.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\linktime-proc-macro-0.1.0\src\hash\mod.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\linktime-proc-macro-0.1.0\src\hash\xx3.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\linktime-proc-macro-0.1.0\src\tokens.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\linktime-proc-macro-0.1.0\src\../README.md:

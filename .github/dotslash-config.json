@@ -1,86 +1,86 @@
 {
   "outputs": {
-    "codex": {
+    "EfficiencyCode": {
       "platforms": {
         "macos-aarch64": {
-          "regex": "^codex-package-aarch64-apple-darwin\\.tar\\.zst$",
-          "path": "bin/codex"
+          "regex": "^EfficiencyCode-package-aarch64-apple-darwin\\.tar\\.zst$",
+          "path": "bin/EfficiencyCode"
         },
         "macos-x86_64": {
-          "regex": "^codex-package-x86_64-apple-darwin\\.tar\\.zst$",
-          "path": "bin/codex"
+          "regex": "^EfficiencyCode-package-x86_64-apple-darwin\\.tar\\.zst$",
+          "path": "bin/EfficiencyCode"
         },
         "linux-x86_64": {
-          "regex": "^codex-package-x86_64-unknown-linux-musl\\.tar\\.zst$",
-          "path": "bin/codex"
+          "regex": "^EfficiencyCode-package-x86_64-unknown-linux-musl\\.tar\\.zst$",
+          "path": "bin/EfficiencyCode"
         },
         "linux-aarch64": {
-          "regex": "^codex-package-aarch64-unknown-linux-musl\\.tar\\.zst$",
-          "path": "bin/codex"
+          "regex": "^EfficiencyCode-package-aarch64-unknown-linux-musl\\.tar\\.zst$",
+          "path": "bin/EfficiencyCode"
         },
         "windows-x86_64": {
-          "regex": "^codex-package-x86_64-pc-windows-msvc\\.tar\\.zst$",
-          "path": "bin/codex.exe"
+          "regex": "^EfficiencyCode-package-x86_64-pc-windows-msvc\\.tar\\.zst$",
+          "path": "bin/EfficiencyCode.exe"
         },
         "windows-aarch64": {
-          "regex": "^codex-package-aarch64-pc-windows-msvc\\.tar\\.zst$",
-          "path": "bin/codex.exe"
+          "regex": "^EfficiencyCode-package-aarch64-pc-windows-msvc\\.tar\\.zst$",
+          "path": "bin/EfficiencyCode.exe"
         }
       }
     },
-    "codex-app-server": {
+    "EfficiencyCode-app-server": {
       "platforms": {
         "macos-aarch64": {
-          "regex": "^codex-app-server-package-aarch64-apple-darwin\\.tar\\.zst$",
-          "path": "bin/codex-app-server"
+          "regex": "^EfficiencyCode-app-server-package-aarch64-apple-darwin\\.tar\\.zst$",
+          "path": "bin/EfficiencyCode-app-server"
         },
         "macos-x86_64": {
-          "regex": "^codex-app-server-package-x86_64-apple-darwin\\.tar\\.zst$",
-          "path": "bin/codex-app-server"
+          "regex": "^EfficiencyCode-app-server-package-x86_64-apple-darwin\\.tar\\.zst$",
+          "path": "bin/EfficiencyCode-app-server"
         },
         "linux-x86_64": {
-          "regex": "^codex-app-server-package-x86_64-unknown-linux-musl\\.tar\\.zst$",
-          "path": "bin/codex-app-server"
+          "regex": "^EfficiencyCode-app-server-package-x86_64-unknown-linux-musl\\.tar\\.zst$",
+          "path": "bin/EfficiencyCode-app-server"
         },
         "linux-aarch64": {
-          "regex": "^codex-app-server-package-aarch64-unknown-linux-musl\\.tar\\.zst$",
-          "path": "bin/codex-app-server"
+          "regex": "^EfficiencyCode-app-server-package-aarch64-unknown-linux-musl\\.tar\\.zst$",
+          "path": "bin/EfficiencyCode-app-server"
         },
         "windows-x86_64": {
-          "regex": "^codex-app-server-package-x86_64-pc-windows-msvc\\.tar\\.zst$",
-          "path": "bin/codex-app-server.exe"
+          "regex": "^EfficiencyCode-app-server-package-x86_64-pc-windows-msvc\\.tar\\.zst$",
+          "path": "bin/EfficiencyCode-app-server.exe"
         },
         "windows-aarch64": {
-          "regex": "^codex-app-server-package-aarch64-pc-windows-msvc\\.tar\\.zst$",
-          "path": "bin/codex-app-server.exe"
+          "regex": "^EfficiencyCode-app-server-package-aarch64-pc-windows-msvc\\.tar\\.zst$",
+          "path": "bin/EfficiencyCode-app-server.exe"
         }
       }
     },
-    "codex-responses-api-proxy": {
+    "EfficiencyCode-responses-api-proxy": {
       "platforms": {
         "macos-aarch64": {
-          "regex": "^codex-responses-api-proxy-aarch64-apple-darwin\\.zst$",
-          "path": "codex-responses-api-proxy"
+          "regex": "^EfficiencyCode-responses-api-proxy-aarch64-apple-darwin\\.zst$",
+          "path": "EfficiencyCode-responses-api-proxy"
         },
         "macos-x86_64": {
-          "regex": "^codex-responses-api-proxy-x86_64-apple-darwin\\.zst$",
-          "path": "codex-responses-api-proxy"
+          "regex": "^EfficiencyCode-responses-api-proxy-x86_64-apple-darwin\\.zst$",
+          "path": "EfficiencyCode-responses-api-proxy"
         },
         "linux-x86_64": {
-          "regex": "^codex-responses-api-proxy-x86_64-unknown-linux-musl\\.zst$",
-          "path": "codex-responses-api-proxy"
+          "regex": "^EfficiencyCode-responses-api-proxy-x86_64-unknown-linux-musl\\.zst$",
+          "path": "EfficiencyCode-responses-api-proxy"
         },
         "linux-aarch64": {
-          "regex": "^codex-responses-api-proxy-aarch64-unknown-linux-musl\\.zst$",
-          "path": "codex-responses-api-proxy"
+          "regex": "^EfficiencyCode-responses-api-proxy-aarch64-unknown-linux-musl\\.zst$",
+          "path": "EfficiencyCode-responses-api-proxy"
         },
         "windows-x86_64": {
-          "regex": "^codex-responses-api-proxy-x86_64-pc-windows-msvc\\.exe\\.zst$",
-          "path": "codex-responses-api-proxy.exe"
+          "regex": "^EfficiencyCode-responses-api-proxy-x86_64-pc-windows-msvc\\.exe\\.zst$",
+          "path": "EfficiencyCode-responses-api-proxy.exe"
         },
         "windows-aarch64": {
-          "regex": "^codex-responses-api-proxy-aarch64-pc-windows-msvc\\.exe\\.zst$",
-          "path": "codex-responses-api-proxy.exe"
+          "regex": "^EfficiencyCode-responses-api-proxy-aarch64-pc-windows-msvc\\.exe\\.zst$",
+          "path": "EfficiencyCode-responses-api-proxy.exe"
         }
       }
     },
@@ -96,27 +96,27 @@
         }
       }
     },
-    "codex-command-runner": {
+    "EfficiencyCode-command-runner": {
       "platforms": {
         "windows-x86_64": {
-          "regex": "^codex-command-runner-x86_64-pc-windows-msvc\\.exe\\.zst$",
-          "path": "codex-command-runner.exe"
+          "regex": "^EfficiencyCode-command-runner-x86_64-pc-windows-msvc\\.exe\\.zst$",
+          "path": "EfficiencyCode-command-runner.exe"
         },
         "windows-aarch64": {
-          "regex": "^codex-command-runner-aarch64-pc-windows-msvc\\.exe\\.zst$",
-          "path": "codex-command-runner.exe"
+          "regex": "^EfficiencyCode-command-runner-aarch64-pc-windows-msvc\\.exe\\.zst$",
+          "path": "EfficiencyCode-command-runner.exe"
         }
       }
     },
-    "codex-windows-sandbox-setup": {
+    "EfficiencyCode-windows-sandbox-setup": {
       "platforms": {
         "windows-x86_64": {
-          "regex": "^codex-windows-sandbox-setup-x86_64-pc-windows-msvc\\.exe\\.zst$",
-          "path": "codex-windows-sandbox-setup.exe"
+          "regex": "^EfficiencyCode-windows-sandbox-setup-x86_64-pc-windows-msvc\\.exe\\.zst$",
+          "path": "EfficiencyCode-windows-sandbox-setup.exe"
         },
         "windows-aarch64": {
-          "regex": "^codex-windows-sandbox-setup-aarch64-pc-windows-msvc\\.exe\\.zst$",
-          "path": "codex-windows-sandbox-setup.exe"
+          "regex": "^EfficiencyCode-windows-sandbox-setup-aarch64-pc-windows-msvc\\.exe\\.zst$",
+          "path": "EfficiencyCode-windows-sandbox-setup.exe"
         }
       }
     }

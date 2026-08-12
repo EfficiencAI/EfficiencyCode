@@ -1,0 +1,38 @@
+[package]
+edition.workspace = true
+license.workspace = true
+name = "EfficiencyCode-image-generation-extension"
+version.workspace = true
+
+[lib]
+name = "EfficiencyCode_image_generation_extension"
+path = "src/lib.rs"
+doctest = false
+
+[lints]
+workspace = true
+
+[dependencies]
+base64 = { workspace = true }
+EfficiencyCode-api = { workspace = true }
+EfficiencyCode-core = { workspace = true }
+EfficiencyCode-exec-server = { workspace = true }
+EfficiencyCode-extension-api = { workspace = true }
+EfficiencyCode-extension-items = { workspace = true }
+EfficiencyCode-login = { workspace = true }
+EfficiencyCode-model-provider = { workspace = true }
+EfficiencyCode-model-provider-info = { workspace = true }
+EfficiencyCode-protocol = { workspace = true }
+EfficiencyCode-tools = { workspace = true }
+EfficiencyCode-utils-absolute-path = { workspace = true }
+EfficiencyCode-utils-image = { workspace = true }
+EfficiencyCode-utils-path-uri = { workspace = true }
+http = { workspace = true }
+schemars = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+tracing = { workspace = true }
+
+[dev-dependencies]
+pretty_assertions = { workspace = true }
+tokio = { workspace = true, features = ["macros", "rt"] }

@@ -1,0 +1,173 @@
+[package]
+edition.workspace = true
+license.workspace = true
+name = "EfficiencyCode-core"
+version.workspace = true
+
+[lib]
+name = "EfficiencyCode_core"
+path = "src/lib.rs"
+
+[[bin]]
+name = "EfficiencyCode-write-config-schema"
+path = "src/bin/config_schema.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+arc-swap = { workspace = true }
+async-channel = { workspace = true }
+base64 = { workspace = true }
+bm25 = { workspace = true }
+chrono = { workspace = true, features = ["serde"] }
+clap = { workspace = true, features = ["derive"] }
+EfficiencyCode-analytics = { workspace = true }
+EfficiencyCode-agent-graph-store = { workspace = true }
+EfficiencyCode-api = { workspace = true }
+EfficiencyCode-app-server-protocol = { workspace = true }
+EfficiencyCode-apply-patch = { workspace = true }
+EfficiencyCode-async-utils = { workspace = true }
+EfficiencyCode-code-mode = { workspace = true }
+EfficiencyCode-connectors = { workspace = true }
+EfficiencyCode-context-fragments = { workspace = true }
+EfficiencyCode-config = { workspace = true }
+EfficiencyCode-core-plugins = { workspace = true }
+EfficiencyCode-diagnostics = { workspace = true }
+EfficiencyCode-exec-server = { workspace = true }
+EfficiencyCode-extension-api = { workspace = true }
+EfficiencyCode-extension-items = { workspace = true }
+EfficiencyCode-features = { workspace = true }
+EfficiencyCode-feedback = { workspace = true }
+EfficiencyCode-file-system = { workspace = true }
+EfficiencyCode-login = { workspace = true }
+EfficiencyCode-memories-read = { workspace = true }
+EfficiencyCode-mcp = { workspace = true }
+EfficiencyCode-model-provider-info = { workspace = true }
+EfficiencyCode-models-manager = { workspace = true }
+EfficiencyCode-shell-command = { workspace = true }
+EfficiencyCode-execpolicy = { workspace = true }
+EfficiencyCode-git-utils = { workspace = true }
+EfficiencyCode-history = { workspace = true }
+EfficiencyCode-hooks = { workspace = true }
+EfficiencyCode-http-client = { workspace = true }
+EfficiencyCode-install-context = { workspace = true }
+EfficiencyCode-network-proxy = { workspace = true }
+EfficiencyCode-otel = { workspace = true }
+EfficiencyCode-plugin = { workspace = true }
+EfficiencyCode-model-provider = { workspace = true }
+EfficiencyCode-protocol = { workspace = true }
+EfficiencyCode-response-debug-context = { workspace = true }
+EfficiencyCode-prompts = { workspace = true }
+EfficiencyCode-rollout = { workspace = true }
+EfficiencyCode-rollout-trace = { workspace = true }
+EfficiencyCode-rmcp-client = { workspace = true }
+EfficiencyCode-sandboxing = { workspace = true }
+EfficiencyCode-skills = { workspace = true }
+EfficiencyCode-skills-extension = { workspace = true }
+EfficiencyCode-state = { workspace = true }
+EfficiencyCode-terminal-detection = { workspace = true }
+EfficiencyCode-thread-store = { workspace = true }
+EfficiencyCode-tools = { workspace = true }
+EfficiencyCode-utils-absolute-path = { workspace = true }
+EfficiencyCode-utils-audio = { workspace = true }
+EfficiencyCode-utils-cache = { workspace = true }
+EfficiencyCode-utils-image = { workspace = true }
+EfficiencyCode-utils-home-dir = { workspace = true }
+EfficiencyCode-utils-output-truncation = { workspace = true }
+EfficiencyCode-utils-path = { workspace = true }
+EfficiencyCode-utils-path-uri = { workspace = true }
+EfficiencyCode-utils-plugins = { workspace = true }
+EfficiencyCode-utils-pty = { workspace = true }
+EfficiencyCode-utils-string = { workspace = true }
+EfficiencyCode-utils-stream-parser = { workspace = true }
+EfficiencyCode-windows-sandbox = { package = "EfficiencyCode-windows-sandbox", path = "../windows-sandbox-rs" }
+dirs = { workspace = true }
+dunce = { workspace = true }
+eventsource-stream = { workspace = true }
+futures = { workspace = true }
+http = { workspace = true }
+iana-time-zone = { workspace = true }
+image = { workspace = true, features = ["jpeg", "png", "webp"] }
+indexmap = { workspace = true }
+libc = { workspace = true }
+once_cell = { workspace = true }
+rand = { workspace = true }
+regex-lite = { workspace = true }
+rmcp = { workspace = true, default-features = false, features = [
+    "base64",
+    "macros",
+    "schemars",
+    "server",
+] }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+sha1 = { workspace = true }
+shlex = { workspace = true }
+similar = { workspace = true }
+tempfile = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true, features = [
+    "io-std",
+    "macros",
+    "process",
+    "rt-multi-thread",
+    "signal",
+] }
+tokio-util = { workspace = true, features = ["rt"] }
+tokio-tungstenite = { workspace = true }
+toml = { workspace = true }
+toml_edit = { workspace = true }
+tracing = { workspace = true, features = ["log"] }
+url = { workspace = true }
+uuid = { workspace = true, features = ["serde", "v4", "v5", "v7"] }
+which = { workspace = true }
+whoami = { workspace = true }
+
+# Build OpenSSL from source for musl builds.
+[target.x86_64-unknown-linux-musl.dependencies]
+openssl-sys = { workspace = true, features = ["vendored"] }
+
+# Build OpenSSL from source for musl builds.
+[target.aarch64-unknown-linux-musl.dependencies]
+openssl-sys = { workspace = true, features = ["vendored"] }
+
+[target.'cfg(unix)'.dependencies]
+EfficiencyCode-shell-escalation = { workspace = true }
+
+[dev-dependencies]
+assert_cmd = { workspace = true }
+assert_matches = { workspace = true }
+EfficiencyCode-exec-server-test-support = { workspace = true }
+EfficiencyCode-image-generation-extension = { workspace = true }
+EfficiencyCode-home = { workspace = true }
+EfficiencyCode-otel = { workspace = true }
+EfficiencyCode-test-binary-support = { workspace = true }
+EfficiencyCode-utils-cargo-bin = { workspace = true }
+EfficiencyCode-web-search-extension = { workspace = true }
+core_test_support = { workspace = true }
+ctor = { workspace = true }
+insta = { workspace = true }
+maplit = { workspace = true }
+opentelemetry = { workspace = true }
+predicates = { workspace = true }
+pretty_assertions = { workspace = true }
+test-case = "3.3.1"
+opentelemetry_sdk = { workspace = true, features = [
+    "experimental_metrics_custom_reader",
+    "metrics",
+] }
+serial_test = { workspace = true }
+tempfile = { workspace = true }
+test-log = { workspace = true }
+tracing-opentelemetry = { workspace = true }
+tracing-subscriber = { workspace = true }
+tracing-test = { workspace = true, features = ["no-env-filter"] }
+walkdir = { workspace = true }
+wiremock = { workspace = true }
+zstd = { workspace = true }
+
+[package.metadata.cargo-shear]
+ignored = ["openssl-sys"]
+ignored-paths = ["tests/remote_env_windows/*.rs"]

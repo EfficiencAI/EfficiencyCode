@@ -1,0 +1,10 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\diplomat_runtime-bfa3a18bcc5df73a.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\diplomat-runtime-0.15.1\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\diplomat-runtime-0.15.1\src\write.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\diplomat-runtime-0.15.1\src\slices.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\diplomat-runtime-0.15.1\src\callback.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\diplomat-runtime-0.15.1\src\result.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\diplomat-runtime-0.15.1\src\rust_interop.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libdiplomat_runtime-bfa3a18bcc5df73a.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\diplomat-runtime-0.15.1\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\diplomat-runtime-0.15.1\src\write.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\diplomat-runtime-0.15.1\src\slices.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\diplomat-runtime-0.15.1\src\callback.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\diplomat-runtime-0.15.1\src\result.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\diplomat-runtime-0.15.1\src\rust_interop.rs
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\diplomat-runtime-0.15.1\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\diplomat-runtime-0.15.1\src\write.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\diplomat-runtime-0.15.1\src\slices.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\diplomat-runtime-0.15.1\src\callback.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\diplomat-runtime-0.15.1\src\result.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\diplomat-runtime-0.15.1\src\rust_interop.rs:

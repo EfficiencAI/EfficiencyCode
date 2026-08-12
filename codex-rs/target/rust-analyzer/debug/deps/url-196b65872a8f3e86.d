@@ -1,0 +1,13 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\url-196b65872a8f3e86.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\host.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\origin.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\parser.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\path_segments.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\slicing.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\quirks.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\liburl-196b65872a8f3e86.rlib: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\host.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\origin.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\parser.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\path_segments.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\slicing.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\quirks.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\liburl-196b65872a8f3e86.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\host.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\origin.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\parser.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\path_segments.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\slicing.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\quirks.rs
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\host.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\origin.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\parser.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\path_segments.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\slicing.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\url-2.5.8\src\quirks.rs:

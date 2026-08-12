@@ -1,0 +1,13 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libc-b29b32fdaaec9fb2.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\macros.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\new\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\new\common\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\new\ucrt\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\primitives.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\windows\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\windows\msvc\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\types.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\liblibc-b29b32fdaaec9fb2.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\macros.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\new\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\new\common\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\new\ucrt\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\primitives.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\windows\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\windows\msvc\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\types.rs
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\macros.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\new\mod.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\new\common\mod.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\new\ucrt\mod.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\primitives.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\windows\mod.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\windows\msvc\mod.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\libc-0.2.186\src\types.rs:

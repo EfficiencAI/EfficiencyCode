@@ -26,9 +26,9 @@ export type {
 export { Thread } from "./thread";
 export type { RunResult, RunStreamedResult, Input, UserInput } from "./thread";
 
-export { Codex } from "./codex";
+export { EfficiencyCode } from "./EfficiencyCode";
 
-export type { CodexOptions } from "./codexOptions";
+export type { EfficiencyCodeOptions } from "./EfficiencyCodeOptions";
 
 export type {
   ThreadOptions,

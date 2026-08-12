@@ -1,0 +1,33 @@
+[package]
+name = "EfficiencyCode-arg0"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "EfficiencyCode_arg0"
+path = "src/lib.rs"
+doctest = false
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+EfficiencyCode-apply-patch = { workspace = true }
+EfficiencyCode-exec-server = { workspace = true }
+EfficiencyCode-install-context = { workspace = true }
+EfficiencyCode-linux-sandbox = { workspace = true }
+EfficiencyCode-sandboxing = { workspace = true }
+EfficiencyCode-shell-escalation = { workspace = true }
+EfficiencyCode-utils-absolute-path = { workspace = true }
+EfficiencyCode-utils-home-dir = { workspace = true }
+dotenvy = { workspace = true }
+tempfile = { workspace = true }
+tokio = { workspace = true, features = ["rt-multi-thread"] }
+
+[target.'cfg(windows)'.dependencies]
+EfficiencyCode-windows-sandbox = { workspace = true }
+
+[dev-dependencies]
+pretty_assertions = { workspace = true }

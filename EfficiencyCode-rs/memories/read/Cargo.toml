@@ -1,0 +1,21 @@
+[package]
+edition.workspace = true
+license.workspace = true
+name = "EfficiencyCode-memories-read"
+version.workspace = true
+
+[lib]
+name = "EfficiencyCode_memories_read"
+path = "src/lib.rs"
+doctest = false
+
+[lints]
+workspace = true
+
+[dependencies]
+EfficiencyCode-protocol = { workspace = true }
+EfficiencyCode-shell-command = { workspace = true }
+EfficiencyCode-utils-absolute-path = { workspace = true }
+
+[dev-dependencies]
+pretty_assertions = { workspace = true }

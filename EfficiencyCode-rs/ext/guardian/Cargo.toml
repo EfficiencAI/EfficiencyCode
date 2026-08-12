@@ -1,0 +1,19 @@
+[package]
+edition.workspace = true
+license.workspace = true
+name = "EfficiencyCode-guardian"
+version.workspace = true
+
+[lib]
+name = "EfficiencyCode_guardian"
+path = "src/lib.rs"
+test = false
+doctest = false
+
+[lints]
+workspace = true
+
+[dependencies]
+EfficiencyCode-core = { workspace = true }
+EfficiencyCode-extension-api = { workspace = true }
+EfficiencyCode-protocol = { workspace = true }

@@ -1,0 +1,14 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\yansi-580b3fef61e28e13.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\macros.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\windows.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\attr_quirk.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\style.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\color.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\paint.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\global.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\condition.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\set.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libyansi-580b3fef61e28e13.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\macros.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\windows.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\attr_quirk.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\style.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\color.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\paint.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\global.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\condition.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\set.rs
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\macros.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\windows.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\attr_quirk.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\style.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\color.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\paint.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\global.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\condition.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\yansi-1.0.1\src\set.rs:

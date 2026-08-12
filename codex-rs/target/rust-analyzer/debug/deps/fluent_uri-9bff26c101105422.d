@@ -1,0 +1,12 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\fluent_uri-9bff26c101105422.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\enc\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\enc\table.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\enc\imp.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\fmt.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\view.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\parser.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\internal.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libfluent_uri-9bff26c101105422.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\enc\mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\enc\table.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\enc\imp.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\fmt.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\view.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\parser.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\internal.rs
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\enc\mod.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\enc\table.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\enc\imp.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\fmt.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\view.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\parser.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\fluent-uri-0.1.4\src\internal.rs:

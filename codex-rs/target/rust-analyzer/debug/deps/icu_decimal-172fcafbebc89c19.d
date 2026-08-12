@@ -1,0 +1,12 @@
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\icu_decimal-172fcafbebc89c19.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\decimal_formatter.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\grouper.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\options.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\parts.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\preferences.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\provider.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\size_test_macro.rs
+
+D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libicu_decimal-172fcafbebc89c19.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\decimal_formatter.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\grouper.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\options.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\parts.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\preferences.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\provider.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\size_test_macro.rs
+
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\lib.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\decimal_formatter.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\grouper.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\options.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\parts.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\preferences.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\provider.rs:
+D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_decimal-2.2.0\src\size_test_macro.rs:

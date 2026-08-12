@@ -1,0 +1,6 @@
+load("//:defs.bzl", "EfficiencyCode_rust_crate")
+
+EfficiencyCode_rust_crate(
+    name = "cloud-tasks-mock-client",
+    crate_name = "EfficiencyCode_cloud_tasks_mock_client",
+)

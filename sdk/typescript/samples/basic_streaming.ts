@@ -3,12 +3,12 @@
 import { createInterface } from "node:readline/promises";
 import { stdin as input, stdout as output } from "node:process";
 
-import { Codex } from "@openai/codex-sdk";
-import type { ThreadEvent, ThreadItem } from "@openai/codex-sdk";
-import { codexPathOverride } from "./helpers.ts";
+import { EfficiencyCode } from "@openai/EfficiencyCode-sdk";
+import type { ThreadEvent, ThreadItem } from "@openai/EfficiencyCode-sdk";
+import { EfficiencyCodePathOverride } from "./helpers.ts";
 
-const codex = new Codex({ codexPathOverride: codexPathOverride() });
-const thread = codex.startThread();
+const EfficiencyCode = new EfficiencyCode({ EfficiencyCodePathOverride: EfficiencyCodePathOverride() });
+const thread = EfficiencyCode.startThread();
 const rl = createInterface({ input, output });
 
 const handleItemCompleted = (item: ThreadItem): void => {

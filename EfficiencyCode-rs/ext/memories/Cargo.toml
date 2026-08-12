@@ -1,0 +1,33 @@
+[package]
+edition.workspace = true
+license.workspace = true
+name = "EfficiencyCode-memories-extension"
+version.workspace = true
+
+[lib]
+name = "EfficiencyCode_memories_extension"
+path = "src/lib.rs"
+doctest = false
+
+[lints]
+workspace = true
+
+[dependencies]
+EfficiencyCode-core = { workspace = true }
+EfficiencyCode-extension-api = { workspace = true }
+EfficiencyCode-features = { workspace = true }
+EfficiencyCode-otel = { workspace = true }
+EfficiencyCode-tools = { workspace = true }
+EfficiencyCode-utils-absolute-path = { workspace = true }
+EfficiencyCode-utils-output-truncation = { workspace = true }
+EfficiencyCode-utils-template = { workspace = true }
+schemars = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true, features = ["fs"] }
+
+[dev-dependencies]
+pretty_assertions = { workspace = true }
+tempfile = { workspace = true }
+tokio = { workspace = true, features = ["fs", "macros"] }

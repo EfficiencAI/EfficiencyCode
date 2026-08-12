@@ -1,0 +1,25 @@
+[package]
+edition.workspace = true
+license.workspace = true
+name = "EfficiencyCode-prompts"
+version.workspace = true
+
+[lib]
+doctest = false
+name = "EfficiencyCode_prompts"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+EfficiencyCode-context-fragments = { workspace = true }
+EfficiencyCode-git-utils = { workspace = true }
+EfficiencyCode-execpolicy = { workspace = true }
+EfficiencyCode-protocol = { workspace = true }
+EfficiencyCode-utils-absolute-path = { workspace = true }
+EfficiencyCode-utils-template = { workspace = true }
+
+[dev-dependencies]
+pretty_assertions = { workspace = true }

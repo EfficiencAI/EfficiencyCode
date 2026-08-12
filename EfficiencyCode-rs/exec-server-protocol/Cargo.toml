@@ -1,0 +1,26 @@
+[package]
+name = "EfficiencyCode-exec-server-protocol"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "EfficiencyCode_exec_server_protocol"
+path = "src/lib.rs"
+doctest = false
+
+[lints]
+workspace = true
+
+[dependencies]
+base64 = { workspace = true }
+EfficiencyCode-file-system = { workspace = true }
+EfficiencyCode-network-proxy = { workspace = true }
+EfficiencyCode-protocol = { workspace = true }
+EfficiencyCode-shell-command = { workspace = true }
+EfficiencyCode-utils-path-uri = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true, features = ["arbitrary_precision", "raw_value"] }
+
+[dev-dependencies]
+pretty_assertions = { workspace = true }
