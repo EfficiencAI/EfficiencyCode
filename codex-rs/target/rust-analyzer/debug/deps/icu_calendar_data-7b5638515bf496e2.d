@@ -1,8 +1,0 @@
-D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\icu_calendar_data-7b5638515bf496e2.d: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_calendar_data-2.2.0\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_calendar_data-2.2.0\src\../data/mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_calendar_data-2.2.0\src\../data\calendar_japanese_modern_v1.rs.data D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_calendar_data-2.2.0\src\../data\calendar_week_v1.rs.data
-
-D:\code\RustFiles\EfficiencyCode/codex-rs/target/rust-analyzer\debug\deps\libicu_calendar_data-7b5638515bf496e2.rmeta: D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_calendar_data-2.2.0\src\lib.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_calendar_data-2.2.0\src\../data/mod.rs D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_calendar_data-2.2.0\src\../data\calendar_japanese_modern_v1.rs.data D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_calendar_data-2.2.0\src\../data\calendar_week_v1.rs.data
-
-D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_calendar_data-2.2.0\src\lib.rs:
-D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_calendar_data-2.2.0\src\../data/mod.rs:
-D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_calendar_data-2.2.0\src\../data\calendar_japanese_modern_v1.rs.data:
-D:\caches\cargo\registry\src\index.crates.io-1949cf8c6b5b557f\icu_calendar_data-2.2.0\src\../data\calendar_week_v1.rs.data:
