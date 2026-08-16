@@ -8,6 +8,7 @@ pub enum ShellType {
     Zsh,
     Bash,
     PowerShell,
+    Winuxsh,
     Sh,
     Cmd,
 }
@@ -18,6 +19,7 @@ impl ShellType {
             Self::Zsh => "zsh",
             Self::Bash => "bash",
             Self::PowerShell => "powershell",
+            Self::Winuxsh => "winuxsh",
             Self::Sh => "sh",
             Self::Cmd => "cmd",
         }
@@ -45,6 +47,7 @@ pub fn detect_shell_type(shell_path: impl AsRef<std::path::Path>) -> Option<Shel
         Some("bash") => Some(ShellType::Bash),
         Some("pwsh") => Some(ShellType::PowerShell),
         Some("powershell") => Some(ShellType::PowerShell),
+        Some("winuxsh") => Some(ShellType::Winuxsh),
         _ => {
             let shell_name = shell_path.file_stem();
             if let Some(shell_name) = shell_name {
@@ -229,6 +232,15 @@ fn get_powershell_shell(path: Option<&PathBuf>) -> Option<DetectedShell> {
     })
 }
 
+fn get_winuxsh_shell(path: Option<&PathBuf>) -> Option<DetectedShell> {
+    let shell_path = get_shell_path(ShellType::Winuxsh, path, "winuxsh", &[]);
+
+    shell_path.map(|shell_path| DetectedShell {
+        shell_type: ShellType::Winuxsh,
+        shell_path,
+    })
+}
+
 fn get_cmd_shell(path: Option<&PathBuf>) -> Option<DetectedShell> {
     let shell_path = get_shell_path(ShellType::Cmd, path, "cmd", &[]);
 
@@ -263,6 +275,7 @@ pub fn get_shell(shell_type: ShellType, path: Option<&PathBuf>) -> Option<Detect
         ShellType::Zsh => get_zsh_shell(path),
         ShellType::Bash => get_bash_shell(path),
         ShellType::PowerShell => get_powershell_shell(path),
+        ShellType::Winuxsh => get_winuxsh_shell(path),
         ShellType::Sh => get_sh_shell(path),
         ShellType::Cmd => get_cmd_shell(path),
     }
@@ -317,6 +330,10 @@ mod tests {
             detect_shell_type(PathBuf::from("powershell")),
             Some(ShellType::PowerShell)
         );
+        assert_eq!(
+            detect_shell_type(PathBuf::from("winuxsh")),
+            Some(ShellType::Winuxsh)
+        );
         assert_eq!(detect_shell_type(PathBuf::from("fish")), None);
         assert_eq!(detect_shell_type(PathBuf::from("other")), None);
         assert_eq!(
@@ -346,6 +363,10 @@ mod tests {
         assert_eq!(
             detect_shell_type(PathBuf::from("pwsh.exe")),
             Some(ShellType::PowerShell)
+        );
+        assert_eq!(
+            detect_shell_type(PathBuf::from("winuxsh.exe")),
+            Some(ShellType::Winuxsh)
         );
         assert_eq!(
             detect_shell_type(PathBuf::from("/usr/local/bin/pwsh")),

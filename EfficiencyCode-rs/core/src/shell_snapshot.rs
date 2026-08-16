@@ -205,7 +205,10 @@ async fn write_shell_snapshot(
     output_path: &AbsolutePathBuf,
     cwd: &AbsolutePathBuf,
 ) -> Result<()> {
-    if shell_type == ShellType::PowerShell || shell_type == ShellType::Cmd {
+    if matches!(
+        shell_type,
+        ShellType::PowerShell | ShellType::Cmd | ShellType::Winuxsh
+    ) {
         bail!("Shell snapshot not supported yet for {shell_type:?}");
     }
     let shell = get_shell(shell_type, /*path*/ None)
@@ -236,7 +239,9 @@ async fn capture_snapshot(shell: &Shell, cwd: &AbsolutePathBuf) -> Result<String
         ShellType::Bash => run_shell_script(shell, &bash_snapshot_script(), cwd).await,
         ShellType::Sh => run_shell_script(shell, &sh_snapshot_script(), cwd).await,
         ShellType::PowerShell => run_shell_script(shell, powershell_snapshot_script(), cwd).await,
-        ShellType::Cmd => bail!("Shell snapshotting is not yet supported for {shell_type:?}"),
+        ShellType::Cmd | ShellType::Winuxsh => {
+            bail!("Shell snapshotting is not yet supported for {shell_type:?}")
+        }
     }
 }
 

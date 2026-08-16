@@ -31,6 +31,7 @@ pub enum ToolUserShellType {
     Zsh,
     Bash,
     PowerShell,
+    Winuxsh,
     Sh,
     Cmd,
 }

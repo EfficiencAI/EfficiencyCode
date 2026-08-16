@@ -39,6 +39,11 @@ impl Shell {
                 args.push(command.to_string());
                 args
             }
+            ShellType::Winuxsh => vec![
+                self.shell_path.to_string_lossy().to_string(),
+                "-c".to_string(),
+                command.to_string(),
+            ],
             ShellType::Cmd => {
                 let mut args = vec![self.shell_path.to_string_lossy().to_string()];
                 args.push("/c".to_string());
@@ -64,6 +69,7 @@ impl Shell {
             "zsh" => ShellType::Zsh,
             "bash" => ShellType::Bash,
             "powershell" => ShellType::PowerShell,
+            "winuxsh" => ShellType::Winuxsh,
             "sh" => ShellType::Sh,
             "cmd" => ShellType::Cmd,
             name => anyhow::bail!("unknown environment shell `{name}`"),
