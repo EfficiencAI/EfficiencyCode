@@ -64,6 +64,7 @@ pub(crate) fn tool_user_shell_type(
         crate::shell::ShellType::Zsh => EfficiencyCode_tools::ToolUserShellType::Zsh,
         crate::shell::ShellType::Bash => EfficiencyCode_tools::ToolUserShellType::Bash,
         crate::shell::ShellType::PowerShell => EfficiencyCode_tools::ToolUserShellType::PowerShell,
+        crate::shell::ShellType::Winuxsh => EfficiencyCode_tools::ToolUserShellType::Winuxsh,
         crate::shell::ShellType::Sh => EfficiencyCode_tools::ToolUserShellType::Sh,
         crate::shell::ShellType::Cmd => EfficiencyCode_tools::ToolUserShellType::Cmd,
     }
