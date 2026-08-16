@@ -3085,7 +3085,7 @@ mod tests {
                 "params": {
                     "type": "chatgpt",
                     "appBrand": null,
-                    "EfficiencyCodeStreamlinedLogin": true
+                    "efficiencyCodeStreamlinedLogin": true
                 }
             }),
             serde_json::to_value(&request)?,
@@ -3110,7 +3110,7 @@ mod tests {
                 "params": {
                     "type": "chatgpt",
                     "appBrand": "chatgpt",
-                    "EfficiencyCodeStreamlinedLogin": true,
+                    "efficiencyCodeStreamlinedLogin": true,
                     "useHostedLoginSuccessPage": true
                 }
             }),
@@ -3692,10 +3692,10 @@ mod tests {
                     "clientManagedHandoffs": true,
                     "delegationAckFiller": false,
                     "flushTranscriptTailOnSessionEnd": true,
-                    "EfficiencyCodeResponsesAsItems": null,
-                    "EfficiencyCodeResponseItemPrefix": null,
-                    "EfficiencyCodeResponseHandoffMode": "bemTags",
-                    "EfficiencyCodeResponseHandoffChannelPrefixes": {
+                    "efficiencyCodeResponsesAsItems": null,
+                    "efficiencyCodeResponseItemPrefix": null,
+                    "efficiencyCodeResponseHandoffMode": "bemTags",
+                    "efficiencyCodeResponseHandoffChannelPrefixes": {
                         "analysis": ["[THINKING]"],
                         "commentary": ["[PROGRESS]", "[UPDATE]"],
                         "final": ["[DONE]"]
@@ -3762,10 +3762,10 @@ mod tests {
                     "clientManagedHandoffs": null,
                     "delegationAckFiller": null,
                     "flushTranscriptTailOnSessionEnd": null,
-                    "EfficiencyCodeResponsesAsItems": null,
-                    "EfficiencyCodeResponseItemPrefix": null,
-                    "EfficiencyCodeResponseHandoffMode": null,
-                    "EfficiencyCodeResponseHandoffChannelPrefixes": null,
+                    "efficiencyCodeResponsesAsItems": null,
+                    "efficiencyCodeResponseItemPrefix": null,
+                    "efficiencyCodeResponseHandoffMode": null,
+                    "efficiencyCodeResponseHandoffChannelPrefixes": null,
                     "model": null,
                     "outputModality": "audio",
                     "includeStartupContext": null,
@@ -3814,10 +3814,10 @@ mod tests {
                     "clientManagedHandoffs": null,
                     "delegationAckFiller": null,
                     "flushTranscriptTailOnSessionEnd": null,
-                    "EfficiencyCodeResponsesAsItems": null,
-                    "EfficiencyCodeResponseItemPrefix": null,
-                    "EfficiencyCodeResponseHandoffMode": null,
-                    "EfficiencyCodeResponseHandoffChannelPrefixes": null,
+                    "efficiencyCodeResponsesAsItems": null,
+                    "efficiencyCodeResponseItemPrefix": null,
+                    "efficiencyCodeResponseHandoffMode": null,
+                    "efficiencyCodeResponseHandoffChannelPrefixes": null,
                     "model": null,
                     "outputModality": "audio",
                     "includeStartupContext": null,

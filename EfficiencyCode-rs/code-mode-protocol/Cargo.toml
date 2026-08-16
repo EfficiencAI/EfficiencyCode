@@ -1,5 +1,6 @@
 [package]
 edition.workspace = true
+build = "build.rs"
 license.workspace = true
 name = "EfficiencyCode-code-mode-protocol"
 version.workspace = true

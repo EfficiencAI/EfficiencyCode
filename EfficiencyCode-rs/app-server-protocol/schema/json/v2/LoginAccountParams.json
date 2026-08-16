@@ -3,7 +3,7 @@
   "definitions": {
     "LoginAppBrand": {
       "enum": [
-        "EfficiencyCode",
+        "efficiencycode",
         "chatgpt"
       ],
       "type": "string"
@@ -43,7 +43,7 @@
           ],
           "default": null
         },
-        "EfficiencyCodeStreamlinedLogin": {
+        "efficiencyCodeStreamlinedLogin": {
           "type": "boolean"
         },
         "type": {
