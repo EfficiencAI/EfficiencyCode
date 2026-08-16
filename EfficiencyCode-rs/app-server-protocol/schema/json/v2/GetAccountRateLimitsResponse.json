@@ -133,7 +133,7 @@
     },
     "RateLimitResetType": {
       "enum": [
-        "EfficiencyCodeRateLimits",
+        "efficiencyCodeRateLimits",
         "unknown"
       ],
       "type": "string"

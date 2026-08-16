@@ -4785,7 +4785,7 @@ fn realtime_start_deserializes_client_handoff_channel_prefixes() {
     let params = serde_json::from_value::<ThreadRealtimeStartParams>(json!({
         "threadId": "thread_123",
         "outputModality": "audio",
-        "EfficiencyCodeResponseHandoffChannelPrefixes": {
+        "efficiencyCodeResponseHandoffChannelPrefixes": {
             "analysis": ["[THINKING]"],
             "commentary": ["[PROGRESS]", "[UPDATE]"],
             "final": ["[DONE]"]

@@ -7,7 +7,7 @@ export type InitializeResponse = { userAgent: string,
 /**
  * Absolute path to the server's $EfficiencyCode_HOME directory.
  */
-EfficiencyCodeHome: AbsolutePathBuf,
+efficiencyCodeHome: AbsolutePathBuf,
 /**
  * Platform family for the running app-server target, for example
  * `"unix"` or `"windows"`.

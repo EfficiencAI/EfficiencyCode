@@ -155,7 +155,7 @@
             "null"
           ]
         },
-        "EfficiencyCodeErrorInfo": {
+        "efficiencyCodeErrorInfo": {
           "anyOf": [
             {
               "$ref": "#/definitions/EfficiencyCodeErrorInfo"

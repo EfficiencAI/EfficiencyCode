@@ -295,14 +295,6 @@
       ],
       "type": "object"
     },
-    "EfficiencyCodeResponseHandoffMode": {
-      "enum": [
-        "thinking",
-        "commentary",
-        "bemTags"
-      ],
-      "type": "string"
-    },
     "CollaborationMode": {
       "description": "Collaboration mode for a EfficiencyCode session.",
       "properties": {
@@ -823,6 +815,14 @@
           "type": "object"
         }
       ]
+    },
+    "EfficiencyCodeResponseHandoffMode": {
+      "enum": [
+        "thinking",
+        "commentary",
+        "bemTags"
+      ],
+      "type": "string"
     },
     "ExperimentalFeatureEnablementSetParams": {
       "properties": {
@@ -1746,7 +1746,7 @@
               ],
               "default": null
             },
-            "EfficiencyCodeStreamlinedLogin": {
+            "efficiencyCodeStreamlinedLogin": {
               "type": "boolean"
             },
             "type": {
@@ -1845,7 +1845,7 @@
     },
     "LoginAppBrand": {
       "enum": [
-        "EfficiencyCode",
+        "efficiencycode",
         "chatgpt"
       ],
       "type": "string"

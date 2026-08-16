@@ -7,7 +7,7 @@
     }
   },
   "properties": {
-    "EfficiencyCodeHome": {
+    "efficiencyCodeHome": {
       "allOf": [
         {
           "$ref": "#/definitions/AbsolutePathBuf"
@@ -28,7 +28,7 @@
     }
   },
   "required": [
-    "EfficiencyCodeHome",
+    "efficiencyCodeHome",
     "platformFamily",
     "platformOs",
     "userAgent"
